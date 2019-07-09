@@ -6,7 +6,7 @@ menu:
     parent: "/with-tyk-community-edition"
     identifier: community-edition-create-api-token
 url: "/with-tyk-community-edition/tutorials/create-api-token"    
-weight: 2
+weight: 3
 ---
 
 To create an API Key, we will need the API ID that we wish to grant the key access to, then creating the key is a very simple API call to the endpoint.

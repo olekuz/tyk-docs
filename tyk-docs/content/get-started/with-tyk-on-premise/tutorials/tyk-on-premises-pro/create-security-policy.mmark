@@ -5,7 +5,7 @@ menu:
   main:
     parent: "Pro Edition"
     identifier: pro-edition-create-security-policy
-weight: 3
+weight: 2
 ---
 <span data-filetype="mmark"></span>
 

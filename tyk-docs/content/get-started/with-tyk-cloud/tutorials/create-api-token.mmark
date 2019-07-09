@@ -4,7 +4,7 @@ Title: Create an API Key - Cloud
 menu:
   main:
     parent: "Tutorials"
-weight: 2
+weight: 3
 ---
 <span data-filetype="mmark"></span>
 {{./static/include/create-api-key-include.md}}

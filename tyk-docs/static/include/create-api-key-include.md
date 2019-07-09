@@ -14,7 +14,15 @@ We have a video walkthrough for creating an API Key.
 
 ![Add key button location][2]
 
-### Step 3: Set Access Rights
+### Step 3: Apply Policies (optional)
+
+This option allows the Key you create to be applied to many APIs at once. Policy settings override the individual Key settings. If you select a policy, all the APIs controlled by the policy will be listed in the **Access Rights** section.
+
+If you do not select a policy, you have to specify the APIs the created Key will be applied to.
+
+![Apply Policy][8]
+
+### Step 4: Set Access Rights
 
 Select the API you created in the **Create an API** tutorial from the Access Rights drop-down list, then click **Add**. This sets an access rule to the API Key for your API. You **must** set an access rule for an API key.
 
@@ -22,7 +30,7 @@ You can leave all other options at their default settings.
 
 ![Access rights location][3]
 
-### Step 4: Click CREATE
+### Step 5: Click CREATE
 
 ![Create button location][4]
 
@@ -81,3 +89,4 @@ curl -X POST -H "authorization: 1238b7e0e2ff4c2957321724409ee2eb" \
 [5]: /docs/img/dashboard/system-management/key_success_popup_2.5.png
 [6]: /docs/img/dashboard/system-management/api_access_cred_2.5.png
 [7]: /docs/img/dashboard/system-management/created_api_id_2.5.png
+[8]: /docs/img/dashboard/system-management/apply_policies.png

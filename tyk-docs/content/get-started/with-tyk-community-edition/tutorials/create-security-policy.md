@@ -5,7 +5,7 @@ menu:
   main:
     parent: "/with-tyk-community-edition"
     identifier: community-edition-create-security-policy
-weight: 3
+weight: 2
 url: "/with-tyk-community-edition/tutorials/create-security-policy"
 ---
 
