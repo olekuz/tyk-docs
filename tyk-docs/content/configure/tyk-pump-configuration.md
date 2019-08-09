@@ -188,7 +188,8 @@ Create a `pump.conf` file:
         "group_id": "",
         "call_timeout": 30,
         "ping_timeout": 60,
-        "rpc_pool_size": 30
+        "rpc_pool_size": 30,
+        "track_all_paths": true
       }
     },
     "logzio": {
@@ -216,6 +217,23 @@ Settings must be the same as for the original `tyk.conf` for Redis and for Mongo
 
 #### Tyk Dashboard
 The Tyk Dashboard uses the `mongo-pump-aggregate` collection to display analytics. This is different than the standard `mongo` pump plugin that will store individual analytic items into MongoDB. The aggregate functionality was built to be fast, as querying raw analytics is expensive in large data sets.
+
+For tracked endpoints, you can additionally calculate analytics on a per Key and OAuth client basis. For example:
+
+```
+"mongo-pump-aggregate": {
+  "type": "mongo-pump-aggregate",
+  "meta": {
+      "mongo_url": "mongodb://localhost:27017/tyk_analytics",
+      "max_insert_batch_size_bytes": 80000,
+      "max_document_size_bytes": 20112,
+      "track_all_paths": true
+  },
+  "use_mixed_collection": true
+        }
+```
+
+You can also use `track_all_paths` to enable tracking analytics for all paths without the need for a plugin. This can also be used with the Hybrid Pump.
 
 ### Other Supported Backend Services
 
@@ -311,6 +329,8 @@ NOTE: Make sure your tyk.conf has `analytics_config.type` set to empty string va
 `call_timeout` - This is the timeout (in milliseconds) for RPC calls.
 
 `rpc_pool_size` - This is maximum number of connections to MDCB.
+
+`track_all_paths` - Set this field to `true` to enable tracking analytics for all paths without the need for a plugin.
 
 
 #### Prometheus Config
