@@ -12,8 +12,7 @@ weight: 3
 
 ### Organisation Level Rate Limiting
 
-Endpoints [Create organisation keys](https://tyk.io/docs/tyk-rest-api/organisation-quotas/#create-organisation-keys) and 
-[Add/update organisation keys](https://tyk.io/docs/tyk-rest-api/organisation-quotas/#add-update-organisation-keys) now 
+The Create organisation keys and Add/update organisation keys Endpoints (see the Organisation Quotas section of the [Tyk Gateway API Swagger/OpenAPI page](https://tyk.io/docs/tyk-rest-api/))now 
 allow you to set rate limits at an organisation level. You will need to add the following fields in your create/add/update key request:
 
 * `"allowance"`
@@ -330,7 +329,7 @@ If a developer forgets their password, they can now request a password reset ema
 
 ![Request email reset][2]
 
-See [Developer Profiles](/docs/publish/developer-profiles/#reset-developer-password) for more details.
+See [Developer Profiles](/docs/tyk-developer-portal/developer-profiles/#reset-developer-password) for more details.
 
 ### SSO API custom email support
 
