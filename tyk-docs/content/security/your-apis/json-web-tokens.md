@@ -149,9 +149,67 @@ Here we have set:
 - field `"jwt_scope_to_policy_mapping"` provides mapping of scopes (read from claim) to actual policy ID. I.e. in this example we specify that scope "admin" will apply policy `"59672779fa4387000129507d"` to a key
 > **NOTE**: several scopes in JWT claim will lead to have several policies applied to a key. In this case all policies should have `"per_api"` set to `true` and shouldn't have the same `API ID` in access rights. I.e. if claim with scopes contains value `"admin developer"` then two policies `"59672779fa4387000129507d"` and `"53222349fa4387004324324e"` will be applied to a key (with using our example config above).
 
+## JWT Examples
+
+Below are some example uses of JWT with Tyk.
+
+### JWT with Header
+
+1. Create an API from the Designer. For this example `jwt-test`
+2. In the **Authentication** settings, select JSON Web Token (JWT)as in [Step 1](/docs/security/your-apis/json-web-tokens/#step-1-set-authentication-mode) above
+3. For the JWT Signing method, select HAMAC from the drop-down list as in [Step 2](/docs/security/your-apis/json-web-tokens/#step-2-set-the-jwt-signing-method) above.
+4. Enter `sub` as the Identity Source, as in [Step 3](/docs/security/your-apis/json-web-tokens/#step-3-set-the-identity-source-and-policy-field-name) above. The Policy field can be left blank.
+5. In the **Endpoint Designer**, enter a GET endpoint. For this example `ip`.
+6. Click Create to save the API.
+7. Edit the API and copy the API URL from the top of the screen.
+8. Enter the following cURL command. ```curl -k https://tyk123.cloudv2.tyk.io/jwt-test/ip``` 
+9. You should see an "Authorization field missing" error returned.
+10. Now we need to [create a Key](/docs/get-started/with-tyk-cloud/tutorials/create-api-token/).
+11. When setting up the Key, you need to select the **This is a JWT ID** option, then add your secret in the secret field. For this example we are using `tyk123`.
+12. Select the `jwt-test` API in the **Access Rights** section. This enables you to use the API with the Key.
+13. Click **Create**. Copy the Key ID that is displayed in the pop-up box.
+14. We now need to enter the Key ID and the secret in a JWT Validator. We will use [jwt.io](https://jwt.io/) for this example.
+15. From the Debugger screen, modify the header section with the following: `"kid": "Your API Key ID Code"`. ![JWT Header][7]
+16. Enter your JWT Secret (`tyk123` in this example) in the **Verify Signature** section. ![JWT Verify Signature][8]
+17. Enter the following cURL command ```curl -k https://tyk123.cloudv2.tyk.io/jwt-test/ip -H "Authorization:<Your JWT Encoded Code">```
+18. You should get a 200 response body, as below:![JWT Header Success][10]
+
+### JWT With Cookie
+
+You can amend the API and Key created in the Header example to demonstrate using JWT with a cookie.
+
+1. Edit the `jwt-test` API and Select the **Raw API Definition** option.
+2. Set the `use_cookie` option to `true` ![JWT Use Cookie][9]
+3. Click **Update** to save your API.
+4. Enter the following cURL command: ```curl -k https://tyk123.cloudv2.tyk.io/jwt-test/ip --cookie "Authorization=<Your JWT Encoded Code">```
+5. You should get the same response as for the Header example.
+
+### JWT with Parameter
+
+Again we can modify the `jwt-test` API and edit the Raw API definition as for the cookie example.
+
+1. Set the `use_cookie` option to `false`.
+2. Set the `use_param` option to `true` ![JWT Use Parameter][11]
+3. Click **Update** to save your API.
+4. Enter the following cURL command: ```curl -k https://tyk123.cloudv2.tyk.io/jwt-test/ip?Authorization=<Your JWT Encoded Code>```
+5. You should get the same response as for the Header and Cookie example.
+
+
+
+
+
+
+
+
 
 [1]: http://jwt.io/introduction/
 [2]: /docs/img/diagrams/jwt2.png
 [3]: /docs/img/dashboard/system-management/jwt_auth_2.5.png
 [4]: /docs/img/dashboard/system-management/jwt_sign_2.5.png
 [5]: /docs/img/dashboard/system-management/jwt_claim_2.7.png
+[6]: /docs/img/dashboard/system-management/auth-field_missing.png
+[7]: /docs/img/dashboard/system-management/jwt_header_code.png
+[8]: /docs/img/dashboard/system-management/jwt_verify_sig.png
+[9]: /docs/img/dashboard/system-management/jwt_use_cookie_true.png
+[10]: /docs/img/dashboard/system-management/jwt_header_response.png
+[11]: /docs/img/dashboard/system-management/jwt_use_param.png
