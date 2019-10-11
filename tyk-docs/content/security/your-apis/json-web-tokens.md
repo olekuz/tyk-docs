@@ -111,7 +111,7 @@ The benefit here is that if RSA is used, then all that is stored in a Tyk instal
 
 ## Option 3: Dynamic public key rotation using JWKs
 
-Instead of specifying static public key in API definition, it is possible to specify URL pointing to JSON Web Key Set (JWKs). At the most basic level, the JWKs is a set of keys containing the public keys that should be used to verify any JWT issued by the authorization server. You can read more about JWKs here: https://auth0.com/docs/jwks
+Instead of specifying static public key in API definition, it is possible to specify a URL pointing to JSON Web Key Set (JWKs). At the most basic level, the JWKs is a set of keys containing the public keys that should be used to verify any JWT issued by the authorization server. You can read more about JWKs here: https://auth0.com/docs/jwks
 
 Using JWKs you can maintan dynamic list of currently active public keys, and safely rotate them, since both old and new JWT tokens will work, until you remove expired JWK. Generated JWT keys should have `kid` a claim, which should match with the `kid` field of JWK, used for validating the token. 
 
@@ -145,20 +145,22 @@ You can map JWT scopes to security policies to be applied to a key. To enable th
 }
 ```
 Here we have set:
+
 - field `"jwt_scope_claim_name"` identifies the JWT claim name which contains scopes. This API Spec field is optional with default value `"scope"`. This claim value is a string with space delimited list of values (by standard)
 - field `"jwt_scope_to_policy_mapping"` provides mapping of scopes (read from claim) to actual policy ID. I.e. in this example we specify that scope "admin" will apply policy `"59672779fa4387000129507d"` to a key
+
 > **NOTE**: several scopes in JWT claim will lead to have several policies applied to a key. In this case all policies should have `"per_api"` set to `true` and shouldn't have the same `API ID` in access rights. I.e. if claim with scopes contains value `"admin developer"` then two policies `"59672779fa4387000129507d"` and `"53222349fa4387004324324e"` will be applied to a key (with using our example config above).
 
 ## JWT Examples
 
 Below are some example uses of JWT with Tyk.
 
-### JWT with Header
+### Authenticate API with User Unique JWT
 
-1. Create an API from the Designer. For this example `jwt-test`
+1. Create an API from the Designer. For this example, name it `jwt-test`
 2. In the **Authentication** settings, select JSON Web Token (JWT)as in [Step 1](/docs/security/your-apis/json-web-tokens/#step-1-set-authentication-mode) above
-3. For the JWT Signing method, select HAMAC from the drop-down list as in [Step 2](/docs/security/your-apis/json-web-tokens/#step-2-set-the-jwt-signing-method) above.
-4. Enter `sub` as the Identity Source, as in [Step 3](/docs/security/your-apis/json-web-tokens/#step-3-set-the-identity-source-and-policy-field-name) above. The Policy field can be left blank.
+3. For the JWT Signing method, select **HMAC** from the drop-down list as in [Step 2](/docs/security/your-apis/json-web-tokens/#step-2-set-the-jwt-signing-method) above.
+4. Enter `sub` as the Identity Source, as in [Step 3](/docs/security/your-apis/json-web-tokens/#step-3-set-the-identity-source-and-policy-field-name) above. Set the policy field to the name of the claim you will be using in your JWT when referring to the policy. For example **pol**.
 5. In the **Endpoint Designer**, enter a GET endpoint. For this example `ip`.
 6. Click Create to save the API.
 7. Edit the API and copy the API URL from the top of the screen.
@@ -174,7 +176,7 @@ Below are some example uses of JWT with Tyk.
 17. Enter the following cURL command ```curl -k https://tyk123.cloudv2.tyk.io/jwt-test/ip -H "Authorization:<Your JWT Encoded Code">```
 18. You should get a 200 response body, as below:![JWT Header Success][10]
 
-### JWT With Cookie
+### JWT with a Cookie
 
 You can amend the API and Key created in the Header example to demonstrate using JWT with a cookie.
 
