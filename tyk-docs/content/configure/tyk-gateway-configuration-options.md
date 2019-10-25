@@ -604,6 +604,7 @@ You need to use the following values for this setting:
 |      1.0      |      769       |
 |      1.1      |      770       |
 |      1.2      |      771       |
+|      1.3      |      772       |
 
 ### <a name="proxy_ssl_ciphers"></a>proxy_ssl_ciphers
 
@@ -661,3 +662,17 @@ As dns query response ip addresses can have changing order depending on dns serv
 - `pick_first` will instruct gateway to connect to first ip in returned ips list and cache the response.
 - `random` will instruct gateway to connect to random ip in returned ips list and cache the response.
 - `no_cache` will instruct gateway to connect to first ip in returned ips list and fetch each addresses list without caching on each API endpoint dns query.
+
+#### <a name="enable_http_profiler"></a> enable_http_profiler
+
+Set this to `true` to run a special `/debug/pprof/` public web page, containing dynamic information about the running process, and where you can download various profiles:
+
+* **goroutine** - stack traces of all current goroutines
+* **heap** - a sampling of all heap allocations
+* **threadcreate** - stack traces that led to the creation of new OS threads
+* **block** - stack traces that led to blocking on synchronization primitives
+* **mutex** - stack traces of holders of contended mutexes
+
+
+
+

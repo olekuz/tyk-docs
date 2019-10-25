@@ -10,11 +10,15 @@ url: "/troubleshooting/tyk-gateway"
 
 [502 error in Tyk Gateway](/docs/troubleshooting/tyk-gateway/502-error-tyk-gateway/)
 
-[“Index out of range“ error in logs](/docs/troubleshooting/tyk-gateway/index-range-error-logs/)
+["Index out of range error" in logs](/docs/troubleshooting/tyk-gateway/index-range-error-logs/)
 
-[“Invalid memory address or nil pointer dereference“ error](/docs/troubleshooting/tyk-gateway/invalid-memory-address-nil-pointer-dereference-error/)
+["Invalid memory address or nil pointer dereference" error](/docs/troubleshooting/tyk-gateway/invalid-memory-address-nil-pointer-dereference-error/)
 
-[“Key object validation failed“ error when updating a key](/docs/troubleshooting/tyk-gateway/key-object-validation-failed-error-updating-key/)
+["Key object validation failed" error when updating a key](/docs/troubleshooting/tyk-gateway/key-object-validation-failed-error-updating-key/)
 
-[“There was a problem proxying the request“](/docs/troubleshooting/tyk-gateway/problem-proxying-request/)
+["There was a problem proxying the request"](/docs/troubleshooting/tyk-gateway/problem-proxying-request/)
+
+[Tyk Gateway Profiling](/docs/troubleshooting/tyk-gateway/profiling/)
+
+["DRL not ready, skipping this notification"](/docs/troubleshooting/tyk-gateway/drl-not-ready/)
 

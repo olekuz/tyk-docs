@@ -29,3 +29,5 @@ There are two way to get profiles:
     * threadcreate - stack traces that led to the creation of new OS threads
     * block        - stack traces that led to blocking on synchronization primitives
     * mutex        - stack traces of holders of contended mutexes
+
+You can also set the `enable_http_profiler` option to `true` in the Tyk Gateway config file to enable this functionality.
