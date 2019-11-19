@@ -3,3 +3,4 @@ tyk-docs/public
 .idea/
 
 *.plist
+.eslintrc.json

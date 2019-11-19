@@ -284,7 +284,7 @@ We need to create a manifest file within the `tyk-plugin` directory. This file c
 * The `custom_middleware` block contains the middleware settings like the plugin driver we want to use (`driver`) and the hooks that our plugin will expose. We use the `auth_check` hook for this tutorial. For other hooks see [here](https://tyk.io/docs/customise-tyk/plugins/rich-plugins/rich-plugins-work/#coprocess-dispatcher-hooks).
 * The `name` field references the name of the function that we implement in our plugin code - `MyAuthMiddleware`. This will be handled by our dispatcher gRPC method (implemented in `Server.cs`).
 * The `path` field is the path to the middleware component.
-* The `raw_body_only` field 
+* The `raw_body_only` field, if set to `true`, avoids string conversion when dispatching a request to your plugin. this means that the request body will be only available in the `raw_body` field, which is defined in "bytes" in the [Protocol Buffers](https://github.com/TykTechnologies/tyk-protobuf) definition For .NET bindings it will probably be encoded as `[]byte`. If `raw_body_only` is set to `false`, then you will find the request body in both the `body` (string) and `raw_body` (bytes) fields. By default the `body` string is converted to UTF-8. If this conversion fails, the `body` field will be empty.
 * The `require_session` field, if set to `true` gives you access to the session object. It will be supplied as a session variable to your middleware processor function
 
 
