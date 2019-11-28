@@ -12,8 +12,8 @@ weight: 3
 
 ### Organisation Level Rate Limiting
 
-The Create organisation keys and Add/update organisation keys Endpoints (see the Organisation Quotas section of the [Tyk Gateway API Swagger/OpenAPI page](https://tyk.io/docs/tyk-rest-api/))now 
-allow you to set rate limits at an organisation level. You will need to add the following fields in your create/add/update key request:
+The Create organisation keys and Add/Update organisation keys Endpoints (see the Organisation Quotas section of the [Tyk Gateway API Swagger/OpenAPI page](https://tyk.io/docs/tyk-rest-api/))now 
+allow you to set rate limits at an organisation level. You will need to add the following fields in your Create/Add/Update key request:
 
 * `"allowance"`
 * `"rate"`
