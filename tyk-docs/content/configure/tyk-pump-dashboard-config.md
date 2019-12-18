@@ -2,16 +2,16 @@
 date: 2017-03-27T15:47:05+01:00
 title: Pump Dashboard Analytics Configuration
 menu:
-    main:
-        parent: "Tyk Pump Configuration"
-weight: 4 
+  main:
+    parent: "Tyk Pump Configuration"
+weight: 4
 ---
 
 Let's walk through setting up analytics in the Dashboard via the Pump.
 
 There are 3 different pumps we want to look at:
 
-1. mongo 
+1. mongo
 2. mongo-pump-selective
 3. mongo-pump-aggregate
 
@@ -26,7 +26,7 @@ This collection [should be capped](/docs/configure/tyk-pump-configuration/#cappi
 ```{.json}
 {
   ...
-  "pumps": { 
+  "pumps": {
     "mongo": {
       "type": "mongo",
       "meta": {
@@ -38,15 +38,16 @@ This collection [should be capped](/docs/configure/tyk-pump-configuration/#cappi
 ```
 
 ### mongo-pump-aggregate
-This pump stores data in a collection called `z_tyk_analyticz_aggregate_{ORG ID}`.  
+
+This pump stores data in a collection called `z_tyk_analyticz_aggregate_{ORG ID}`.
 
 There are minimal number of documents that get stored, so you don't need to worry about capping this. The documents contain aggregate info across an individual API, such as total requests, errors, and more.
 
 This pump supplies the data for the following sub categories `API Usage Data`:
 
-* Activity by API
-* Activity by Key
-* Errors
+- Activity by API
+- Activity by Key
+- Errors
 
 You will need to set the `enable_aggregate_lookups` field to true to in the [dashboard configuration file](https://tyk.io/docs/configure/tyk-dashboard-configuration-options/) in addition to adding the below pump to your pump conf file:
 
@@ -74,6 +75,7 @@ This pump stores data in collections called `z_tyk_analyticz_{ORG ID}`.
 If the Dashboard configuration key `use_sharded_keys` equals `true`, then the Dashboard will use these collections to populate `Log Browser`.
 
 This collection [should be capped](/docs/configure/tyk-pump-configuration/#capping-analytics-data) due to the number of individual documents.
+
 ```{.json}
 {
   ...
@@ -93,10 +95,10 @@ This collection [should be capped](/docs/configure/tyk-pump-configuration/#cappi
 
 With the Dashboard config value `use_sharded_analytics` set to true, this will show analytics in your Dashboard
 
-* Activity by API
-* Activity by Key
-* Errors
-* Log Browser
+- Activity by API
+- Activity by Key
+- Errors
+- Log Browser
 
 ```{.json}
 {
@@ -118,10 +120,11 @@ With the Dashboard config value `use_sharded_analytics` set to true, this will s
     "mongo-pump-aggregate": {
       "name": "mongo-pump-aggregate",
       "meta": {
-        "mongo_url": "mongodb://localhost:27017/tyk_analytics"
-      },
-      "use_mixed_collection": false
-    },
+        "mongo_url": "mongodb://localhost:27017/tyk_analytics",
+        "use_mixed_collection": false
+      }
+    }
+  },
     "mongo-pump-selective": {
       "name": "mongo-pump-selective",
       "meta": {
