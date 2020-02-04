@@ -14,15 +14,14 @@ Centralised JWTs add a `TykJWTSessionID` to the session meta data on create to e
 
 ### Clock Skew
 
-> **NOTE**: Available from v2.7.2 onwards
-
 Due to the nature of distributed systems it is expected that despite best efforts you can end up in a situation with clock skew between the issuing party (An OpenID/OAuth provider) and the validating party (Tyk).
 
-This means that in certain circumstances Tyk would reject requests to an API endpoint secured with JWT with the `Token is not valid yet` error . This occurs due to the clock on the Tyk server being behind the clock on the Identity Provider server even with all servers ntp sync'd from the same ntp server.
+This means that in certain circumstances Tyk would reject requests to an API endpoint secured with JWT with the `Token is not valid yet` error. This occurs due to the clock on the Tyk server being behind the clock on the Identity Provider server even with all servers ntp sync'd from the same ntp server.
 
-You can now configure JWT clock skew using the following variables. All values are in seconds. The default is `0` (i.e. no skew).
+You can now configure the clock skew for the three claims we check when validating a JWT `-nbf`, `exp` and `iat` using the following variables. All values are in seconds and are added/subtracted to the current time of the check.  The default is `0` (i.e. no skew).
 
 ```{.json}
+"enable_jwt": true,
 "jwt_issued_at_validation_skew": 0,
 "jwt_expires_at_validation_skew": 0,
 "jwt_not_before_validation_skew": 0
