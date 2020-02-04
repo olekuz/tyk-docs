@@ -14,17 +14,18 @@ Centralised JWTs add a `TykJWTSessionID` to the session meta data on create to e
 
 ### Clock Skew
 
-Due to the nature of distrusted systems it is expected that despite best efforts you can end up in a situation with clock skew between the issuing party (An OpenID/OAuth provider) and the validating party (Tyk).  
+> **NOTE**: Available from v2.7.2 onwards
 
-This means that in certain circumstances Tyk would reject requests to an API endpoint secured with JWT with the "Token is not valid yet" error . This occurs due to the clock on the Tyk server being behind the clock on the Identity Provider server even with all servers ntp sync'd from the same ntp server.
+Due to the nature of distributed systems it is expected that despite best efforts you can end up in a situation with clock skew between the issuing party (An OpenID/OAuth provider) and the validating party (Tyk).
 
-You can disable the validation check on 3 claims `IssueAt`, `ExpireAt` and `NotBefore` by adding the following boolean fields to your API definition:
+This means that in certain circumstances Tyk would reject requests to an API endpoint secured with JWT with the `Token is not valid yet` error . This occurs due to the clock on the Tyk server being behind the clock on the Identity Provider server even with all servers ntp sync'd from the same ntp server.
+
+You can now configure JWT clock skew using the following variables. All values are in seconds. The default is `0` (i.e. no skew).
 
 ```{.json}
-  "enable_jwt": true,
-  "jwt_disable_issued_at_validation": true,
-  "jwt_disable_expires_at_validation": true,
-  "jwt_disable_not_before_validation": true
+"jwt_issued_at_validation_skew": 0,
+"jwt_expires_at_validation_skew": 0,
+"jwt_not_before_validation_skew": 0
 ```
 
 See [JSON Web Tokens](/docs/basic-config-and-security/security/your-apis/json-web-tokens/) for more details.
