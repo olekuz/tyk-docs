@@ -49,6 +49,8 @@ This licence is suitable for managing 1 Tyk Gateway node for evaluation purposes
 
 This commercial licence is valid for managing 2 Tyk Gateway nodes. Includes helpdesk support. We also offer Pricing models for more than 2 nodes if required.
 
+See [Tyk On-Premises](https://tyk.io/api-gateway/on-premises/) for more details on our On-Premises offering.
+
 
 ## Enterprise Licencing
 
