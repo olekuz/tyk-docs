@@ -13,23 +13,27 @@ weight: 1
 
 To create an account with Tyk Multi-Cloud is very quick and free (for 30 days):
 
-Visit our Tyk [Multi-Cloud Signup Page](https://cloud.tyk.io) and enter your details:
+1. Complete our [Getting Started Form](https://pages.tyk.io/get-started-with-tyk) and enter your details:
+2. You'll then be taken to our [PoC or Pro Plan form](https://signup.tyk.io/api-gateway/cloud/#cloud). Select Pro Plan from the form.
 
-![Tyk Multi-Cloud signup form][2]
+![PoC Form](/docs/img/dashboard/system-management/pro_plan_select.png)
 
-Your company name will be used to generate your cloud endpoint, this is where your API Developer Portal will be hosted, and also your Tyk Cloud API endpoints for any APIs that you create.
+3. Complete the form and click **Start Free Trial**.
 
-> **Note**: If you change the password in your cloud account page it will not change the password in your dashboard.
+> **Note:** If you change the password in your cloud account page it will not change the password for your Cloud Dashboard.
 
 ## <a name="log-into-your-cloud-dashboard"></a>Log into your Cloud Dashboard 
 
 From your cloud account page click **Login to your dashboard**:
 
-![Cloud Navigation][3]
+![Account Dashboard](/docs/img/dashboard/system-management/new_account_overview.png)
 
 A login screen for our cloud dashboard will be displayed. You can login directly from <https://admin.cloud.tyk.io>. The username and password will be the same as those used to create your account.
 
-[1]: https://cloud.tyk.io
-[2]: /docs/img/cloud/multi-cloud_signup_form.png
-[3]: /docs/img/cloud/new_landing_page.png
-[4]: /docs/img/cloud/DashLoginButton.png
+### Next Steps
+
+[Create an API](https://tyk.io/docs/try-out-tyk/tutorials/create-api/)
+
+[Create an API Security Policy](/docs/try-out-tyk/tutorials/create-security-policy/)
+
+[Create an API Key](/docs/try-out-tyk/tutorials/create-api-key/)

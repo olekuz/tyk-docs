@@ -22,7 +22,7 @@ To create a free Tyk Cloud account:
 
 From your cloud account page click **Login to your dashboard**:
 
-![Cloud Navigation](/docs/img/dashboard/system-management/new_account_overview.png)
+![Account Dashboard](/docs/img/dashboard/system-management/new_account_overview.png)
 
 This will present you with a new login screen for our cloud dashboard. You can login directly from <https://admin.cloud.tyk.io>. The username and password will be the same as those used to create your account.
 
