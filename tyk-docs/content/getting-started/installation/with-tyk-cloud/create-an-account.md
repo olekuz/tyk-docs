@@ -9,38 +9,29 @@ weight: 1
 
 To create a free Tyk Cloud account:
 
-Visit our Tyk [Cloud Signup Page](https://cloud.tyk.io) and enter your details:
+1. Complete our [Getting Started Form](https://pages.tyk.io/get-started-with-tyk) and enter your details:
+2. You'll then be taken to our [PoC or Pro Plan form](https://signup.tyk.io/api-gateway/cloud/#cloud). Proof of Concept is selected by default.
 
-![Tyk Cloud signup form][2]
+![PoC Form](/docs/img/dashboard/system-management/poc_select.png)
 
-Your company name will be used to generate your cloud endpoint. This is where your API Developer Portal will be hosted, and also your Tyk Cloud API endpoints for any APIs that you create.
+3. Complete the form and click **Start Free Trial**.
 
-> **Note:** If you change the password in your cloud account page it will not change the password in your Cloud Dashboard.
+> **Note:** If you change the password in your cloud account page it will not change the password for your Cloud Dashboard.
 
 ## <a name="log-into-your-cloud-dashboard"></a> Log into your Dashboard
 
 From your cloud account page click **Login to your dashboard**:
 
-![Cloud Navigation][3]
+![Cloud Navigation](/docs/img/dashboard/system-management/new_account_overview.png)
 
 This will present you with a new login screen for our cloud dashboard. You can login directly from <https://admin.cloud.tyk.io>. The username and password will be the same as those used to create your account.
 
 ### Next Steps
 
-[Create an API from the Dashboard][5]
+[Create an API](https://tyk.io/docs/try-out-tyk/tutorials/create-api/)
 
-[Create an API from the Tyk REST API][6]
+[Create an API Security Policy](/docs/try-out-tyk/tutorials/create-security-policy/)
 
-[Create an API Token from the Dashboard][7]
+[Create an API Key](/docs/try-out-tyk/tutorials/create-api-key/)
 
-[Create an API Token from the Tyk REST API][8]
-
-[1]: https://cloud.tyk.io
-[2]: /docs/img/cloud/cloud_signup_form.png
-[3]: /docs/img/cloud/new_landing_page.png
-[4]: /docs/img/cloud/DashLoginButton.png
-[5]: /docs/get-started/with-tyk-cloud/tutorials/create-api/#with-dashboard
-[6]: /docs/get-started/with-tyk-cloud/tutorials/create-api/#with-api
-[7]: /docs/get-started/with-tyk-cloud/tutorials/create-api-token/#with-dashboard
-[8]: /docs/get-started/with-tyk-cloud/tutorials/create-api-token/#with-api
 
