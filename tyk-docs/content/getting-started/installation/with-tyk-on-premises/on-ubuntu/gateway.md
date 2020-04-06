@@ -130,4 +130,8 @@ Tyk Gateway has full domain support built-in, you can:
 *   Split APIs over a domain using a path (e.g. api.com/api1, api.com/api2, moreapis.com/api1, moreapis.com/api2 etc).
 *   If you have set a hostname for the Gateway, then all non-domain-bound APIs will be on this hostname + the `listen_path`.
 
+### Performance Tuning Your Gateway
+
+We have a blog post - [Performance tuning your Gateway](https://tyk.io/performance-tuning-your-tyk-api-gateway/) that walks you through getting seriously low latency and high throughput from a 2-virtual-core commodity server with just 4GB of RAM.
+
 [1]: https://packagecloud.io/tyk
