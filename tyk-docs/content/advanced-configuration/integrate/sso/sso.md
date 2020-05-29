@@ -13,16 +13,17 @@ url: "/advanced-configuration/integrate/sso"
 
 ### SSO - The generic use case
 SSO gives users the ability to log in to multiple applications without the need to enter their password more than once.
-[OIDC](/docs/advanced-configuration/integrate/api-auth-mode/open-id-connect/) enables an application to verify the identity of users from an organisation without the need to self store and manage them, and without doing the identification process and exposing their passwords to that application. Their lists of users and passwords are kept safe in one single place, in the IdP that the organisation has chosen to use. The Authorisation server of the IdP identify the users for a pre-registered and approved application (`client` in OAuth and OIDC terminology).
+[OIDC](/docs/advanced-configuration/integrate/api-auth-mode/open-id-connect/) or SAML enables an application to verify the identity of users from an organisation without the need to self store and manage them, and without doing the identification process and exposing their passwords to that application. Their lists of users and passwords are kept safe in one single place, in the IdP that the organisation has chosen to use. The Authorisation server of the IdP identify the users for a pre-registered and approved application (`client` in OAuth and OIDC terminology).
 
 
 ### SSO in Tyk
 SSO is sometimes complicated to understand or set up but once you get the basics and learn to set up our [TIB - Tyk-Identity-Broker](/docs/advanced-configuration/integrate/3rd-party-identity-providers/#a-name-tib-a-tyk-identity-broker-tib-overview) it becomes an easy task.
 
-Using our Tyk-Identity-Broker (TIB), you can do both - use your existing users directory to login to the **Dashboard** or **Developer Portal** and have a SSO. TIB, among other options, supports three methods for login to Tyk's UI:
+Using our Tyk-Identity-Broker (TIB), you can do both - use your existing users directory to login to the **Dashboard** or **Developer Portal** and have a SSO. TIB, among other options, supports four methods for login to Tyk's UI:
 
 1. Login with 3rd party social providers
 2. Login with any IdP that supports ODIC
+3. Login with any IdP that supports SAML
 3. Login with LDAP (not using OIDC)
 
 #### Tyk Identity Broker (TIB)
@@ -53,6 +54,63 @@ Instructions on setting SSO with Google+ will be added soon.
 - Instructions on setting SSO with PingID   - will be added soon
 - Instructions on setting SSO with Auth0    - will be added soon
 - Instructions on setting SSO with keycloak - will be added soon
+
+### <a name="saml"></a> SSO with SAML
+
+SAML authentication is a way for a service provider, such as the Tyk Dashboard or Portal, to assert the Identity of a User via a third party.
+
+Tyk Identity Broker can act as the go-between for the Tyk Dashboard and Portal and a third party identity provider. Tyk Identity broker can also interpret and pass along information about the user who is logging in such as Name, Email and group or role metadata for enforcing role based access control in the Tyk Dashboard.
+
+The provider config for SAML has the following values that can be configured in a Profile:
+
+`SAMLBaseURL` - The host of TIB that will be used in the metadata document for the Service Provider. This will form part of the metadata URL used as the Entity ID by the IDP. The redirects configured in the IDP must match the expected Host and URI configured in the metadata document made available by Tyk Identity Broker.
+
+`FailureRedirect` - Where to redirect failed login requests.
+
+`IDPMetaDataURL` - The metadata URL of your IDP which will provide Tyk Identity Broker with information about the IDP such as EntityID, Endpoints (Single Sign On Service Endpoint, Single Logout Service Endpoint), its public X.509 cert, NameId Format, Organization info and Contact info.
+
+This metadata XML can be signed providing a public X.509 cert and the private key.     
+
+`CertFile` - An X.509 certificate for signing your requests to the IDP
+
+`KeyFile` - A private key for signing your requests to the IDP
+
+`ForceAuthentication` - Ignore any session held by the IDP and force re-login every request.
+
+`SAMLEmailClaim` - Key for looking up the email claim in the SAML assertion form the IDP. Defaults to: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`
+
+`SAMLForenameClaim` - Key for looking up the forename claim in the SAML assertion form the IDP. Defaults to: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/forename`
+
+`SAMLSurnameClaim` - Key for looking up the surname claim in the SAML assertion form the IDP. Defaults to: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`
+
+Example profile configuration:
+
+```
+{
+    "ActionType": "GenerateOrLoginUserProfile",
+    "ID": "saml-sso-login",
+    "OrgID": "{YOUR_ORGANISATION_ID}",
+    "CustomEmailField": "",
+    "IdentityHandlerConfig": {
+        "DashboardCredential": "{DASHBOARD_USER_API_KEY}"
+    },
+    "ProviderConfig": {
+        "SAMLBaseURL": "https://{HOST}",
+        "FailureRedirect": "http://{DASHBOARD_HOST}:{PORT}/?fail=true",
+        "IDPMetaDataURL": "{IDP_METADATA_URL}",
+        "CertFile":"myservice.cert",
+        "KeyFile": "myservice.key",
+        "ForceAuthentication": false,
+        "SAMLEmailClaim": "",
+        "SAMLForenameClaim": "",
+        "SAMLSurnameClaim": ""
+    },
+    "ProviderName": "SAMLProvider",
+    "ReturnURL": "http://{DASHBOARD_URL}:{PORT}/tap",
+    "Type": "redirect"
+}
+```
+
 
 ## <a name="tyk-dashboard"></a> Tyk's REST API for SSO
 
