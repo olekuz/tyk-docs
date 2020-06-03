@@ -45,17 +45,17 @@ In short, all you need is as follow:
 7. More Docs for the flow can be found on our [GitHub TIB repo README](https://github.com/TykTechnologies/tyk-identity-broker) and our [3rd Party integration docs](/docs/advanced-configuration/integrate/3rd-party-identity-providers/)
 
 
-### <a name="identity-providers"></a>SSO with Social Identity Providers
+### SSO with Social Identity Providers
 See [using a Social Identity Provider](/docs/advanced-configuration/integrate/3rd-party-identity-providers/social/) for details of using SSO with Social Identity Providers.
 Instructions on setting SSO with Google+ will be added soon.
 
-### <a name="openid-connect"></a> SSO with OpenID Connect (OIDC)
+### SSO with OpenID Connect (OIDC)
 - Instruction on setting [SSO with Okta](/docs/advanced-configuration/integrate/sso/dashboard-login-okta-tib/)
 - Instructions on setting SSO with PingID   - will be added soon
 - Instructions on setting SSO with Auth0    - will be added soon
 - Instructions on setting SSO with keycloak - will be added soon
 
-### <a name="saml"></a> SSO with SAML
+### SSO with SAML
 
 SAML authentication is a way for a service provider, such as the Tyk Dashboard or Portal, to assert the Identity of a User via a third party.
 
@@ -112,7 +112,7 @@ Example profile configuration:
 ```
 
 
-## <a name="tyk-dashboard"></a> Tyk's REST API for SSO
+## Tyk's REST API for SSO
 
 The SSO API allows you to implement custom authentication schemes for the Dashboard and Portal. You can access the API by both admin and dashboard APIs.
 Our Tyk Identity Broker (TIB) internally also uses these APIs.
@@ -164,7 +164,7 @@ Host: localhost:3000
 ```
 
 
-## <a name="ldap"></a>SSO with LDAP Integration
+## SSO with LDAP Integration
 Detailed instruction on setting [SSO with LDAP](/docs/advanced-configuration/integrate/sso/dashboard-login-ldap-tib/).
 
 See [apply search filters](/docs/advanced-configuration/integrate/3rd-party-identity-providers/ldap/#a-name-ldap-search-a-using-advanced-ldap-search) to add advanced search to your LDAP authentication.
