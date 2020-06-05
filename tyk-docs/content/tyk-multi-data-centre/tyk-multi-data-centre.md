@@ -90,8 +90,8 @@ Also, the lookup to MDCB is via a resilient compressed RPC channel that is desig
 
 ### Organisational Benefits
 
-MDCB-slaved gateways are tied to a single organisation in the Dashboard. This means that you can set up different teams as organisations in the Dashboard, and each team can run it's own set of Gateways that are logically isolated.
-This can be achieved with a Dashboard-only setup, but requires Gateway sharding (tagging) and behavioural policy on the user's side to ensure that all APIs are tagged correctly, otherwise they do not load.
+MDCB-slaved gateways are tied to a single organisation in the Dashboard. This means that you can set up different teams as organisations in the Dashboard, and each team can run it's own set of Gateways that are physically isolated.
+Similar segregation but logically only can be achieved with a [on-premises](https://tyk.io/docs/getting-started/installation/with-tyk-on-premises/#what-is-tyk-on-premises) setup, but requires Gateway sharding (tagging) and behavioural policy on the user's side to ensure that all APIs are tagged correctly, otherwise they do not load.
 With an MDCB setup you get the ability to do both - segment out teams with their own Gateway clusters, and also sub-segment those Gateways with tagging.
 
 
