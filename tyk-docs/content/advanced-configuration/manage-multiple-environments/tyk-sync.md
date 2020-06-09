@@ -197,3 +197,24 @@ SYNC Updating Policy: Test policy 1
 
 The command provides output to identify which actions have been taken. If using a Tyk Gateway, the Gateway will be
 automatically hot-reloaded.
+
+## Example: Dump a specific API from one Tyk Dashboard  
+
+First, we need to identify the api_id that we want to dump, in this case `ac35df594b574c9c7a3806286611d211`.
+When we have that, we are going to execute the dump command specifying the api_id in the tags.
+```
+tyk-sync dump -d="http://localhost:3000" -s="b2d420ca5302442b6f20100f76de7d83" -t="./tmp" -a="ac35df594b574c9c7a3806286611d211"
+Extracting APIs and Policies from http://localhost:3000
+> Fetching policies
+--> Identified 0 policies
+--> Fetching and cleaning policy objects
+> Fetching APIs
+--> Fetched 1 APIs
+> Creating spec file in: tmp/.tyk.json
+Done.
+```
+
+Note that if you want to specify more than one API, the values are going to be comma-separated.
+For example `-a="ac35df594b574c9c7a3806286611d211,30e7b4001ea94fb970c324bad1a171c3"`.
+
+Policies specification have the same behaviour.
