@@ -88,6 +88,8 @@ Flags:
   -k, --key string         Key file location for auth (optional)
   -s, --secret string      Your API secret
   -t, --target string      Target directory for files
+  -p, --policies           Specific policies ids selection (optional)
+  -a, --apis               Specific api_id's selection (optional)
 ```
 
 ### Publish Command
