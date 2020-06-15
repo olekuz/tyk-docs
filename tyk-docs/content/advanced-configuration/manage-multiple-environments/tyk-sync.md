@@ -88,7 +88,7 @@ Flags:
   -k, --key string         Key file location for auth (optional)
   -s, --secret string      Your API secret
   -t, --target string      Target directory for files
-  -p, --policies           Specific policies ids selection (optional)
+  -p, --policies           Specific policies ID selection (optional)
   -a, --apis               Specific api_id's selection (optional)
 ```
 
@@ -200,8 +200,8 @@ automatically hot-reloaded.
 
 ## Example: Dump a specific API from one Tyk Dashboard  
 
-First, we need to identify the api_id that we want to dump, in this case `ac35df594b574c9c7a3806286611d211`.
-When we have that, we are going to execute the dump command specifying the api_id in the tags.
+First, we need to identify the `api_id` that we want to dump, in this case `ac35df594b574c9c7a3806286611d211`.
+When we have that, we are going to execute the dump command specifying the `api_id` in the tags.
 ```
 tyk-sync dump -d="http://localhost:3000" -s="b2d420ca5302442b6f20100f76de7d83" -t="./tmp" -a="ac35df594b574c9c7a3806286611d211"
 Extracting APIs and Policies from http://localhost:3000
@@ -214,7 +214,7 @@ Extracting APIs and Policies from http://localhost:3000
 Done.
 ```
 
-Note that if you want to specify more than one API, the values are going to be comma-separated.
+Note that if you want to specify more than one API, the values need to be comma-separated.
 For example `-a="ac35df594b574c9c7a3806286611d211,30e7b4001ea94fb970c324bad1a171c3"`.
 
 Policies specification have the same behaviour.
