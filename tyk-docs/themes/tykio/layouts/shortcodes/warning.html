@@ -1,0 +1,13 @@
+<div class="warning warning-{{ .Get 0 }}">
+  {{ .Inner | markdownify | }}
+</div>
+
+<style>
+  /* The alert message box */
+.warning {
+  padding: 20px;
+  background-color: #FF6C7D; /* Red */
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+</style>

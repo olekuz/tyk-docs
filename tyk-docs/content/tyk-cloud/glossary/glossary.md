@@ -1,0 +1,166 @@
+---
+date: 2018-03-09T11:20:34Z
+Title: Glossary
+weight: 10
+menu:
+  main:
+    parent: "Tyk-Cloud"
+aliases:
+    - /tyk-cloud/glossary/
+---
+
+We have listed some terms that will help you with get to grips with Tyk-Cloud that little bit quicker.
+
+## Account Terms
+
+### Account
+
+The highest level container for one or more organisations.
+
+### Organisation
+
+The main entity of data, only view one org at a time, all data is contained.
+
+### Team 
+
+A sub-grouping within an organisation.
+
+### User
+
+A person who is a member of an organisation/team with a set of permissions.
+
+### Role
+
+A set of data and access permissions that can be applied to a user or team of users. See [User Roles](/docs/tyk-cloud/reference-docs/user-roles/) for more details.
+
+### Profile
+
+The place that holds personal information for a user.
+
+### Subscription
+
+A set of allowances assigned to an organisation (made up of plan+addons+settings).
+
+### Plan
+
+A portion of allowances (without add-ons) that feed into the main subscription.
+
+### Operations
+
+The place to manage all deployments for an organisation or team. 
+
+### Environment
+
+A grouping of 'deployments' that can have multiple control planes in different regions.
+
+### Stack
+
+The high level name for the set of configurations making up different types of deployments.
+
+### Control Plane
+
+A deployment type: A single management layer for data in one region (where all the data lives).
+
+### Edge
+
+A deployment type: Additional workers with varying functionality that are linked to the main control plane.
+
+### Instance
+
+Used to control traffic and scale in a Tyk Gateway.
+
+### Dashboard
+
+The Tyk Analytics Dashboard to manage APIs and services.
+
+### Retirement
+
+Where an Organisation has expired due to either a subscription failure or cancellation and is now within a "retirement" period of 30 days, during which an [Billing Admin](/docs/tyk-cloud/reference-docs/user-roles/#user-roles-within-tyk-cloud) can reinstate full functionality by updating or creating a new subscription.
+
+## Action Terms
+
+### Deploy
+
+Deploy a not yet deployed state (a first time deployment).
+
+### Undeploy
+
+Temporarily remove a deployed status but keep all data and configuration.
+
+### Redeploy
+
+Deploy from an undeployed state.
+
+### Destroy
+
+Permenantly remove a deployment and all associated data and configurations.
+
+### Create
+
+Date and time of time a deployment was initially created.
+
+### Add
+
+Add a new 'user' or 'team' etc.
+
+### Remove
+
+Remove things that have been added e.g. users and teams.
+
+### Update
+
+Saving a change to a configuration.
+
+### Edit
+
+Changing configuration or information on any of the deployments or other resources such as users or teams.
+
+## State Terms
+
+### Deployed
+
+A deployment that is currently deployed.
+
+### Undeployed
+
+A deployment that was deployed but has been undeployed.
+
+### Not Deployed
+
+A deployment that has never been deployed.
+
+### Destroyed
+
+A deployment that has been permenantly deleted and will not be visible in the operations console.
+
+### Unsuccessful
+
+When there has been an error in the deployment process.
+
+### Deploying
+
+When a deployment is being deployed.
+
+### Undeploying
+
+When a deployment is being undeployed.
+
+## Roles and Permissions
+
+See [User Roles](/docs/reference-docs/user-roles/) for more details
+
+### Super Administrator
+
+Can do everything across all organisations
+
+### Organisation Administrator
+
+Can do everything within the scope of the one organisation they have access to.
+
+### Team Administrator
+
+Can do everything within the scope of the one team they have access to.
+
+### Team Member
+
+Can only view and manage the overview, environments and deployments.

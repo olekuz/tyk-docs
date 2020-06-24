@@ -1,0 +1,13 @@
+<div class="note note-{{ .Get 0 }}">
+  {{ .Inner | markdownify | }}
+</div>
+
+<style>
+  /* The alert message box */
+.note {
+  padding: 20px;
+  background-color: #00C4AD; /* Red */
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+</style>
