@@ -19,7 +19,7 @@ One of Tyk's main functions is to handle authentication. So unless a configured 
 
 ## <a name="3-sensitive-data-exposure"></a>3 - Sensitive Data Exposure
 
-You can use the Tyk [whitelist](https://tyk.io/docs/transform-traffic/endpoint-designer/#whitelist) plugin to explicitly specify a list of allowed endpoints. you can also specify per [path access](https://tyk.io/docs/security/security-policies/secure-apis-method-path/) at a policy level in access rules. You also can use [Tyk Analytics](https://tyk.io/docs/analyse/redis-mongodb-sizing/#a-name-analytics-a-analytics) to check for anomalies.
+You can use the Tyk [allowlist](https://tyk.io/docs/transform-traffic/endpoint-designer/#allowlist) plugin to explicitly specify a list of allowed endpoints. you can also specify per [path access](https://tyk.io/docs/security/security-policies/secure-apis-method-path/) at a policy level in access rules. You also can use [Tyk Analytics](https://tyk.io/docs/analyse/redis-mongodb-sizing/#a-name-analytics-a-analytics) to check for anomalies.
 
 ## <a name="4-xml-external-entities"></a>4 - XML External Entities (XXE)
 

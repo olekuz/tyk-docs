@@ -868,7 +868,7 @@ New in 2.9.4, you can now override the default error code and or message returne
 
 ### ignore_endpoint_case
 
-New in v2.9.4 you can now configure Tyk to ignore the case of any endpoints for APIs managed by Tyk. Setting this to `true` will override any [individual API](/docs/tyk-rest-api/api-definition-objects/other-root-objects/) and [Ignore](/docs/advanced-configuration/transform-traffic/endpoint-designer/#ignore), [Blacklist](/docs/advanced-configuration/transform-traffic/endpoint-designer/#blacklist) and [Whitelist](/docs/advanced-configuration/transform-traffic/endpoint-designer/#whitelist) plugin endpoint settings. 
+New in v2.9.4 you can now configure Tyk to ignore the case of any endpoints for APIs managed by Tyk. Setting this to `true` will override any [individual API](/docs/tyk-rest-api/api-definition-objects/other-root-objects/) and [Ignore](/docs/advanced-configuration/transform-traffic/endpoint-designer/#ignore), [Blocklist](/docs/advanced-configuration/transform-traffic/endpoint-designer/#blocklist){{<fn blocklist>}}{{</fn>}} and [Allowlist](/docs/advanced-configuration/transform-traffic/endpoint-designer/#allowlist){{<fn allowlist>}}{{</fn>}} plugin endpoint settings. 
 
 ### ssl_force_common_name_check
 

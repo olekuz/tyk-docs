@@ -7,7 +7,7 @@ menu:
 weight: 3 
 ---
 
-Tyk already lets you set version access rights, whitelisted, and blacklisted paths to control how your users access your APIs, however what has not been easy to do is to restrict access based on specific paths, per key or policy.
+Tyk already lets you set version access rights, allowed, and blocked paths to control how your users access your APIs, however what has not been easy to do is to restrict access based on specific paths, per key or policy.
 
 Granular path control allows you to define which methods and paths a key is allowed to access on a per API-version basis. This can be done on a key-by-key basis, or, for even more power and control, through the Policies feature.
 
@@ -15,7 +15,7 @@ With this feature it is possible to set up tiered access policies for your users
 
 Or, alternatively, you could just upgrade a single key to have more access, both methods use the same, or similar areas of the configuration to make this possible.
 
-> **Note**: Granular permissions are applied *after* version-based (global) whitelist/blacklist rules.
+> **Note**: Granular permissions are applied *after* version-based (global) allowlist/blocklist rules.
 
 ### Setting granular paths on a per-key basis
 

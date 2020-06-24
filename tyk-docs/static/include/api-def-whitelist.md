@@ -1,4 +1,4 @@
-### IP Whitelisting (Middleware)
+### Allowing IPs
 
 * `enable_ip_whitelisting`: If set to `true`, only requests coming from the explicit list of IP addresses (`allowed_ips`) are allowed through.
 

@@ -1,4 +1,4 @@
-### IP Blacklisting (Middleware)
+### Blocking IPs (Middleware)
 
 * `enable_ip_blacklisting`: If set to `true`, requests coming from the explicit list of IP addresses (`blacklisted_ips`) are not allowed through.
 
