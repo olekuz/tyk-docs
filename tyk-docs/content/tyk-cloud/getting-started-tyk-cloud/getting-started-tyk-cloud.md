@@ -5,8 +5,7 @@ weight: 2
 menu:
   main:
     parent: "Tyk-Cloud"
-aliases:
-    - /tyk-cloud/getting-started/
+url: "/tyk-cloud/getting-started"
 ---
 
 Getting started with Tyk-Cloud involves you setting up the following:
