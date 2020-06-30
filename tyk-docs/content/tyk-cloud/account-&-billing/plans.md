@@ -103,6 +103,8 @@ You can create 10 teams with 15 users and Single Sign On (SSO) capability.
 
 ### Enterprise Global Plan
 
+Maintain HA failovers, spread your architecture across 3 regions, adding further regions as required. More powerful infrastructure, bigger storage, handle enterprise level traffic. 
+
 * 3 Environments
 * 3 Control Planes
 * 18 Edge Gateways
