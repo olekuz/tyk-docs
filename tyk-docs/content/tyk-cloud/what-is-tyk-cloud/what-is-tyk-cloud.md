@@ -5,8 +5,7 @@ weight: 1
 menu:
   main:
     parent: "Tyk-Cloud"
-aliases:
-    - /tyk-cloud/what-is-tyk-cloud/
+url: "/tyk-cloud/what-is-tyk-cloud"
 ---
 
 ## Next Level SaaS

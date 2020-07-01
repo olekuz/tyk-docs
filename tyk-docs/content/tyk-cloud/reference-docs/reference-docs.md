@@ -5,8 +5,7 @@ weight: 7
 menu:
   main:
     parent: "Tyk-Cloud"
-aliases:
-    - /tyk-cloud/reference/
+url: "/tyk-cloud/reference-docs"
 ---
 
 **Insert Lead paragraph here.**

@@ -5,8 +5,7 @@ weight: 4
 menu:
   main:
     parent: "Tyk-Cloud"
-aliases:
-    - /tyk-cloud/administration/
+url: "/tyk-cloud/administration"
 ---
 
 Maintaining your Tyk-Cloud installation is governed by the following factors:

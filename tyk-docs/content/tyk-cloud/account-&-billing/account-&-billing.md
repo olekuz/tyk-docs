@@ -5,8 +5,7 @@ weight: 5
 menu:
   main:
     parent: "Tyk-Cloud"
-aliases:
-    - /tyk-cloud/account-and-billing/
+url: "/tyk-cloud/account-billing"
 ---
 
 ## Our Plans

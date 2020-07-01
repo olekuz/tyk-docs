@@ -5,8 +5,7 @@ weight: 3
 menu:
   main:
     parent: "Tyk-Cloud"
-aliases:
-    - /tyk-cloud/using-plugins/
+url: "/tyk-cloud/using-plugins"
 ---
 
 Tyk-Cloud allows you to take advantage of Tyk's plugin architecture that allows you to write powerful middleware. For this version of Tyk-Cloud, we support the use of Python and JavaScript Middleware based plugins.

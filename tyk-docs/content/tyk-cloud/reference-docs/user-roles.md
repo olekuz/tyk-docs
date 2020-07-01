@@ -5,8 +5,7 @@ menu:
   main:
     parent: "Reference Docs"
 weight: 1
-aliases:
-    - /tyk-cloud/reference/user-roles/
+url: "/tyk-cloud/reference-docs/user-roles"
 ---
 
 ## User Roles within Tyk-Cloud
