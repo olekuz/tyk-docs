@@ -3,7 +3,7 @@ date: 2020-04-16T17:02:56+01:00
 title: “301 Moved permanently“ error in the Dashboard API
 menu:
   main:
-    parent: "Tyk Cloud"
+    parent: "Tyk Cloud Classic"
 weight: 5 
 ---
 

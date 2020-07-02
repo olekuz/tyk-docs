@@ -12,7 +12,7 @@ weight: 4
 
 
 {{< tabs_start >}}
-{{< tab_start "Cloud" >}}
+{{< tab_start "Cloud Classic" >}}
 {{< include "create-portal-entry-include" >}}
 
 {{< tab_end >}}

@@ -24,6 +24,7 @@ Some text here around what outcome is **with this** Product Type.
 Some text here around what outcome is **with this** Product Type. 
 {{< /badge >}}
 
+
 {{< badge read="9 mins" href="/docs/getting-started/installation/with-tyk-on-premises/docker/" image="/docs/img/docker.png">}}
 Some text here around what outcome is **with this** Product Type. 
 {{< /badge >}}

@@ -10,7 +10,7 @@ weight: 2
 How to create an API within Tyk, depending on your installation type:
 
 {{< tabs_start >}}
-{{< tab_start "Cloud" >}}
+{{< tab_start "Cloud Classic" >}}
 
 {{< include "create-api-include" >}}
 

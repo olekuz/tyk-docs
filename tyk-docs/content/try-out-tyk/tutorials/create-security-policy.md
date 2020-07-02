@@ -13,7 +13,7 @@ A security policy encapsulates several options that can be applied to a key. It 
 See [What is a Security Policy?](/docs/getting-started/key-concepts/what-is-a-security-policy/) for more details.
 
 {{< tabs_start >}}
-{{< tab_start "Cloud" >}}
+{{< tab_start "Cloud Classic" >}}
 {{< include "create-security-policy-include" >}}
 
 {{< tab_end >}}

@@ -17,7 +17,7 @@ The developer portal enables you to:
 *   Unlike other platforms, Tyk will not auto-publish your APIs to the Portal, instead they are presented as a facade, you choose what APIs and what Policies to expose to the Portal.
 *   Fully control the flow of the developer sign-up and enrollment.
 
-The developer Portal is available to Pro (On-Premises), Cloud and Multi-Cloud users.
+The developer Portal is available to Pro (On-Premises), Cloud Classic and Multi-Cloud users.
 
 For an example of how clients have used our portal, visit:
 

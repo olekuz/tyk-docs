@@ -10,7 +10,7 @@ weight: 3
 Follow the tutorial for your installation.
 
 {{< tabs_start >}}
-{{< tab_start "Cloud" >}}
+{{< tab_start "Cloud Classic" >}}
 
 {{< include "create-api-key-include" >}}
 
