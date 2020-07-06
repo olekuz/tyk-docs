@@ -3,18 +3,22 @@ date: 2020-03-17T19:13:22Z
 Title: Task 7 - Add Another Edge Gateway
 menu:
   main:
-    parent: "Getting Started with Tyk-Cloud"
+    parent: "Getting Started with Tyk Cloud"
 weight: 7
 aliases:
     - /tyk-cloud/new-edge-gateway/
 ---
+
+## Introduction
+
+You can use Tyk Cloud to manage your APIs effectively and with minimal effort. This page explains how to add an Edge Gateway, which proxies the traffic to your data. 
 
 You'll now create a new Edge Gateway.
 
 
 ## Step One - Add a New Edge
 
-From the Edge Gateway section of the Tyk-Cloud Deployments screen, click Add Edge.
+From the Edge Gateway section of the Tyk Cloud Deployments screen, click Add Edge.
 
 ## Step Two - Complete the Deployment details
 

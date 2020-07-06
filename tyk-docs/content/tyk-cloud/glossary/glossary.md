@@ -4,12 +4,12 @@ Title: Glossary
 weight: 10
 menu:
   main:
-    parent: "Tyk-Cloud"
+    parent: "Tyk Cloud"
 aliases:
     - /tyk-cloud/glossary/
 ---
 
-We have listed some terms that will help you with get to grips with Tyk-Cloud that little bit quicker.
+We have listed some terms that will help you with get to grips with Tyk Cloud that little bit quicker.
 
 ## Account Terms
 

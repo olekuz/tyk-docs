@@ -3,13 +3,18 @@ date: 2020-03-17T19:13:22Z
 Title: Task 6 - Test your API
 menu:
   main:
-    parent: "Getting Started with Tyk-Cloud"
+    parent: "Getting Started with Tyk Cloud"
 weight: 6
 aliases:
     - /tyk-cloud/test-api/
 ---
 
-You'll now access the API you setup in [Task 5](/docs/tyk-cloud/getting-started-tyk-cloud/first-api/) from the Edge Gateway within Tyk-Cloud.
+## Introduction
+
+You can use Tyk Cloud to manage your APIs effectively and with minimal effort. This page shows how you can test an API that you have added to Tyk Cloud, to ensure that it’s functioning correctly. 
+
+
+You'll now access the API you setup in [Task 5](/docs/tyk-cloud/getting-started-tyk-cloud/first-api/) from the Edge Gateway within Tyk Cloud.
 
 
 ## Step One - Access the Gateway Ingress

@@ -21,7 +21,7 @@ You now have your middleware uploaded to your S3 bucket. We are now going to cre
 
 ### Create your API
 
-1. From your Control Plane in Tyk-Cloud, click the Ingress > Dashboard link
+1. From your Control Plane in Tyk Cloud, click the Ingress > Dashboard link
 
 ![Dashboard Link](/docs/img/plugins/control_plane_dashboard_link.png)
 

@@ -17,7 +17,7 @@ aliases:
 
 {{< note success >}}
 **Note**  
-For this release of Tyk-Cloud, we are only supporting card payments
+For this release of Tyk Cloud, we are only supporting card payments
 {{< /note >}}
 
 4. If you are upgrading from a free trial, enter your card details and click Save

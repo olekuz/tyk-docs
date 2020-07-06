@@ -4,14 +4,14 @@ date: 2020-04-28
 weight: 3
 menu:
   main:
-    parent: "Tyk-Cloud"
+    parent: "Tyk Cloud"
 url: "/tyk-cloud/using-plugins"
 ---
 
-Tyk-Cloud allows you to take advantage of Tyk's plugin architecture that allows you to write powerful middleware. For this version of Tyk-Cloud, we support the use of Python and JavaScript Middleware based plugins.
+Tyk Cloud allows you to take advantage of Tyk's plugin architecture that allows you to write powerful middleware. For this version of Tyk Cloud, we support the use of Python and JavaScript Middleware based plugins.
 
 For more details, see: 
 * [Python Plugins](/docs/plugins/rich-plugins/python/)
 * [JSVM](/docs/plugins/javascript-middleware/)
 
-Next you'll set up an Tyk-Cloud Control Plane to use a Python Authentication Plugin.
+Next you'll set up an Tyk Cloud Control Plane to use a Python Authentication Plugin.

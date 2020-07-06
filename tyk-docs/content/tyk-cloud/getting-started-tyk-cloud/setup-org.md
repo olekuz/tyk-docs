@@ -3,11 +3,16 @@ date: 2020-03-17T19:13:22Z
 Title: Task 2 - Set up Your Organisation
 menu:
   main:
-    parent: "Getting Started with Tyk-Cloud"
+    parent: "Getting Started with Tyk Cloud"
 weight: 2
 aliases:
     - /tyk-cloud/setup-org/
 ---
+
+
+## Introduction
+
+You can use Tyk Cloud to manage your APIs effectively and with minimal effort. To do so, you need to set up your organisation, which is what this page explains how to do.
 
 ## Step One - Name your Organisation
 

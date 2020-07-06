@@ -14,14 +14,14 @@ aliases:
 ![Plugins Settings](/docs/img/plugins/plugins_enable.png)
 
 1. You need to enable Plugins on a Control Plane.
-2. You need to enter Provider details to enable you to store and access your plugins. For this version of Tyk-Cloud, we are supporting Amazon AWS S3. If you haven't got an AWS S3 account, go to [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/) and set one up. You will need the following details to configure SW3 within your Control Plane:
+2. You need to enter Provider details to enable you to store and access your plugins. For this version of Tyk Cloud, we are supporting Amazon AWS S3. If you haven't got an AWS S3 account, go to [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/) and set one up. You will need the following details to configure SW3 within your Control Plane:
    * Your AWS Key ID
    * Your AWS Secret
    * Your AWS Region
 
 {{< note success >}}
 **Note**  
-For this release of Tyk-Cloud, you need to enter your AWS Region manually.
+For this release of Tyk Cloud, you need to enter your AWS Region manually.
 {{< /note >}}
 
 ## AWS IAM Policy
@@ -30,7 +30,7 @@ We have included a sample IAM policy that you need to create in AWS to allow the
 
 {{< note warning >}}
 **Warning**  
-We recommend you restrict your IAM user as much as possible before sharing the credentials with any 3rd party, including Tyk-Cloud. See [IAM User Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html) for more details.
+We recommend you restrict your IAM user as much as possible before sharing the credentials with any 3rd party, including Tyk Cloud. See [IAM User Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html) for more details.
 {{< /note >}}
 
 ```.json

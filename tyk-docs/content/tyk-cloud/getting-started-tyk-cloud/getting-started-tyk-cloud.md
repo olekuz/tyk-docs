@@ -1,14 +1,16 @@
 ---
 date: 2020-03-17T19:13:22Z
-Title: Getting Started with Tyk-Cloud
+Title: Getting Started with Tyk Cloud
 weight: 2
 menu:
   main:
-    parent: "Tyk-Cloud"
-url: "/tyk-cloud/getting-started"
+    parent: "Tyk Cloud"
+url: "/Tyk Cloud/getting-started"
 ---
 
-Getting started with Tyk-Cloud involves you setting up the following:
+## Introduction
+
+Tyk Cloud delivers an easy API management solution. This page walks you through how to start using the product:
 
 * Creating your account
 * Your first Organisation
@@ -21,7 +23,7 @@ Depending on your initial requirements in terms of Environments, Teams and Users
 
 ## Prerequisites
 
-The following information would be useful so you can set up Tyk-Cloud as quickly as possible:
+The following information would be useful so you can set up Tyk Cloud as quickly as possible:
 
 * Team member information including their email address and the role you plan to assign to them.
-* We have some specific terminology used within Tyk-Cloud. It would be useful to checkout our [Glossary](/docs/tyk-cloud/glossary/glossary/) so you understand what we are referring to.
+* We have some specific terminology used within Tyk Cloud. It would be useful to checkout our [Glossary](/docs/Tyk Cloud/glossary/glossary/) so you understand what we are referring to.

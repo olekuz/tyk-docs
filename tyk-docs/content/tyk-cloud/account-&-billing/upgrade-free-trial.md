@@ -11,7 +11,7 @@ aliases:
 
 ## My free trial is coming to an end. What are my options?
 
-Every new Tyk-Cloud account is assigned to our 14 free trial. You have the following options:
+Every new Tyk Cloud account is assigned to our 14 free trial. You have the following options:
 
 * Upgrade to a paid plan at any stage of the free trial period.
 * Use the free trial period and upgrade after it expires

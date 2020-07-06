@@ -3,11 +3,16 @@ date: 2020-03-17T19:13:22Z
 Title: Task 3 - Set up Your First Team
 menu:
   main:
-    parent: "Getting Started with Tyk-Cloud"
+    parent: "Getting Started with Tyk Cloud"
 weight: 3
 aliases:
     - /tyk-cloud/setup-team/
 ---
+
+## Introduction
+
+You can use Tyk Cloud to manage your APIs effectively and with minimal effort. Part of that process involves setting up a team. This page walks you through how to do so.
+
 Click **Get Started** to create your team
 
 ## Step One - Name your Team

@@ -86,7 +86,7 @@ You can create 5 teams with ten users and Single Sign On (SSO) capability.
 
 ### Enterprise HA Plan
 
-Maintain High Availability failovers by running multiple environments (not something Tyk-Cloud does automatically, it just provides the capacity to do it), bigger infrastructure and spread your architecture over up to 2 regions. 
+Maintain High Availability failovers by running multiple environments (not something Tyk Cloud does automatically, it just provides the capacity to do it), bigger infrastructure and spread your architecture over up to 2 regions. 
 
 Our Enterprise HA plan gives you the following:
 

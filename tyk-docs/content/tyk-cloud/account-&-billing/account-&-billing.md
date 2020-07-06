@@ -4,7 +4,7 @@ Title: Account and Billing
 weight: 5
 menu:
   main:
-    parent: "Tyk-Cloud"
+    parent: "Tyk Cloud"
 url: "/tyk-cloud/account-billing"
 ---
 

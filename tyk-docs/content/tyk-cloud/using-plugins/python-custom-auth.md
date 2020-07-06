@@ -11,7 +11,7 @@ aliases:
 
 ## What are we going to do?
 
-We are going to configure an Tyk-Cloud Control Plane to use a custom authentication plugin built in Python.
+We are going to configure an Tyk Cloud Control Plane to use a custom authentication plugin built in Python.
 
 ## What do I need in advance?
 

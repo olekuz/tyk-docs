@@ -1,5 +1,5 @@
 ---
-title: "Tyk-Cloud User Roles"
+title: "Tyk Cloud User Roles"
 date: 2020-04-06
 menu:
   main:
@@ -8,9 +8,9 @@ weight: 1
 url: "/tyk-cloud/reference-docs/user-roles"
 ---
 
-## User Roles within Tyk-Cloud
+## User Roles within Tyk Cloud
 
-We have the following user roles defined in Tyk-Cloud for your team members
+We have the following user roles defined in Tyk Cloud for your team members
 
 * Billing Admin
 * Org Admin

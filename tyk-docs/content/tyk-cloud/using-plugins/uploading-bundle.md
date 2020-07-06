@@ -11,7 +11,7 @@ aliases:
 
 ## How do I upload my bundle file to my Amazon S3 bucket?
 
-We are going to use a Tyk CLI tool called mservctl. this acts as an file server for our plugins. You use it to push your plugin bundle to your S3 bucket. Your Tyk-Cloud Tyk Gateway will use MServ to retrieve your bundle, instead of connecting directly into S3.
+We are going to use a Tyk CLI tool called mservctl. this acts as an file server for our plugins. You use it to push your plugin bundle to your S3 bucket. Your Tyk Cloud Tyk Gateway will use MServ to retrieve your bundle, instead of connecting directly into S3.
 
 ### Prerequisites
 
@@ -21,7 +21,7 @@ From your Control Plane you need the following settings.
 
 ![File Server Settings](/docs/img/plugins/fileserver_settings.png)
 
-* Your Tyk-Cloud Control Plane Ingress File Server Endpoint (1)
+* Your Tyk Cloud Control Plane Ingress File Server Endpoint (1)
 * Your File Server API Key (2)
 
 ## How does mservctl work?

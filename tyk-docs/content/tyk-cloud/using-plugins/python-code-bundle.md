@@ -11,7 +11,7 @@ aliases:
 
 ## What do I need to do to create my Plugin?
 
-* You need to create the Python code bundle on your locally installed Gateway (not an Tyk-Cloud Edge stack).
+* You need to create the Python code bundle on your locally installed Gateway (not an Tyk Cloud Edge stack).
 * You will create 2 files, a manifest file (`manifest.json`) and the python file (`middleware.py`)
 * You then create a zipped bundle via our Tyk CLI tool that is built in to your local Gateway instance.
   

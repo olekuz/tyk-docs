@@ -3,13 +3,17 @@ date: 2020-03-17T19:13:22Z
 Title: Task 5 - Add your first API
 menu:
   main:
-    parent: "Getting Started with Tyk-Cloud"
+    parent: "Getting Started with Tyk Cloud"
 weight: 5
 aliases:
     - /tyk-cloud/first-api/
 ---
 
-You'll now setup a very basic API to demonstrate how they are managed within Tyk-Cloud.
+## Introduction
+
+You can use Tyk Cloud to manage your APIs effectively and with minimal effort. This page demonstrates how to add a basic API within Tyk Cloud. 
+
+You'll now setup a very basic API to demonstrate how they are managed within Tyk Cloud.
 
 ## Prerequisites
 
