@@ -47,5 +47,11 @@ Our patch release schedule is very agile, and in the case of security issues we 
 
 ## <a name="10-insufficient-logging-monitoring"></a>10 - Insufficient Logging and Monitoring
 
-We provide [logs of multiple verbosity](https://tyk.io/docs/log-data/), depending on your situation. Tyk provides both system level [analytics](https://tyk.io/docs/analyse/redis-mongodb-sizing/#a-name-analytics-a-analytics), exposed via StatsD and various other loggers, as well as request analytics. These can be viewed in real-time in dashboard, or pumped to external services and used to analyze the logs.
-
+Tyk provides information and feedback in varoius ways: 
+- [Logs of multiple verbosity](https://tyk.io/docs/log-data/), depending on your situation. 
+- System level [analytics](https://tyk.io/docs/basic-config-and-security/report-monitor-trigger-events/instrumentation/) exposed via StatsD and various other loggers (instrumentation).
+- Request analytics with different ways of [datailed recording](https://site-dev.tykbeta.com/docs/analytics-and-reporting/useful-debug-modes/) on the request level and the key level. Data per data, including its content can be viewed in real-time in Tyk Dashboard. You can also choose to send the data to an [external services](https://site-dev.tykbeta.com/docs/tyk-configuration-reference/tyk-pump-configuration/tyk-pump-configuration/#supported-backends) and used to analyze your logs.
+- [OpenTracing](https://site-dev.tykbeta.com/docs/advanced-configuration/opentracing/) to allows services which have distributed tracing enabled for instrumentation to work seamless with Tyk gateway. 
+- [Events handler](https://site-dev.tykbeta.com/docs/basic-config-and-security/report-monitor-trigger-events/) - Tyk has the ability to configure APIs with event handlers to log data or send webhook when an event occurs.
+There are currently two built-in event handlers: eh_log_handler (Log handler – mainly for debugging) and eh_web_hook_handler (Web Hook Handler).
+- [Monitors and events](https://site-dev.tykbeta.com/docs/basic-config-and-security/report-monitor-trigger-events/monitors/) - to actively monitor both users and organisation quotas and provides an easy way to notify your stakeholders in case there's traffic abnormality pattern.
