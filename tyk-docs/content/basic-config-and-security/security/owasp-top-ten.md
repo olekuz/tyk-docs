@@ -48,9 +48,11 @@ Our patch release schedule is very agile, and in the case of security issues we 
 ## <a name="10-insufficient-logging-monitoring"></a>10 - Insufficient Logging and Monitoring
 
 Tyk provides information and feedback in various ways: 
-- [Logs of multiple verbosity](https://tyk.io/docs/log-data/), depending on your situation. 
-- System level [analytics](https://tyk.io/docs/basic-config-and-security/report-monitor-trigger-events/instrumentation/) exposed via StatsD and various other loggers (instrumentation).
+- [Logs of multiple verbosity](https://tyk.io/docs/log-data/), depending on your situation.
+- Integration with [3rd party aggregated log and error tools](https://site-dev.tykbeta.com/docs/advanced-configuration/log-data/#integration-with-3rd-party-aggregated-log-and-error-tools) - Tyk logger supports multiple back-ends such as Sentry, Graylog and Logstash.
+- System level [analytics](https://tyk.io/docs/basic-config-and-security/report-monitor-trigger-events/instrumentation/) exposed via StatsD and various other loggers (instrumentation). 
 - Request analytics with different ways of [detailed recording](https://tyk.io/docs/analytics-and-reporting/useful-debug-modes/) on the request level and the key level. Data per data, including its content can be viewed in real-time in Tyk Dashboard. You can also choose to send the data to an [external services](https://tyk.io/docs/tyk-configuration-reference/tyk-pump-configuration/tyk-pump-configuration/#supported-backends) and used to analyze your logs.
 - [OpenTracing](https://tyk.io/docs/advanced-configuration/opentracing/) to allow services, which have distributed tracing enabled, for instrumentation to work seamless with Tyk gateway. 
-- [Event handlers](https://tyk.io/docs/basic-config-and-security/report-monitor-trigger-events/) - Tyk has the ability to configure APIs with event handlers to log data or fire webhooks when an event occurs.
+- [Event handlers](https://tyk.io/docs/basic-config-and-security/report-monitor-trigger-events/) - Tyk has the ability to configure APIs with event handlers to log data or fire webhooks when an event occurs. [Events](https://site-dev.tykbeta.com/docs/basic-config-and-security/report-monitor-trigger-events/event-types/) could represent an authentication failure, exceeded rate-limit, misuse of api version and more.
 - [Monitors and events](https://tyk.io/docs/basic-config-and-security/report-monitor-trigger-events/monitors/) - Active monitoring of both user & organisations. Provides simple means of notifying stakeholders in the case of traffic abnormalities.
+- [Audit logs](https://site-dev.tykbeta.com/docs/release-notes/version-2.8/#dashboard-audit-log-improvements) for the management layer - to record all activity and changed done by the users of the API Management.
