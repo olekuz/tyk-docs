@@ -47,7 +47,7 @@ Our patch release schedule is very agile, and in the case of security issues we 
 
 ## <a name="10-insufficient-logging-monitoring"></a>10 - Insufficient Logging and Monitoring
 
-Tyk provides information and feedback in various ways: 
+Based on [OWASP logging cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html) Tyk provides information and feedback in various ways: 
 - [Logs of multiple verbosity](https://tyk.io/docs/log-data/), depending on your situation.
 - Integration with [3rd party aggregated log and error tools](https://site-dev.tykbeta.com/docs/advanced-configuration/log-data/#integration-with-3rd-party-aggregated-log-and-error-tools) - Tyk logger supports multiple back-ends such as Sentry, Graylog and Logstash.
 - System level [analytics](https://tyk.io/docs/basic-config-and-security/report-monitor-trigger-events/instrumentation/) exposed via StatsD and various other loggers (instrumentation). 
