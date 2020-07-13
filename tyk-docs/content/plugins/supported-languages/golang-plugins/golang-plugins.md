@@ -610,4 +610,4 @@ func MyPluginFunction(w http.ResponseWriter, r *http.Request) {
   fmt.Println("API name is", apidef.Name)
 }
 ```
-`ctx.GetDefinition` returns an APIDefinition object, the Go data structure can be found [here](https://github.com/TykTechnologies/tyk/blob/master/apidef/api_definitions.go#L351)
+`ctx.GetDefinition` returns an APIDefinition object, the Go data structure can be found [here](https://github.com/TykTechnologies/tyk/blob/master/apidef/api_definitions.go#L351)(https://github.com/TykTechnologies/tyk/blob/b638cf3aa4f3c4c3953344de69fda962c01832bb/apidef/api_definitions.go#L358)
