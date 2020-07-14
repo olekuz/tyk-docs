@@ -9,6 +9,10 @@ aliases:
     - /tyk-cloud/administration/tasks/as-team-member/"
 ---
 
+## Introduction
+
+This page explains what a Tyk Cloud team member can do as part of your API management process, giving you complete control over your API management.
+
 As a Team Member, your role allows you to manage the following within the team you are a member of:
 
 * View Environments

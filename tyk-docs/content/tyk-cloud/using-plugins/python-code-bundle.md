@@ -9,6 +9,11 @@ aliases:
     - /python-custom-auth-plugin/python-code-bundle/
 ---
 
+## Introduction
+
+This page demonstrates how to create a Python code bundle as part of the custom authentication process for Tyk Cloud, so that you can ensure your API management solution is as effective as possible.
+
+
 ## What do I need to do to create my Plugin?
 
 * You need to create the Python code bundle on your locally installed Gateway (not an Tyk Cloud Edge stack).

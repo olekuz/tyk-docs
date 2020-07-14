@@ -9,6 +9,10 @@ aliases:
     - /using-plugins/python-custom-auth-plugin/
 ---
 
+## Introduction
+
+This page introduces the process of configuring a custom authentication plugin, so that you can override the default Tyk authentication mechanism with your own authentication logic. 
+
 ## What are we going to do?
 
 We are going to configure an Tyk Cloud Control Plane to use a custom authentication plugin built in Python.

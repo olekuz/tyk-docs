@@ -8,6 +8,10 @@ menu:
 url: "/tyk-cloud/administration"
 ---
 
+## Introduction
+
+This page introduces the process of maintaining your Tyk Cloud installation, so that you can ensure every user has the right permissions, giving you complete control over your API management.
+
 Maintaining your Tyk-Cloud installation is governed by the following factors:
 
 * The plan you are signed up to

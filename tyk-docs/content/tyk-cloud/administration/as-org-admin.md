@@ -9,6 +9,10 @@ aliases:
     - /tyk-cloud/administration/tasks/as-org-admin/"
 ---
 
+## Introduction
+
+This page explains what a Tyk Cloud org admin can do as part of your API management process, giving you complete control over your API management.
+
 As an Org Admin, your role allows you to manage the following:
 
 * [Environments](/docs/tyk-cloud/glossary/glossary/#environment)

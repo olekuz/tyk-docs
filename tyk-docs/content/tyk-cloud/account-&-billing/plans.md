@@ -10,6 +10,10 @@ aliases:
 ---
 
 
+## Introduction
+
+This page explains the Tyk Cloud account types and addons, plus how to change your plan type, so that you can build the perfect package to meet your needs. 
+
 Our plans cover every use case scenario, from a free trial, to a global enterprise ready plan. You can also purchase addons to increase your functionality.
 
 ### 14 Day Trial

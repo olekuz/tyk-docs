@@ -9,7 +9,9 @@ aliases:
     - /tyk-cloud/glossary/
 ---
 
-We have listed some terms that will help you with get to grips with Tyk Cloud that little bit quicker.
+## Introduction
+
+This page explains the terms that we use across the Tyk Cloud documentation, so that you can always be sure what we mean.
 
 ## Account Terms
 

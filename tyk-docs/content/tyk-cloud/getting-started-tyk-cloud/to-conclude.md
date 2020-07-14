@@ -9,6 +9,10 @@ aliases:
     - /tyk-cloud/what-we-covered/
 ---
 
+## Introduction
+
+This summary page explains the steps required to implement Tyk Cloud, which enables you to manage your APIs seamlessly. 
+
 We've covered the following to get you started with the Tyk Cloud way of managing Tyk deployments
 
 * We've created a new Organisation

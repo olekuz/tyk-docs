@@ -9,6 +9,10 @@ aliases:
     - /tyk-cloud/administration/tasks/teams-and-user-admin/"
 ---
 
+## Introduction
+
+This page walks you through creating, editing and deleting teams on Tyk Cloud, in order that you can manage your APIs effectively.
+
 ## Teams Admin
 
 ### Editing an Existing Team

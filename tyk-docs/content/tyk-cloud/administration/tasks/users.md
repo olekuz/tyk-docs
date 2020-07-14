@@ -9,6 +9,10 @@ aliases:
     - /tyk-cloud/administration/tasks/users-admin/"
 ---
 
+## Introduction
+
+This page walks you through creating, editing and deleting users on Tyk Cloud, in order that you can manage your APIs effectively.
+
 ## Editing Existing Users
 
 ### Prerequisites

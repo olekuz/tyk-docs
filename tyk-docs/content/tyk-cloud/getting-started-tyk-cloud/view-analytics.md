@@ -9,9 +9,13 @@ aliases:
     - /tyk-cloud/view-analytics/
 ---
 
-You'll now look at the analytics for the API you created in [Task 5](/docs/tyk-cloud/getting-started-tyk-cloud/first-api/).
+## Introduction
+
+You can use Tyk Cloud to manage your APIs effectively and with minimal effort. This page walks you through the Tyk Cloud analytics process, so that you can ensure your APIs are performing perfectly. 
 
 ## Step One - Access the Dashboard
+
+You'll now look at the analytics for the API you created in [Task 5](/docs/tyk-cloud/getting-started-tyk-cloud/first-api/).
 
 From the Deployments Overview screen Click **Access Dashboard**. You'll be redirected to the Tyk Dashboard for your [Control Plane](/docs/tyk-cloud/glossary/glossary/#control-plane). You can see the successful calls made to your API from the two Edges you created.
 

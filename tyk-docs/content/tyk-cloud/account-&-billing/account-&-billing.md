@@ -8,6 +8,10 @@ menu:
 url: "/tyk-cloud/account-billing"
 ---
 
+## Introduction
+
+This page explains the Tyk Cloud account types and addons, so that you can build the perfect package to meet your needs.
+
 ## Our Plans
 
 Our plans cover every use case scenario, from a free trial, to a global enterprise ready plan. You can also purchase addons to increase your functionality.

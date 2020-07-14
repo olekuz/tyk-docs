@@ -9,6 +9,10 @@ aliases:
     - /tyk-cloud/administration/tasks/environment-admin/"
 ---
 
+## Introduction
+
+This page walks you through creating and editing environments on Tyk Cloud, in order that you can manage your APIs effectively.
+
 ## Prerequisites
 
 The following [user roles](/docs/tyk-cloud/reference-docs/user-roles/) can perform Environment Admin tasks:

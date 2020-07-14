@@ -9,6 +9,10 @@ aliases:
     - /python-custom-auth-plugin/api-middleware-test/
 ---
 
+## Introduction
+
+This page explains how to test out your Python custom authentication on Tyk Cloud, to ensure that it’s working properly. 
+
 ## Testing our middleware with an API
 
 You now have your middleware uploaded to your S3 bucket. We are now going to create an API from our Control Plane Dashboard and test it via Postman

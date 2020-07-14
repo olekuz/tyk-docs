@@ -8,6 +8,10 @@ weight: 1
 url: "/tyk-cloud/reference-docs/user-roles"
 ---
 
+## Introduction
+
+This page defines the different user roles within Tyk Cloud, so that you can see at a glance what each role does and manage your account accordingly.
+
 ## User Roles within Tyk Cloud
 
 We have the following user roles defined in Tyk Cloud for your team members

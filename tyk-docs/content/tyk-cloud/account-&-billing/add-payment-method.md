@@ -9,6 +9,10 @@ aliases:
     - /tyk-cloud/account-and-billing/add-payment-method/
 ---
 
+## Introduction
+
+This page details how to add a payment method for your Tyk Cloud account, so that you can continue to enjoy the benefits of outstanding API management.
+
 ## How to add a payment method to your account
 
 1. Log in to your account as a Billing Admin

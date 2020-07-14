@@ -8,6 +8,10 @@ menu:
 url: "/tyk-cloud/using-plugins"
 ---
 
+## Introduction
+
+This page explains that you can use plugins with Tyk Cloud and links to details of Python and JSVM based plugins.
+
 Tyk Cloud allows you to take advantage of Tyk's plugin architecture that allows you to write powerful middleware. For this version of Tyk Cloud, we support the use of Python and JavaScript Middleware based plugins.
 
 For more details, see: 

@@ -9,6 +9,10 @@ aliases:
     - /tyk-cloud/account-and-billing/upgrade-free-trial/"
 ---
 
+## Introduction
+
+This page explains how you can upgrade your free trial of Tyk Cloud to a full account, to continue enjoying the benefits of Tyk Cloud.
+
 ## My free trial is coming to an end. What are my options?
 
 Every new Tyk Cloud account is assigned to our 14 free trial. You have the following options:

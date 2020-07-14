@@ -9,6 +9,10 @@ aliases:
     - /tyk-cloud/administration/tasks/as-team-admin/"
 ---
 
+## Introduction
+
+This page explains what an Tyk Cloud team admin can do as part of your API management process, giving you complete control over your API management.
+
 As a Team Admin, your role allows you to manage the following:
 
 * Environment admin

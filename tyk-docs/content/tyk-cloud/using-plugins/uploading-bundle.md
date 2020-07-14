@@ -9,6 +9,10 @@ aliases:
     - /python-custom-auth-plugin/uploading-bundle/
 ---
 
+## Introduction
+
+This page walks you through uploading your bundle as part of the process of Python custom authentication on Tyk Cloud, so that you can ensure your API management solution is as effective as possible.
+
 ## How do I upload my bundle file to my Amazon S3 bucket?
 
 We are going to use a Tyk CLI tool called mservctl. this acts as an file server for our plugins. You use it to push your plugin bundle to your S3 bucket. Your Tyk Cloud Tyk Gateway will use MServ to retrieve your bundle, instead of connecting directly into S3.

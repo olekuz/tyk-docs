@@ -8,4 +8,6 @@ weight: 6
 url: "/tyk-cloud/administration/tasks"
 ---
 
-We've split admin tasks into relevant areas of Tyk Cloud functionality. Some of these tasks are dependent on your plan (and any addons) and Organisation setup.
+## Introduction
+
+This page introduces you to admin tasks based on Tyk Cloud’s functionality, so that you can be in control of your API management solution at every stage.
