@@ -4,7 +4,7 @@ date: 2020-04-28
 weight: 3
 menu:
   main:
-    parent: "Tyk Cloud"
+    parent: "Configuration Options"
 url: "/tyk-cloud/using-plugins"
 ---
 

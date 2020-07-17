@@ -4,7 +4,7 @@ date: 2020-04-08
 weight: 4
 menu:
   main:
-    parent: "Tyk-Cloud"
+    parent: "Tyk Cloud"
 url: "/tyk-cloud/administration"
 ---
 
