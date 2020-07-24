@@ -33,9 +33,137 @@ This flag can also be [set programatically](https://tyk.io/docs/tyk-developer-po
 
 The developer portal is fully customizable via templates.  We'll add custom logic to the portal catalog template (catalogue.html) to show/hide the "Internal API" catalogbased on the value of the "internal" flag for the developer.  
 
-Please see the customized catalogue template ​​here​: https://gist.github.com/nerdydread/1c4f2c909e33591d7c63f805e8e3698d  
+Please see the customized catalogue template ​​here​: 
 
-We're now going to overwrite the default catalogue.html template in the 'portal/templates' directory on the Tyk Dashboard instance with the custom one.
+<details>
+<summary>Click to expand template</summary>
+
+```text
+{{ define "cataloguePage" }} {{ $org_id := .OrgId}} 
+{{ template "header" .}}
+{{ $page := .}}
+<body>
+
+	{{ template "navigation" . }}
+
+	<div>
+
+		<!-- Main content here -->
+
+		<div class="container" style="margin-top:80px;">
+		
+		<div class="row">
+		
+			<h1>API Catalogue</h1>
+		</div>
+			
+			<div class="row">
+
+			{{ if .Data.APIS }}
+				{{if .UserData.Fields}}
+					{{$internal := index .UserData.Fields "internal"}}
+					{{ range $index, $apiDetail := .Data.APIS}}
+						{{ if $apiDetail.Show }}
+							{{if (and (eq $apiDetail.Name "Internal API") (eq $internal "0") )}}
+									<p>Internal Catalogue cannot be shown to external developer. {{ printf "(catalogue name: %#v)" $apiDetail.Name }} </p>
+
+							{{else}}
+								<div class="col-md-4">
+					<h2>{{$apiDetail.Name}}</h2>
+					<p>{{$apiDetail.LongDescription | markDown}}</p>
+
+					{{ if $apiDetail.Documentation }}
+
+
+					<a href="{{ $page.PortalRoot }}apis/{{$apiDetail.Documentation}}/documentation/" class="btn btn-info catalogue">
+
+				
+	    				<span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp; View documentation 	
+	    			</a>
+					<br/>
+
+					{{ end }}
+
+					{{if eq $apiDetail.Version "" }}
+					{{if eq $apiDetail.IsKeyless false}}
+
+					<a href="{{ $page.PortalRoot }}member/apis/{{$apiDetail.APIID}}/request" class="btn btn-success catalogue">
+
+						<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>&nbsp; Request an API key
+					</a>
+					{{ end }}
+					{{ else }}
+					{{if eq $apiDetail.IsKeyless false}}
+    				<a href="{{ $page.PortalRoot }}member/policies/{{$apiDetail.PolicyID}}/request" class="btn btn-success catalogue">
+    					<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>&nbsp; Request an API key
+    				</a>
+					{{ end }}
+					{{ end }}
+				</div>
+							{{ end }}
+						{{ end }}
+					{{ end }}
+				{{ else }}
+					{{ range $index, $apiDetail := .Data.APIS}}
+						{{ if $apiDetail.Show }}
+							{{if (ne $apiDetail.Name "Internal API") }}
+								<div class="col-md-4">
+									<h2>{{$apiDetail.Name}}</h2>
+									<p>{{$apiDetail.LongDescription | markDown}}</p>
+
+									{{ if $apiDetail.Documentation }}
+
+
+									<a href="{{ $page.PortalRoot }}apis/{{$apiDetail.Documentation}}/documentation/" class="btn btn-info catalogue">
+
+
+										<span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp; View documentation
+									</a>
+									<br/>
+
+									{{ end }}
+
+									{{if eq $apiDetail.Version "" }}
+									{{if eq $apiDetail.IsKeyless false}}
+
+									<a href="{{ $page.PortalRoot }}member/apis/{{$apiDetail.APIID}}/request" class="btn btn-success catalogue">
+
+										<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>&nbsp; Request an API key
+									</a>
+									{{ end }}
+									{{ else }}
+									{{if eq $apiDetail.IsKeyless false}}
+									<a href="{{ $page.PortalRoot }}member/policies/{{$apiDetail.PolicyID}}/request" class="btn btn-success catalogue">
+										<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>&nbsp; Request an API key
+									</a>
+									{{ end }}
+									{{ end }}
+								</div>
+							{{end}}
+						{{end}}
+					{{end}}
+				{{ end }}
+			{{ else }}
+				<div class="row">
+				<p>
+					<em>It looks like there are no APIs in the Catalogue.</em>
+				</p>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+	{{ template "footer" .}}
+	</div>
+	<!-- /container -->
+	{{ template "scripts" .}}
+</body>
+</html>
+{{ end }}
+```
+</details>
+
+
+We're now going to overwrite the default catalogue.html template in the 'portal/templates' directory on the Tyk Dashboard instance with the custom one above.
 
 **NOTE**: After replacing or updating a template, the Dashboard must be restarted to lead the changes.
 
