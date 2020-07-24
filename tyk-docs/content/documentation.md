@@ -2,69 +2,84 @@
 publishdate: 2020-03-09
 lastmod: 2020-04-09
 Title: Tyk API Gateway Documentation
-diffTitleName: Tyk Documentation
+diffTitleName:
 menu:
   main:
     name: Documentation
 url: "/"
 weight: 1
 diffTitle: true
+hideSidebar: true
 ---
 
-Our documentation helps you get the most out of your Tyk installation. It covers all aspects of using Tyk to manage your APIs.
+## Quickstart Guides
 
-### Getting started
+{{< grid >}}
 
-We have installation and tutorials for all Tyk Editions:
+{{< badge read="10 mins" href="/asd" image="/docs/img/tyk-cloud.svg" >}}
+Some text here around what outcome is **with this** Product Type. 
+{{< /badge >}}
 
-- [Cloud](/docs/getting-started/installation/with-tyk-cloud/)
-- [Multi-Cloud](/docs/getting-started/installation/with-tyk-multi-cloud/)
-- [On-Premises](/docs/getting-started/installation/with-tyk-on-premises/)
-- [Community Edition](/docs/getting-started/installation/with-tyk-community-edition/)
+{{< badge read="9 mins" href="/asd" image="/docs/img/aws.png">}}
+Some text here around what outcome is **with this** Product Type. 
+{{< /badge >}}
 
-Our tutorials cover all the subjects to get you started with Tyk, both using the Dashboard, and using our own APIs where available. From creating APIs to deploying your portal to your end users.
+{{< badge read="9 mins" href="/asd" image="/docs/img/docker.png">}}
+Some text here around what outcome is **with this** Product Type. 
+{{< /badge >}}
 
-Our documentation also covers the following (and more):
+{{< badge read="11s mins" href="/asd" image="/docs/img/k8s.png">}}
+Some text here around what outcome is **with this** Product Type. 
+{{< /badge >}}
 
-### Concepts
+{{< /grid >}}
 
-The important [key concepts](/docs/getting-started/key-concepts/) behind Tyk, helping you to understand the Tyk way of doing things.
+## The Tyk Stack
 
-### Configuration
+{{< grid >}}
 
-How to [configure](/docs/tyk-configuration-reference/) Tyk to suit your requirements.
+{{< badge type="mid" href="/asd" image="/docs/img/diagram.png" imageStyle="height: 90%;" >}}
+**LOREM IPSUM**
 
-### Analysis
+Lorem ipsum Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{{< /badge >}}
 
-How to use Tyk's [analytics](/docs/analytics-and-reporting/) tools.
+{{< badge type="mid" href="/asd" image="/docs/img/diagram.png" imageStyle="height: 90%;" >}}
+**LOREM IPSUM**
 
-### Customising Tyk
+Lorem ipsum Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{{< /badge >}}
 
-How to [customise](/docs/plugins/) Tyk, using Rich Plugins and JavaScript Virtual Machine Middleware.
+{{< /grid >}}
 
-### Portal Configuration
+{{< button href="/asd" color="red" content="View more content" >}}
 
-How to [personalise](/docs/tyk-developer-portal/customise/) your Developer Portal.
+## Feature Steps
 
-### Tyk APIs
+{{< grid >}}
 
-How to use our APIs.
+{{< badge title="Tyk Cloud" href="/asd" >}}
+#### Feature
 
-- [Gateway REST API](/docs/tyk-gateway-api/)
-- [Dashboard API](/docs/tyk-dashboard-api/)
-- [Dashboard Admin API](/docs/dashboard-admin-api/)
+Lorem ipsum Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{{< /badge >}}
 
-### Current Versions
+{{< badge title="API Manager" href="/asd" >}}
+#### Feature
 
-- Tyk Gateway v3.0
-- Tyk Dashboard v3.0
-- Tyk Pump v1.0
-- Tyk Identity Broker (TIB) v0.7.1
-- MDCB v1.7.2
+Lorem ipsum Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{{< /badge >}}
 
-### Supported MongoDB and Redis Versions
+{{< badge title="Tyk Gateway" href="/asd" >}}
+#### Feature
 
-Tyk has been tested on the following versions:
+Lorem ipsum Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{{< /badge >}}
 
-- MongoDB 3.x and 4.0.x
-- Redis 2.8.x to 5.0.x
+{{< badge title="API Manager" href="/asd" >}}
+#### Feature
+
+Lorem ipsum Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{{< /badge >}}
+
+{{< /grid >}}

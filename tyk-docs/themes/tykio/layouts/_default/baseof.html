@@ -64,39 +64,54 @@
   <link rel="shortcut icon" href="/docs/images/favicon/favicon.ico" />
 </head>
 
-<body class="page-documentation">
+<body class="page-documentation {{if not .Params.hideSidebar}}hasSidebar{{end}}">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVX4PCL"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
   <header class="header f-14">
     <a href="https://tyk.io" class="logo" data-turbolinks="false">
-      <img src="https://tyk.io/wp-content/themes/tyk/dist/svg/logo.svg" width="88" height="45"
+      <img src="/docs/img/logo.svg" width="165" height="59"
         alt="Tyk API Gateway and API Management">
     </a>
-    <a href="https://github.com/TykTechnologies/tyk" target="_blank" class="header-github icon-github"></a>
+    <a href="https://github.com/TykTechnologies/tyk" target="_blank" class="header-github">
+      <img src="/docs/img/github.svg" width="59" height="59"
+        alt="Tyk API Gateway and API Management">
+    </a>
+
+    <div class="links-container">
+      <a href="/">Quickstart guides</a>
+      <a href="/">Feature setups</a>
+      <a href="/">Concepts/learning</a>
+      <a href="/">API References</a>
+    </div>
+
+
+    <a href="/login" target="_blank" class="header-right button button-green">
+      Login
+    </a>
+    <a href="/support" target="_blank" class="header-right button button-red">
+      24/7 Support
+    </a>
+    <a href="/support" target="_blank" class="header-right" style="padding-top: 0.25em">Community</a>
+
     <button class="m-show burger" data-toggle="show-submenu"></button>
   </header>
 
   <header class="hero" data-turbolinks-permanent>
     <div class="container">
       <div class="hero-sidebyside">
-        <h1 id="doc-icon">
-          <img src="/docs/images/icon-documentation.svg" width="0" height="0" alt="Documentation">
-          Documentation
-        </h1>
-
-         <nav class="hero-text f-16">
+        <nav class="hero-text f-16">
           <div id="searchbox"></div>
           <div id="hits" class="documentation-search-results f-16 roboto"></div>
         </nav>
-        
       </div>
     </div>
   </header>
 
-  <section class="section-page hasSidebar">
+  <section class="section-page {{if not .Params.hideSidebar}}hasSidebar{{end}}">
     <div class="container clear">
+      {{if not .Params.hideSidebar}}
       <aside class="page-submenu roboto" data-turbolinks-permanent>
         <nav class="aside-submenu">
           <div data-tree class="st-treed">
@@ -105,6 +120,7 @@
         </nav>
         <button class="submenu-close overlay-close m-show icon-close" data-toggle="show-submenu"></button>
       </aside>
+      {{end}}
 
       <article class="page-content wysiwyg">
 
@@ -115,11 +131,13 @@
           </div>
           <a class="button grey medium suggest-edit icon-github" target="_blank">Edit on GitHub</a>
         </nav>
-        <h1>{{ if .Params.diffTitle }}
-          {{ .Params.diffTitleName }}
-          {{else}}
-          {{.Title}}
+        {{ if .Params.diffTitle }}
+          {{if .Params.diffTitleName}}
+          <h1>{{ .Params.diffTitleName }}</h1>
           {{ end }}
+        {{else}}
+          <h1>{{.Title}}</h1>
+        {{ end }}
         </h1>
         <div id="main-content">
           {{ block "content" . }}
