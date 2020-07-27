@@ -474,7 +474,7 @@ h4 {
 
 p {
   margin-bottom: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -596,7 +596,7 @@ textarea {
   font: inherit;
   outline: none;
   border: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 input[type=text],
@@ -874,7 +874,7 @@ body {
 
 .container {
   max-width: 1300px;
-  padding: 0 32px;
+  padding: 0 5px;
   margin: auto;
   position: relative;
 }
@@ -1981,6 +1981,7 @@ body {
 
 .section-page {
   padding: 152px 0;
+  padding-bottom: 0;
 }
 
 .wysiwyg h1,
@@ -2017,7 +2018,7 @@ body {
 .wysiwyg ul,
 .wysiwyg ol,
 .wysiwyg table {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .wysiwyg p {
@@ -2657,7 +2658,7 @@ body {
   content: 'Pronunciation: /tAIk/';
   padding-left: 14px;
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
 }
 
@@ -4226,7 +4227,7 @@ body {
    ========================================================================== */
 .woocommerce table {
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
 }
 

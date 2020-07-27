@@ -1,5 +1,11 @@
-<div class="grid">
+<div class="grid {{.Get "type"}}">
 	{{.Inner}}
+
+	{{if .Get "next"}}
+		<a class="badge next" href="{{.Get "next"}}">
+			View more resources
+		</a>
+	{{end}}
 
 	<div style="clear: both"></div>	
 </div>

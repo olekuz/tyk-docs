@@ -1,6 +1,6 @@
-<a class="badge {{.Get "type"}}" href="{{.Get "href"}}">
+<a class="badge {{.Get "type"}} {{if .Get "image"}}with_image{{end}}" href="{{.Get "href"}}">
 	{{if .Get "read"}}
-	<div class="nav read">{{.Get "read"}}</div>
+		<div class="nav read">{{.Get "read"}}</div>
 	{{end}}
 	{{if .Get "title"}}
 	<div class="nav title">{{.Get "title"}}</div>
@@ -17,4 +17,9 @@
 		</center>
 		{{end}}
 	</p>
+	
+	<div class="bottom">
+		<div class="read">{{.Get "read"}}</div>
+		<span class="button center button-black">Keep reading</span>
+	</div>
 </a>
