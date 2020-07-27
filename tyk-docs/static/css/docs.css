@@ -336,7 +336,7 @@
 .submenu-toggle span {top:0px !important;}
 
 .hasSidebar .container:before{ width: 397px; left: 49%; margin-left: -720px; pointer-events: none !important;}
-.hasSidebar aside { padding-right: 124px; margin-right: -65px;}
+.hasSidebar aside { padding-right: 124px; margin-right: -100px;}
 .hasSidebar aside:before, .blog-sidebar:before { right: 73%; }
 
 /* Edit on GitHub button */
@@ -403,7 +403,7 @@ margin:-90px 0 0;
 }
 
 @media only screen and (max-width: 1000px) {
-  .menu-getstarted { top:15px !important; }
+  .menu-getstarted { top:15px !important; } 
 }
 
 .st-treed {font-size: 15px;}
