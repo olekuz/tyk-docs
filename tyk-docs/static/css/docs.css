@@ -722,7 +722,7 @@ body * { visibility: hidden; }
 }
 
 #searchbox.js-active:after {
-	display: block;
+	display: none;
 }
 
 /* ==========================================================================
