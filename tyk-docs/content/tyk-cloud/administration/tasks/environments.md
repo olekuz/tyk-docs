@@ -22,7 +22,7 @@ The following [user roles](/docs/tyk-cloud/reference-docs/user-roles/) can perfo
 
 You should also have created a team to assign to any new environment.
 
-## Adding a New Environment
+## Adding a New Environment
 
 1. From the Enviroments screen, click **Add Environment**
 2. Select the team you want to assign to the Environment

@@ -3,7 +3,7 @@ date: 2017-03-22T11:52:07Z
 title: Tutorials
 menu:
   main:
-    parent: "Try out Tyk"
+    parent: "Installation"
 weight: 1
 ---
 

@@ -16,21 +16,21 @@ hideSidebar: true
 
 {{< grid >}}
 
-{{< badge read="10 mins" href="/docs/getting-started/installation/with-tyk-cloud/" image="/docs/img/tyk-cloud.svg" >}}
-Some text here around what outcome is **with this** Product Type. 
+{{< badge read="10 mins" href="/docs/tyk-cloud/tyk-cloud" image="/docs/img/tyk-cloud.svg" >}}
+Our new, next level SaaS product. 
 {{< /badge >}}
 
 {{< badge read="9 mins" href="/docs/getting-started/with-tyk-on-premises/installation/on-aws/" image="/docs/img/aws.png">}}
-Some text here around what outcome is **with this** Product Type. 
+Install our **On-Premises** product on AWS. 
 {{< /badge >}}
 
 
 {{< badge read="9 mins" href="/docs/getting-started/installation/with-tyk-on-premises/docker/" image="/docs/img/docker.png">}}
-Some text here around what outcome is **with this** Product Type. 
+Install our **On-Premises** product with Docker. 
 {{< /badge >}}
 
 {{< badge read="11s mins" href="/docs/getting-started/installation/with-tyk-on-premises/with-kubernetes/" image="/docs/img/k8s.png">}}
-Some text here around what outcome is **with this** Product Type. 
+Install our **On-Premises** product with Kubernetes. 
 {{< /badge >}}
 
 {{< /grid >}}
