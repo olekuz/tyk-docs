@@ -1993,13 +1993,13 @@ body {
 }
 
 .wysiwyg h1 {
-  font-size: 46px;
+  font-size: 30px;
   font-weight: bold;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 }
 
 .wysiwyg h2 {
-  font-size: 32px;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 
