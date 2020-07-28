@@ -28,37 +28,37 @@ Configure and deploy your customised Tyk Stack implementation.
 
 {{< grid >}}
 
-{{< badge title="Tyk Cloud" href="/docs/tyk-cloud/configuration-options/using-plugins/python-custom-auth/" >}}
+{{< badge title="Configuration" href="/docs/tyk-cloud/configuration-options/using-plugins/python-custom-auth/" >}}
 #### Python custom plugins
 
 Deploy your own custom plugin bundles directly into each control plane to access in the the Tyk Dashboard API Manager
 {{< /badge >}}
 
-{{< badge title="Tyk Cloud" href="/docs/tyk-cloud/administration/tasks/environments/" >}}
-#### Manage environments
-
-Create and manage multiple environments within your Tyk Cloud organisation
-{{< /badge >}}
-
-{{< badge title="Tyk Cloud" href="/tyk-cloud/getting-started-tyk-cloud/setup-environment/" >}}
-#### Manage deployments
-
-Create and manage your Control Plane and Edge Gateway deployments
-{{< /badge >}}
-
-{{< badge title="Tyk Cloud" href="/docs/tyk-cloud/using-custom-domains/" >}}
+{{< badge title="Configuration" href="/docs/tyk-cloud/using-custom-domains/" >}}
 #### Using custom domains
 
 Use your own domains for your team to access your API Dashboards and Developer Portals
 {{< /badge >}}
 
-{{< badge title="Tyk Cloud" href="3/docs/tyk-cloud/administration/tasks/teams/" >}}
+{{< badge title="Administration" href="/docs/tyk-cloud/administration/tasks/environments/" >}}
+#### Manage environments
+
+Create and manage multiple environments within your Tyk Cloud organisation
+{{< /badge >}}
+
+{{< badge title="Administration" href="/tyk-cloud/getting-started-tyk-cloud/setup-environment/" >}}
+#### Manage deployments
+
+Create and manage your Control Plane and Edge Gateway deployments
+{{< /badge >}}
+
+{{< badge title="Administration" href="3/docs/tyk-cloud/administration/tasks/teams/" >}}
 #### Manage teams & users
 
 Create teams in your organisation, define roles and manage user access
 {{< /badge >}}
 
-{{< badge title="Tyk Cloud" href="/docs/tyk-cloud/account-billing/" >}}
+{{< badge title="Account" href="/docs/tyk-cloud/account-billing/" >}}
 #### Manage billing
 
 Upgrade your subscription, billing details or card information

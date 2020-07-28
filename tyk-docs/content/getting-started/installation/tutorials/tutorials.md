@@ -4,7 +4,7 @@ title: Tutorials
 menu:
   main:
     parent: "Installation"
-weight: 1
+weight: 6
 ---
 
 The following tutorials will show you how to get up and running with Tyk depending on your installation type. 
