@@ -48,7 +48,6 @@ The following table shows the scope for each user role.
 | Upload plugins to the File Server                          |               | X         | X          | X            |
 | Delete plugins from File Server                        |               | X         | X          | X            |
 | Viewing Analytics                                 |               | X         | X          | X            |
-| Apply multiple roles to a single user             |               | X         | X          |              |
 
 ## Initial Tyk Cloud Account Roles
 
@@ -60,6 +59,7 @@ Your user who signs up for the initial Tyk Cloud account is uniquely assigned to
 This is the only occasion where a user can be assigned to 2 roles. So, for example, if you invite a user to be a Team Admin, that is the only role (and team) they can belong to. For a user to be invited as a Billing admin, they can't have an existing Tyk Cloud account.
 
 {{< note success >}}
-**Note**  
+**Note**
+  
 This functionality may change in subsequent releases.
 {{< /note >}}

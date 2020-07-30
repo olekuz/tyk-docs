@@ -15,9 +15,14 @@ Visit our Tyk [Cloud Signup Page](https://signup.tyk.io/api-gateway/cloud/) and 
 
 Your company name will be used to generate your cloud endpoint. This is where your API Developer Portal will be hosted, and also your Tyk Cloud API endpoints for any APIs that you create.
 
-> **Note:** If you change the password in your cloud account page it will not change the password in your Cloud Dashboard.
+{{< note success >}}
+**Note**  
 
-## <a name="log-into-your-cloud-dashboard"></a> Log into your Dashboard
+If you change the password in your cloud account page it will not change the password in your Cloud Dashboard.
+{{< /note >}}
+
+
+##  Log into your Dashboard
 
 From your cloud account page click **Login to your dashboard**:
 
@@ -27,10 +32,10 @@ This will present you with a new login screen for our cloud dashboard. You can l
 
 ### Next Steps
 
-[Create an API from the Dashboard](/docs/try-out-tyk/tutorials/create-api/#tutorial-create-an-api-with-the-dashboard)
+[Create an API from the Dashboard](/docs/getting-started/installation/tutorials/create-api/#tutorial-create-an-api-with-the-dashboard)
 
-[Create an API from the Tyk Gateway API](/docs/try-out-tyk/tutorials/create-api/#tutorial-create-an-api-with-the-dashboard-api)
+[Create an API from the Tyk Gateway API](/docs/getting-started/installation/tutorials/create-api/#tutorial-create-an-api-with-the-dashboard-api)
 
-[Create an API Key from the Dashboard](/docs/try-out-tyk/tutorials/create-api-key/#tutorial-create-an-api-key-with-the-dashboard)
+[Create an API Key from the Dashboard](/docs/getting-started/installation/tutorials/create-api-key/#tutorial-create-an-api-key-with-the-dashboard)
 
-[Create an API Key from the Tyk Gateway API](/docs/try-out-tyk/tutorials/create-api-key/#tutorial-create-an-api-key-with-the-api)
+[Create an API Key from the Tyk Gateway API](/docs/getting-started/installation/tutorials/create-api-key/#tutorial-create-an-api-key-with-the-api)

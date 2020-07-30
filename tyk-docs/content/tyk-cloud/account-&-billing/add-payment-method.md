@@ -20,7 +20,8 @@ This page details how to add a payment method for your Tyk Cloud account, so tha
 3. Click Payment Method
 
 {{< note success >}}
-**Note**  
+**Note**
+  
 For this release of Tyk Cloud, we are only supporting card payments
 {{< /note >}}
 

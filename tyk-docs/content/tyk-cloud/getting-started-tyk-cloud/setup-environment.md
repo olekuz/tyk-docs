@@ -22,7 +22,8 @@ Give your [Environment](/docs/tyk-cloud/glossary/glossary/#environment) a name. 
 Give your [Control Plane](/docs/tyk-cloud/glossary/glossary/#control-plane) a name. Again, this is up to you and you may already have an infrastructure you want to re-create in Tyk Cloud.
 
 {{< note success >}}
-**Note**  
+**Note**
+  
 For this release of Tyk Cloud, you can only have one Control Plane per Environment.
 {{< /note >}}
 

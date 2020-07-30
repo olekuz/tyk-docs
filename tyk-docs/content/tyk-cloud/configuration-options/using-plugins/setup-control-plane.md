@@ -24,7 +24,8 @@ This page explains how to set up a control plane with plugins to customise it on
    * Your AWS Region
 
 {{< note success >}}
-**Note**  
+**Note**
+
 For this release of Tyk Cloud, you need to enter your AWS Region manually.
 {{< /note >}}
 
@@ -32,10 +33,11 @@ For this release of Tyk Cloud, you need to enter your AWS Region manually.
 
 We have included a sample IAM policy that you need to create in AWS to allow the plugin bundle to work. For more information on creating IAM policies, see the [AWS Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html).
 
-{{< note warning >}}
-**Warning**  
+{{< warning success >}}
+**Warning**
+  
 We recommend you restrict your IAM user as much as possible before sharing the credentials with any 3rd party, including Tyk Cloud. See [IAM User Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html) for more details.
-{{< /note >}}
+{{< /warning >}}
 
 ```.json
 {

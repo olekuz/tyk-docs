@@ -19,7 +19,11 @@ See [What is a Security Policy?](/docs/getting-started/key-concepts/what-is-a-se
 {{< tab_end >}}
 {{< tab_start "Multi-Cloud" >}}
 
-> **NOTE**: Tyk Multi-Cloud has superseded our Hybrid offering. See [Tyk Multi-Cloud](https://tyk.io/api-gateway/cloud/#multi-cloud) for more details. You can get a free 30 day trial of Tyk Multi-Cloud.
+{{< note success >}}
+**Note**  
+
+Tyk Multi-Cloud has superseded our Hybrid offering. See [Tyk Multi-Cloud](https://tyk.io/api-gateway/cloud/#multi-cloud) for more details. You can get a free 30 day trial of Tyk Multi-Cloud.
+{{< /note >}}
 
 A security policy for Tyk Multi-Cloud is the same as one with Tyk Cloud and will be mirrored in your Multi-Cloud Gateways, follow the instructions below to generate a policy, within a few seconds, that policy will be available in your Multi-Cloud Gateways locally.
 
@@ -29,7 +33,7 @@ A security policy for Tyk Multi-Cloud is the same as one with Tyk Cloud and will
 {{< include "create-security-policy-include" >}}
 {{< tab_end >}}
 {{< tab_start "Community Edition" >}}
-## <a name="create-a-file-based-policy"></a>Tutorial: Create a Policy with the Gateway API
+## Tutorial: Create a Policy with the Gateway API
 
 Adding a policy to a Community Edition Tyk Gateway is very easy. Polices are loaded into memory on load and so need to be specified in advanced in a file called `policies.json`. To add a policy, simply create or edit the `/policies/policies.json` file and add the policy object to the object array:
 

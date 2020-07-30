@@ -16,6 +16,7 @@ For this release we will cover the following options:
 - Using custom Domains
 
 {{< note success >}}
-**Note**  
+**Note**
+ 
 The use of plugins and custom domains is dependent on your Tyk Cloud [plan](/docs/account-billing/plans/)
 {{< /note >}}

@@ -67,7 +67,12 @@ This component is in charge of dispatching your HTTP requests to the custom midd
 *   **Post**: gets executed after the authentication, validation, throttling, and quota-limiting middleware has been executed, just before the request is proxied upstream. Use this to post-process a request before sending it to your upstream API. This is only called when using protected APIs. If you want to call a hook after the authentication but before the validation, throttling and other middleware, see **PostKeyAuth**.
 *   **Response**: gets executed after the upstream API replies. The arguments passed to this hook include both the request and response data. Use this to modify the HTTP response before it's sent to the client. This hook also receives the request object, the session object, the metadata and API definition associated with the request.
 
-**Note:** Response hooks are not available for native Go plugins. Python and gRPC plugins are supported. 
+{{< note success >}}
+**Note**  
+
+Response hooks are not available for native Go plugins. Python and gRPC plugins are supported. 
+{{< /note >}}
+
 
 ### Coprocess Gateway API
 
@@ -140,5 +145,8 @@ The intended way of using a Coprocess middleware is to specify it as part of an 
   "driver": "python"
 }
 ```
+{{< note success >}}
+**Note**  
 
-> **Note**: All hook types support chaining except the custom auth check (`auth_check`).
+All hook types support chaining except the custom auth check (`auth_check`).
+{{< /note >}}

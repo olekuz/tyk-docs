@@ -33,7 +33,8 @@ With our free trial you get 14 days access to the full Tyk Stack with the follow
 You can create 20 teams with 20 users.
 
 {{< note success >}}
-**Note**  
+**Note**
+  
 For the 14 day trial plan, these quotas are the same as for our Enterprise Global plan
 {{< /note >}}
 

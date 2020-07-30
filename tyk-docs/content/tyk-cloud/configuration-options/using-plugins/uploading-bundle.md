@@ -73,7 +73,8 @@ Use "mservctl [command] --help" for more information about a command.
 ```
 
 {{< note success >}}
-**Note**  
+**Note**
+  
 You may have to change the CHMOD settings on the binary to make it executable. (`chmod +x <filename>`). On MacOS you may also need to change your security settings to allow the binary to run.
 {{< /note >}}
 
