@@ -14,6 +14,7 @@ For this release we will cover the following options:
 
 - Using plugins
 - Using custom Domains
+- Initial configuration of your Developer Portal
 
 {{< note success >}}
 **Note**
