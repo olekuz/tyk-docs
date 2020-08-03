@@ -19,7 +19,7 @@ Give your [Environment](/docs/tyk-cloud/glossary/glossary/#environment) a name. 
 
 ## Step Two - Name your Control Plane
 
-Give your [Control Plane](/docs/tyk-cloud/glossary/glossary/#control-plane) a name. Again, this is up to you and you may already have an infrastructure you want to re-create in Tyk Cloud.
+Give your [Control Plane Dashboard](/docs/tyk-cloud/glossary/glossary/#control-plane) a name. Again, this is up to you and you may already have an infrastructure you want to re-create in Tyk Cloud.
 
 {{< note success >}}
 **Note**
@@ -34,6 +34,6 @@ For this release of Tyk Cloud, you can only have one Control Plane per Environme
 
 ## Step Five
 
-Click [Deploy Control Plane and Creat an Edge Gateway](/docs/tyk-cloud/glossary/glossary/#deploy). You can watch your deployment being created. You will then be taken to the Deployments overview screen within Tyk Cloud.
+Click [Deploy Control Plane and Create an Edge Gateway](/docs/tyk-cloud/glossary/glossary/#deploy). You can watch your deployment being created. You will then be taken to the Deployments overview screen within Tyk Cloud.
 
 Next you'll set up your first API from the Tyk Dashboard.

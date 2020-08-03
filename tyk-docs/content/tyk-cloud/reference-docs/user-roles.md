@@ -63,3 +63,7 @@ This is the only occasion where a user can be assigned to 2 roles. So, for examp
   
 This functionality may change in subsequent releases.
 {{< /note >}}
+
+## Tyk System Integration User (do not delete)
+
+When you click your Control Plane Dashboard link from your Tyk Cloud Deployments Overview screen, you are automatically logged in to your Dashboard. This is due to a default Tyk Integration user that is created as part of the Control Plane deployment process. This user has a first name of `Tyk System Integration` and a last name of `User (do not delete)`. As the last name infers, you should not delete this user or your access to the Dashboard will be broken.
