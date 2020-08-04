@@ -16,7 +16,7 @@ hideSidebar: true
 
 {{< grid >}}
 
-{{< badge read="10 mins" href="/docs/tyk-cloud/tyk-cloud" image="/docs/img/tyk-cloud.svg" >}}
+{{< badge read="10 mins" href="/docs/tyk-cloud/" image="/docs/img/tyk-cloud.svg" >}}
 Sign up for our new, next level **SaaS** product. 
 {{< /badge >}}
 
