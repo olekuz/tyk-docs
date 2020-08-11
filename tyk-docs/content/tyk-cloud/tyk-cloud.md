@@ -31,13 +31,13 @@ Configure and deploy your customised Tyk Stack implementation.
 {{< badge title="Configuration" href="/docs/tyk-cloud/configuration-options/using-plugins/python-custom-auth/" >}}
 #### Python custom plugins
 
-Deploy your own custom plugin bundles directly into each control plane to access in the the Tyk Dashboard API Manager
+Implement your own custom logic with Python based plugins
 {{< /badge >}}
 
 {{< badge title="Configuration" href="/docs/tyk-cloud/using-custom-domains/" >}}
 #### Using custom domains
 
-Use your own domains for your team to access your API Dashboards and Developer Portals
+Configure custom domain for your Dashboard and Developer Portal
 {{< /badge >}}
 
 {{< badge title="Administration" href="/docs/tyk-cloud/administration/tasks/environments/" >}}

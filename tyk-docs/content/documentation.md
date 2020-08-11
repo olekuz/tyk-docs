@@ -35,7 +35,7 @@ Install our **On-Premises** product with Kubernetes.
 
 {{< /grid >}}
 
-{{< button href="/docs/getting-started/installation/" color="red" content="All installation options" >}}
+{{< button href="/docs/getting-started/installation/" color="green" content="All installation options" >}}
 
 ## The Tyk Stack
 
@@ -94,19 +94,19 @@ TLS connections are supported for all Tyk components
 {{< badge title="Dashboard" href="/docs/tyk-dashboard-analytics/" >}}
 #### Analytics
 
-The Tyk Dashboard has a full set of analytics functions and graphs that you can use to segment and view your API traffic and activity
+Learn how to segment and view your API traffic and activity
 {{< /badge >}}
 
 {{< badge title="New in v3.0" href="/docs/graphql/" >}}
 #### GraphQL
 
-Tyk supports GraphQL natively. This means Tyk doesn’t have to use any external service or process for any GraphQL middleware.
+Tyk supports GraphQL natively. Proxy to existing service or build it from scratch.
 {{< /badge >}}
 
 {{< badge title="Integration" href="/asd" >}}
 #### Single Sign On
 
-SSO gives users the ability to log in to multiple applications without the need to enter their password more than once.
+Log into dashboard and portal with your existing IDP.
 {{< /badge >}}
 
 {{< /grid >}}
