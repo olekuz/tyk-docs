@@ -605,7 +605,7 @@ body * { visibility: hidden; }
 .media-body-body {margin-top: 5px; }
 .media-body-title {border-top: 1px solid #E1E1E1;}
 .media-body-title a {font-weight: bold; color: #505071;}
-.media-body:hover { background: #e1e1e1; margin: 0; padding: 0; }
+.media-body:hover { background: #e1e1e1;}
 
 /* Structure */
 .section-page { padding-top: 0;}
@@ -731,7 +731,6 @@ body * { visibility: hidden; }
 	border-bottom: 2px solid #4f4f71;
 	color: #000;
 	max-height: 400px;
-  overflow-y: scroll;
   display: none;
   margin-top: 10px;
   font-family: Smoolthan;
