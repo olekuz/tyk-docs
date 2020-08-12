@@ -41,10 +41,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.header a:hover { 
-  text-decoration: underline;
-}
-
 .header-github {
   width: 59px;
   height: 59px;
@@ -64,6 +60,26 @@
 
 .header .links-container a { 
   margin-right: 1em;
+  position: relative;
+  text-decoration: none;
+}
+
+.header .links-container a:before, .header .links-container a:before { 
+  left: 50%;
+  width: 0;
+  content: "";
+  background: #00d9ba;
+  position: absolute;
+  bottom: -5px;
+  height: 1px;
+  margin: 0 10px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.header .links-container a:hover:before {
+  width: calc(100%);
+  left: -10px;
 }
 
 .header-github img {
@@ -94,12 +110,14 @@
 }
 
 .section-page {
-  background: top center url('../img/front-bg.jpg') repeat-x, bottom center url('../img/front-bg-2.jpg') repeat-x;
+  background: top center url('../img/front-bg-1.svg') repeat-x, bottom center url('../img/front-bg-2.svg') repeat-x;
+  background-size: 4817.57px;
   background-color: #EBEBF2;
 }
 
 .hasSidebar .section-page {
-  background: top center url('../img/content-bg.jpg') repeat-x;
+  background: top center url('../img/content-bg.svg') repeat-x;
+  background-size: 4817.57px;
   background-color: white;
 }
 
@@ -586,7 +604,7 @@ body * { visibility: hidden; }
 .hero .search {margin-top: 10px; max-width: 100%;}
 .media-body-body {margin-top: 5px; }
 .media-body-title {border-top: 1px solid #E1E1E1;}
-.media-body-title a {font-weight: bold;}
+.media-body-title a {font-weight: bold; color: #505071;}
 .media-body:hover { background: #e1e1e1; margin: 0; padding: 0; }
 
 /* Structure */
@@ -659,6 +677,10 @@ body * { visibility: hidden; }
 	color: #7A79A1;
 }
 
+.js-active .ais-SearchBox-input, .ais-SearchBox .ais-SearchBox-input:focus {
+  background-color: #fff !important;
+}
+
 .ais-SearchBox-submit,
 .ais-SearchBox-reset {
 	position: absolute;
@@ -728,13 +750,17 @@ body * { visibility: hidden; }
 	padding-top: 4px;
 }
 
+.documentation-search-results ul li > div {
+  padding: 10px;
+}
+
 .documentation-search-results .media-body-title {
   border-top: none;
 }
 
 .documentation-search-results mark {
 	font-weight: bold;
-  color: #03DABA;
+  color: #7a79a1;
 	font-style: normal;
 	background-color: unset;
 }
