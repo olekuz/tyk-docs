@@ -1036,6 +1036,10 @@ aside {
     width: 100%;
     padding: 10px;
   }
+
+  .grid.big .badge .bottom {
+    width: 100%;
+  }
 }
 
 
