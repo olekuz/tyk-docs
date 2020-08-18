@@ -33,7 +33,6 @@ This flag can also be [set programatically](https://tyk.io/docs/tyk-developer-po
 
 The developer portal is fully customizable via templates. We'll add custom logic to the portal catalogue template (catalogue.html) to show/hide the "Internal API" catalogue based on the value of the "internal" flag for the developer.  
 
-<<<<<<< HEAD
 Please see the customized catalogue template ​​here​: 
 
 <details>
@@ -162,7 +161,6 @@ Please see the customized catalogue template ​​here​:
 {{ end }}
 ```
 </details>
-
 
 We're now going to overwrite the default catalogue.html template in the 'portal/templates' directory on the Tyk Dashboard instance with the custom one above.
 
