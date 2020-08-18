@@ -39,7 +39,12 @@ When an HMAC-signed request comes into Tyk, the key is extracted from the Author
 
 Tyk API Gateway supports full header signing through the use of the `headers` HMAC signature field. This includes the request method and path using the`(request-target)` value. For body signature verification, HTTP Digest headers should be included in the request and in the header field value.
 
-> **NOTE**: All headers should be in lowercase.
+{{< note success >}}
+**Note**  
+
+All headers should be in lowercase.
+{{< /note >}}
+
 
 ### A sample signature generation snippet
 
