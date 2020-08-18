@@ -5,6 +5,7 @@ menu:
   main:
     parent: "Getting Started"
 weight: 6
+url: "getting-started/tutorials/"
 aliases:
   - /docs/try-out-tyk/tutorials/tutorials/
 ---
