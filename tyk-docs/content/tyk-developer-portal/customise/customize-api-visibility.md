@@ -165,11 +165,6 @@ Please see the customized catalogue template ​​here​:
 
 
 We're now going to overwrite the default catalogue.html template in the 'portal/templates' directory on the Tyk Dashboard instance with the custom one above.
-=======
-Please see the customised catalogue template ​​here​: https://gist.github.com/nerdydread/1c4f2c909e33591d7c63f805e8e3698d  
-
-We're now going to overwrite the default `catalogue.html` template in the 'portal/templates' directory on the Tyk Dashboard instance with the custom one.
->>>>>>> fd0e9c9915af0453fcbb2f477232a68e632ded5a
 
 **NOTE**: After replacing or updating a template, the Dashboard must be restarted to apply the changes.
 
