@@ -31,11 +31,12 @@ struct CoProcessMessage {
 ```
 
 The unpacked data will hold the actual `CoProcessObject` data structure.
-`HookType` - the hook type (see below) 
-`Request`  - the HTTP request
-`Session`  - the [Tyk session object](/docs/tyk-apis/tyk-gateway-api/token-session-object-details/).
-`Metadata`  - the metadata from the session data above (key/value string map).
-`Spec`     - the API specification data. Currently organization ID, API ID and config_data.
+
+- `HookType` - the hook type (see below)
+- `Request`  - the HTTP request
+- `Session`  - the [Tyk session object](/docs/tyk-apis/tyk-gateway-api/token-session-object-details/).
+- `Metadata`  - the metadata from the session data above (key/value string map).
+- `Spec`     - the API specification data. Currently organization ID, API ID and config_data.
 
 ```{.copyWrapper}
 type CoProcessObject struct {
