@@ -13,7 +13,7 @@ aliases:
 
 This page explains what it means when your Tyk Cloud account goes into retirement and what your options are when it does, from account reinstatement to closure.
 
-Your plan will go into [retirement](/docs/glossary/#retirement) in the following scenarios:
+Your plan will go into [retirement](/docs/tyk-cloud/troubleshooting-support/glossary/#retirement) in the following scenarios:
 
 * Your subscription is manually unsubscribed by your Billing Admin
 * Your periodic subscription payment fails

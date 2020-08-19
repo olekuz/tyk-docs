@@ -23,7 +23,7 @@ From an Edge Gateway, copy the Ingress link and open it in a browser tab. You wi
 
 ## Step Two - Append the URL with your API
 
-You created a API named **my app** in [Task 5](/docs/tyk-cloud/getting-started-tyk-cloud/first-api/). Add `/my-app/` to the end of the URL. You should be taken to https://tyk.io, which you added as the **Target URL** for the API in [Task 5](/docs/tyk-cloud/getting-started-tyk-cloud/first-api/#step-three---core-settings).
+You created a API named **my app** in [Task 5](/docs/tyk-cloud/getting-started-tyk-cloud/first-api/). Add `/my-app/` to the end of the URL. You should be taken to https://httpbin.org/, which you added as the **Target URL** for the API in [Task 5](/docs/tyk-cloud/getting-started-tyk-cloud/first-api/#step-three---core-settings).
 
 
 Next you'll create another Tyk Gateway Edge Stack from your Linked Stacks.

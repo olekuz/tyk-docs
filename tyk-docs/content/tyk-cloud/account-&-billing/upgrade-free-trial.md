@@ -22,7 +22,7 @@ Every new Tyk Cloud account is assigned to our 14 free trial. You have the follo
 
 ## What happens if my free trial expires?
 
-If your free trial ends without you upgrading, your account enters what we call [retirement](/docs/account-billing/retirement/).
+If your free trial ends without you upgrading, your account enters what we call [retirement](/docs/tyk-cloud/troubleshooting-support/glossary/#retirement).
 
 ## What does Upgrading a Free Trial account involve?
 

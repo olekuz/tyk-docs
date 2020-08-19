@@ -20,5 +20,5 @@ Maintaining your Tyk-Cloud installation is governed by the following factors:
 ## Matrix
 
 1. See our [Tyk-Cloud Plans](/docs/tyk-cloud/account-billing/plans/) to understand the limitations of your plan
-2. See [User Roles](/docs/tyk-cloud/reference-docs/user-roles/) for the scope of the your role
+2. See [User Roles](/docs/tyk-cloud/troubleshooting-support/user-roles/) for the scope of the your role
 

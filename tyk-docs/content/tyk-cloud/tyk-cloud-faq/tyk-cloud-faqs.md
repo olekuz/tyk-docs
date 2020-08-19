@@ -4,8 +4,8 @@ date: 2020-07-30
 weight: 7
 menu:
   main:
-    parent: "Tyk Cloud"
-url: "/tyk-cloud/faqs"
+    parent: "Troubleshooting & Support"
+url: "/tyk-cloud/troubleshooting-&-support/faqs"
 ---
 
 ## Introduction

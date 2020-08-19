@@ -3,9 +3,9 @@ title: "Tyk Cloud User Roles"
 date: 2020-04-06
 menu:
   main:
-    parent: "Reference Docs"
+    parent: "Teams & Users"
 weight: 1
-url: "/tyk-cloud/reference-docs/user-roles"
+url: "/tyk-cloud/troubleshooting-&-support/user-roles"
 ---
 
 ## Introduction

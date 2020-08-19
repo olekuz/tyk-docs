@@ -17,7 +17,7 @@ You can use Tyk Cloud to manage your APIs effectively and with minimal effort. T
 
 You'll now look at the analytics for the API you created in [Task 5](/docs/tyk-cloud/getting-started-tyk-cloud/first-api/).
 
-From the Deployments Overview screen Click **Access Dashboard**. You'll be redirected to the Tyk Dashboard for your [Control Plane](/docs/tyk-cloud/glossary/glossary/#control-plane). You can see the successful calls made to your API from the two Edges you created.
+From the Deployments Overview screen Click **Access Dashboard**. You'll be redirected to the Tyk Dashboard for your [Control Plane](/docs/tyk-cloud/troubleshooting-support/glossary/#control-plane). You can see the successful calls made to your API from the two Edges you created.
 
 ## Step Two - Create an Error
 

@@ -1,12 +1,12 @@
 ---
-title: "As a Billing Admin"
+title: "Managing Billing Admins"
 date: 2020-04-15
 menu:
   main:
-    parent: "Administration"
+    parent: "Account and Billing"
 weight: 5
 aliases:
-    - /tyk-cloud/administration/as-billing-admin/"
+    - /tyk-cloud/account-billing/managing-billing-admins/"
 ---
 
 ## Introduction

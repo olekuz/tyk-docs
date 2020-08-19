@@ -17,11 +17,11 @@ Click **Get Started** to create your team
 
 ## Step One - Name your Team
 
-Name your [team](/docs/tyk-cloud/glossary/glossary/#team). You may find it useful to reflect the names used within your organisation.
+Name your [team](/docs/tyk-cloud/troubleshooting-support/glossary/#team). You may find it useful to reflect the names used within your organisation.
 
 ## Step Two - Invite your Users
 
-Invite your [users](/docs/tyk-cloud/glossary/glossary/#user) to your team. You'll only need their email address and which of the available [roles](/docs/tyk-cloud/glossary/glossary/#role) you want to assign to them.
+Invite your [users](/docs/tyk-cloud/troubleshooting-support/glossary/#user) to your team. You'll only need their email address and which of the available [roles](/docs/tyk-cloud/troubleshooting-support/glossary/#role) you want to assign to them.
 
 Out of the box, the following roles are setup:
 

@@ -15,9 +15,9 @@ This page explains what a Tyk Cloud org admin can do as part of your API managem
 
 As an Org Admin, your role allows you to manage the following:
 
-* [Environments](/docs/tyk-cloud/glossary/glossary/#environment)
+* [Environments](/docs/tyk-cloud/troubleshooting-support/glossary/#environment)
 * Deployments (Control Planes, Edges)
-* [Teams](/docs/tyk-cloud/glossary/glossary/#team) and team members
+* [Teams](/docs/tyk-cloud/troubleshooting-support/glossary/#team) and team members
 * Plugins
 
 ## Org Admin Overview Screen
