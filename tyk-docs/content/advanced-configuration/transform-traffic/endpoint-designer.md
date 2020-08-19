@@ -203,7 +203,7 @@ At the top of the Endpoint Designer you can see which version you are currently 
 
 ## Debugging
 
-The Endpoint Designer has a Debugging tab that allows you to test your endpoints before you publish or update them. You can also use it for testing any middleware plugins you have implemented. Any debugging you create will persist while still in the Endpoint Designer for the current API, enabling you to make changes in the rest of the API settings without losing the debugging scenario.
+The API screen has a Debugging tab that allows you to test your endpoints before you publish or update them. You can also use it for testing any middleware plugins you have implemented. Any debugging you create will persist while still in the current API, enabling you to make changes in the rest of the API settings without losing the debugging scenario.
 
 The Debugging tab consists of the following sections:
 
