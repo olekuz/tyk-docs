@@ -4,8 +4,8 @@ date: 2020-04-06
 menu:
   main:
     parent: "Teams & Users"
-weight: 1
-url: "/tyk-cloud/troubleshooting-&-support/user-roles"
+weight: 3
+url: "/tyk-cloud/teams-&-users/user-roles"
 ---
 
 ## Introduction

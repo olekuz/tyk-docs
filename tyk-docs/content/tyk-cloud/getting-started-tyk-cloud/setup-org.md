@@ -18,8 +18,8 @@ You can use Tyk Cloud to manage your APIs effectively and with minimal effort. T
 
 Give your organisation a name. This is up to you, but most use their company name.
 
-## Step Two - Select a Home Region
+## Step Two - Select a Region
 
-Select a region from the drop-down list where your [Control Planes](/docs/tyk-cloud/troubleshooting-support/glossary/#control-plane) will be deployed and your data stored. The number of regions available will depend on your licence. Further regions can be added as an upgrade option. Then click Create Organisation.
+Select a region from the drop-down list where your [Control Planes](/docs/tyk-cloud/troubleshooting-support/glossary/#control-plane) will be deployed and your data stored. The number of regions available will depend on your licence. Further regions can be added as an upgrade option.
 
 Next you'll get started by setting up your first team.
