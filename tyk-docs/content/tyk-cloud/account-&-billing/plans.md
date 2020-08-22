@@ -4,7 +4,7 @@ date: 2020-05-23
 menu:
   main:
     parent: "Account and Billing"
-weight: 3
+weight: 1
 aliases:
     - /tyk-cloud/account-and-billing/our-plans/
 ---

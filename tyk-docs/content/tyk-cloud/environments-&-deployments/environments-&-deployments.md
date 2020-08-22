@@ -8,4 +8,11 @@ menu:
 url: "/tyk-cloud/environments-&-deployments"
 ---
 
-## Introduction
+This section covers the administration of the various components ofyour Tyk Cloud installation:
+
+* [Organisation](/docs/tyk-cloud/environments-deployments/managing-organisations/)
+* [Environments](/docs/tyk-cloud/environments-deployments/managing-environments/)
+* [Control Planes](/docs/tyk-cloud/environments-deployments/managing-control-planes/)
+* [Edge Gateways](/docs/tyk-cloud/environments-deployments/managing-gateways/)
+
+It also covers links to how to start [managing your APIs](/docs/tyk-cloud/environments-deployments/managing-apis/) via the Tyk Dashboard, accessible from your Control Plane.

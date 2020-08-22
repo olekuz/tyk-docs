@@ -4,7 +4,7 @@ date: 2020-05-23
 menu:
   main:
     parent: "Account and Billing"
-weight: 1
+weight: 3
 aliases:
     - /tyk-cloud/account-and-billing/upgrade-free-trial/"
 ---

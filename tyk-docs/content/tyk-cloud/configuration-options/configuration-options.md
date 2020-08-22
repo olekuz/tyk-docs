@@ -12,12 +12,12 @@ This section will cover how you can configure your Tyk Cloud deployment.
 
 For this release we will cover the following options:
 
-- Using plugins
-- Using custom Domains
-- Initial configuration of your Developer Portal
+- [Using plugins](/docs/tyk-cloud/using-plugins/)
+- [Using custom domains](/docs/tyk-cloud/using-custom-domains/)
+- [Initial configuration of your Developer Portal](/docs/tyk-cloud/initial-portal-config/)
 
 {{< note success >}}
 **Note**
  
-The use of plugins and custom domains is dependent on your Tyk Cloud [plan](/docs/account-billing/plans/)
+The use of plugins and custom domains is dependent on your Tyk Cloud [plan](/docs/tyk-cloud/account-billing/plans/)
 {{< /note >}}
