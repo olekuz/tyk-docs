@@ -17,7 +17,7 @@ Click **Get Started** to create your team
 
 ## Step One - Name your Team
 
-Name your [team](/docs/tyk-cloud/troubleshooting-support/glossary/#team). You may find it useful to reflect the names used within your organisation.
+Name your [team](/docs/tyk-cloud/troubleshooting-support/glossary/#team). You may find it useful to reflect the names used within your organazation.
 
 ## Step Two - Invite your Users
 
