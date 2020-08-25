@@ -71,9 +71,7 @@ The provider config for SAML has the following values that can be configured in 
 
 This metadata XML can be signed providing a public X.509 cert and the private key.     
 
-`CertFile` - An X.509 certificate for signing your requests to the IDP
-
-`KeyFile` - A private key for signing your requests to the IDP
+`CertLocation`: An X.509 certificate and the private key for signing your requests to the IDP, this should be one single file with the cert and key concatenated.
 
 `ForceAuthentication` - Ignore any session held by the IDP and force re-login every request.
 
@@ -98,8 +96,7 @@ Example profile configuration:
         "SAMLBaseURL": "https://{HOST}",
         "FailureRedirect": "http://{DASHBOARD_HOST}:{PORT}/?fail=true",
         "IDPMetaDataURL": "{IDP_METADATA_URL}",
-        "CertFile":"myservice.cert",
-        "KeyFile": "myservice.key",
+        "CertLocation":"myservice.cert",
         "ForceAuthentication": false,
         "SAMLEmailClaim": "",
         "SAMLForenameClaim": "",
