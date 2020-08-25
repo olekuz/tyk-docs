@@ -1,6 +1,6 @@
 ---
 date: 2020-03-17T19:13:22Z
-Title: Task 5 - Add your first API
+Title: Task 5 - Deploy your Edge Gateway and add your first API
 menu:
   main:
     parent: "Getting Started with Tyk Cloud"
@@ -11,34 +11,33 @@ aliases:
 
 ## Introduction
 
-You can use Tyk Cloud to manage your APIs effectively and with minimal effort. This page demonstrates how to add a basic API within Tyk Cloud. 
+Now that you have completed onboarding you will deploy your Edge Gateway and setup a very basic API to demonstrate how API are managed within Tyk Cloud.
 
-You'll now setup a very basic API to demonstrate how they are managed within Tyk Cloud.
+## Step One - Deploy your Edge Gateway
+1. From your Control Plane overview you will see the Edge Gateway is in a Not Deployed state. Click on your Edge Gateway to open its overview.
+2. In the top right of your Edge Gateway overview, click **Not Deployed** and choose **Deploy** from the drop-down.
+3. With your Edge Gateway successfully deployed, make a note of the tags assigned to your Edge Gateway. One tag is "edge" and the other is the location of your Edge Gateway. You'll add a tag when creating your API.
 
-## Prerequisites
+## Step Two - Access the Dashboard
 
-From the **Edge Gateways** section of the Deployments screen, make a note of the Tag "edge" assigned to your Edge Gateway. You'll add this tag when creating your API.
+Go to the Control Plane overview and click the dashboard link in the Ingress list. You'll be redirected to the Tyk Dashboard for your [Control Plane](/docs/tyk-cloud/troubleshooting-support/glossary/#control-plane).
 
-## Step One - Access the Dashboard
-
-From the Deployments Overview screen Click **Access Dashboard**. You'll be redirected to the Tyk Dashboard for your [Control Plane](/docs/tyk-cloud/troubleshooting-support/glossary/#control-plane).
-
-## Step Two - Add a New API
+## Step Three - Add a New API
 
 Click the APIs menu item and then click **Add New API**.
 
-## Step Three - Core Settings
+## Step Four - Core Settings
 
-1. Give Your API a name - We'll use "my app" for the rest of this Getting Started journey
-2. Scroll down to the **Target URL** setting and change the URL to https://httpbin.org/
-3. Then scroll down to the Authentication section and select **Open(Keyless)** to keep things simple for this demo
+1. Give Your API a name - We'll use "my app" for the rest of this Getting Started journey.
+2. Scroll down to the **Target URL** setting and use the URL https://httpbin.org/
+3. Then scroll down to the Authentication section and select **Open(Keyless)** to keep things simple for this demo.
 
-## Step Four - Advanced Options
+## Step Five - Advanced Options
 
 1. Click the **Advanced Options** tab of the API Designer.
-2. Scroll down to the **Segment Tags (Node Segmentation)** setting and add the tag (edge) you saw in the Linked Stacks settings. 
+2. Scroll to the **Segment Tags (Node Segmentation)** setting and add the tag (edge) or the location tag you saw for the Edge Gateway. 
 
-## Step Five - Save Your API
+## Step Six - Save Your API
 
 Click **Save** from the API Designer. Your API will now be added to the APIs list.
 
