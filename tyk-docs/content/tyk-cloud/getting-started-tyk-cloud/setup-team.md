@@ -11,17 +11,17 @@ aliases:
 
 ## Introduction
 
-You can use Tyk Cloud to manage your APIs effectively and with minimal effort. Part of that process involves setting up a team. This page walks you through how to do so.
+You can use Tyk Cloud to manage your team as well as your APIs effectively and with minimal effort. Part of that process involves setting up your first team.
 
-Click **Get Started** to create your team
+After creating your Organisation you'll land on the success screen. Click **Get Started**.
 
 ## Step One - Name your Team
 
-Name your [team](/docs/tyk-cloud/troubleshooting-support/glossary/#team). You may find it useful to reflect the names used within your organisation.
+Give your [Team](/docs/tyk-cloud/troubleshooting-support/glossary/#team) a name. You may find it useful to reflect the names used within your organisation.
 
 ## Step Two - Invite your Users
 
-Invite your [users](/docs/tyk-cloud/troubleshooting-support/glossary/#user) to your team. You'll only need their email address and which of the available [roles](/docs/tyk-cloud/troubleshooting-support/glossary/#role) you want to assign to them.
+Invite your [users](/docs/tyk-cloud/troubleshooting-support/glossary/#user) to your team. You'll only need their email address and which of the available [roles](/docs/tyk-cloud/troubleshooting-support/glossary/#role) you want to assign to them. This step is optional and can be completed within the dashboard later.
 
 Out of the box, the following roles are setup:
 
@@ -29,4 +29,4 @@ Out of the box, the following roles are setup:
 * **Team admin**. They can manage deployment activity and users for the team they are added to.
 * **Organisation admin**. They can manage deployment activity and users for a single organisation.
 
-Next you'll create an environment.
+Next you'll create an Environment.
