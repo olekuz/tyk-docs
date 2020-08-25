@@ -1,6 +1,6 @@
 ---
 date: 2020-03-17T19:13:22Z
-Title: Task 4 - Create an Environment
+Title: Task 4 - Set Up Environment and Configure Deployments
 menu:
   main:
     parent: "Getting Started with Tyk Cloud"
@@ -11,29 +11,23 @@ aliases:
 
 ## Introduction
 
-You can use Tyk Cloud to manage your APIs effectively and with minimal effort. To do so, you will need to create an environment that allows you to group deployments with specific purposes, which is what this page shows you how to do. 
+An Environment allows you to group deployments together. In this step we will create an Environment and configure our first Control Plane and Edge Gateway deployments. 
 
 ## Step One - Name your Environment
 
-Give your [Environment](/docs/tyk-cloud/troubleshooting-support/glossary/#environment) a name. You may find it useful to reflect the names used within your organisation.
+Give your [Environment](/docs/tyk-cloud/troubleshooting-support/glossary/#environment) a name. You may find it useful to reflect the names used within your organisation such as Development, Production etc.
 
 ## Step Two - Name your Control Plane
 
-Give your [Control Plane Dashboard](/docs/tyk-cloud/troubleshooting-support/glossary/#control-plane) a name. Again, this is up to you and you may already have an infrastructure you want to re-create in Tyk Cloud.
-
-{{< note success >}}
-**Note**
-  
-For this release of Tyk Cloud, you can only have one Control Plane per Environment.
-{{< /note >}}
+Give your [Control Plane](/docs/tyk-cloud/troubleshooting-support/glossary/#control-plane) a name. Again, this is up to you and you may already have an infrastructure you want to re-create in Tyk Cloud.
 
 ## Step Three - Configure your first Edge Gateway
 
-1. Select the region you want to locate your [Edge Gateway](/docs/tyk-cloud/troubleshooting-support/glossary/#edge) in from the drop-down list.
-2. Give your Edge a name
+1. Select the region you want to locate your [Edge Gateway](/docs/tyk-cloud/troubleshooting-support/glossary/#edge) in from the drop-down list. Your Edge Gateway is not confined to the same region as your Organisation and Control Plane but the amount of regions you have to choose from can be limited depending on your subscription plan.
+2. Give your Edge Gateway a name. 
 
 ## Step Five
 
-Click [Deploy Control Plane and Create an Edge Gateway](/docs/tyk-cloud/troubleshooting-support/glossary/#deploy). You can watch your deployment being created. You will then be taken to the Deployments overview screen within Tyk Cloud.
+Click [Deploy Control Plane and Create an Edge Gateway](/docs/tyk-cloud/troubleshooting-support/glossary/#deploy). You can watch your Control Plane being deployed and your Edge Gateway being created. You will then be taken to the Control Plane overview screen within the Tyk Cloud dashboard.
 
-Next you'll set up your first API from the Tyk Dashboard.
+Next you'll deploy your Edge Gateway and set up your first API from the Tyk Dashboard.
