@@ -12,10 +12,11 @@ url: "/Tyk Cloud/getting-started"
 
 Tyk Cloud delivers an easy API management solution. This page walks you through how to start using the product:
 
-* Creating your account
+* Creating your Tyk Cloud account
 * Your first Organisation
-* Creating your first team
-* Configuring and deploying your Environment
+* Creating your first Team and Environment
+* Configuring and deploying your Control Plane and creating your Edge Gateway
+* Adding and testing your first API
 
 At the end of this process you will have a simple API set up via a Tyk Dashboard and you'll see analytics for this API on the Tyk Activity Dashboard.
 
@@ -26,4 +27,4 @@ Depending on your initial requirements in terms of Environments, Teams and Users
 The following information would be useful so you can set up Tyk Cloud as quickly as possible:
 
 * Team member information including their email address and the role you plan to assign to them.
-* We have some specific terminology used within Tyk Cloud. It would be useful to checkout our [Glossary](/docs/Tyk Cloud/glossary/glossary/) so you understand what we are referring to.
+* We have some specific terminology used within Tyk Cloud. It would be useful to checkout our [Glossary](/docs/tyk-cloud/troubleshooting-support/glossary/) so you understand what we are referring to.
