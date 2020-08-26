@@ -71,7 +71,7 @@ The provider config for SAML has the following values that can be configured in 
 
 This metadata XML can be signed providing a public X.509 cert and the private key.     
 
-`CertLocation`: An X.509 certificate and the private key for signing your requests to the IDP, this should be one single file with the cert and key concatenated.
+`CertLocation`: An X.509 certificate and the private key for signing your requests to the IDP, this should be one single file with the cert and key concatenated. When using internal identity broker, this value should be the id of the certificate uploaded via certificate manager in dashboard, otherwise it should be a path where the certificate is placed.
 
 `ForceAuthentication` - Ignore any session held by the IDP and force re-login every request.
 
