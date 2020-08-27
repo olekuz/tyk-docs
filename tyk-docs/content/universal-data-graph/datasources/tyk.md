@@ -23,4 +23,4 @@ In general, it is advised to first add all APIs you'd wish to add to a data grap
 Then in a second step you'd add these to your data graph.
 
 
-Please note, as of `3.2.0` internal datasorces (`TykRESTDataSource` and `TykGraphQLDataSource`) will be depricated on API level please use `HTTPJSONDataSource` or `GraphQLDataSource` respectively.
+Please note, as of `3.2.0` internal datasorces (`TykRESTDataSource` and `TykGraphQLDataSource`) will be deprecated on API level, please use `HTTPJSONDataSource` or `GraphQLDataSource` respectively.
