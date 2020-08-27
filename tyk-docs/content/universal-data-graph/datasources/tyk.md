@@ -21,3 +21,6 @@ They also add a lot of flexibility as you can add custom middlewares, AuthZ as w
 
 In general, it is advised to first add all APIs you'd wish to add to a data graph as a dedicated API to tyk.
 Then in a second step you'd add these to your data graph.
+
+
+Please note, as of `3.2.0` internal datasorces (`TykRESTDataSource` and `TykGraphQLDataSource`) will be depricated on API level please use `HTTPJSONDataSource` or `GraphQLDataSource` respectively.
