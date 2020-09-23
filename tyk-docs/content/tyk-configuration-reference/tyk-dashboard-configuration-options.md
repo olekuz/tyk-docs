@@ -373,7 +373,7 @@ The Tyk Dashboard can bind the Dashboard application to a specific domain name. 
 The hostname to bind the Dashboard to. This must be a proper hostname and **not** `localhost`.
 
 #### <a name="host_config.portal_domains"></a>host_config.portal_domains 
- ##### Environment variable: TYK_DB_HOSTCONFIG_PORTALDOMAINS
+##### Environment variable: TYK_DB_HOSTCONFIG_PORTALDOMAINS
 
 It is possible to hard-code portal domains (these override settings set by the Dashboard for routing purposes). Set `Domainname:ORGID` here so that Tyk can route domain names for the portals of those organisations.
 
