@@ -30,7 +30,7 @@ Key sessions are created and updated using the Tyk Gateway API, in order to set 
 
 ### How to delete expired tokens
 
-In order to not clutter the database with expired tokens, Tyk provides a way to force a TTL on all keys, this is a maximum time to live and should always be significantly larger than your maximum expiry setting. This setting must be set on a per-API basis.
+In order to not clutter the database with expired tokens, Tyk provides a way to force a TTL on all keys, which will delete them from Redis.
 
-To enforce a TTL, set the `session_lifetime` value (in seconds) in your API Definition Object, this will need to be managed via the Dashboard REST API.
+[Read more here](/docs/basic-config-and-security/security/authentication-authorization/physical-token-expiry/).
 
