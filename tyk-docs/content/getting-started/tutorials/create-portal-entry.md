@@ -37,7 +37,7 @@ That's it, now you need to create the home page.
 
 ### Step 3: Create the home page
 
-![Create Page One](/docs/img/2.10/home_page_template.png)
+![Create Page One](/img/2.10/home_page_template.png)
 
 From **Pages**" click **Add Page** and give it any title you like (e.g. "Welcome") and select **Default Home Page Template** from the **Page Type** drop-down list. Ensure **Check to make this page the home page** is selected.
 
@@ -69,7 +69,7 @@ Not all APIs are visible to the Portal, only the ones you tell it about, so from
 
 Save the API Catalogue entry by clicking **Update**.
 
-![Catalogue Entry](/docs/img/2.10/portal_confirmation_on_prem.png)
+![Catalogue Entry](/img/2.10/portal_confirmation_on_prem.png)
 
 ### Step 6: Set your Portal hostname
 
@@ -80,7 +80,7 @@ This process will bind your organisations' Portal to the domain name you've spec
 {{< note success >}}
 **Note**  
 
-If you installed [Tyk On-Premises for Vagrant](/docs/getting-started/installation/with-tyk-on-premises/install-tyk-pro-premises-vagrant/), you will have created a `etc/hosts` entry of `portal-instance.com`. You should enter this hostname in the drop-down.
+If you installed [Tyk On-Premises for Vagrant](/getting-started/installation/with-tyk-on-premises/install-tyk-pro-premises-vagrant/), you will have created a `etc/hosts` entry of `portal-instance.com`. You should enter this hostname in the drop-down.
 {{< /note >}}
 
 {{< note success >}}

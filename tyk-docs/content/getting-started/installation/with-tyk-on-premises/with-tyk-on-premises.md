@@ -23,18 +23,18 @@ The full Tyk On-Premises system consists of:
 {{< note success >}}
 **Note**  
 
-For a production environment, we recommend that the Gateway, Dashboard and Pump are installed on separate machines. If installing multiple Gateways, you should install each on a separate machine. For more information on deploying to a production environment, see [Planning for Production](/docs/planning-for-production/).
+For a production environment, we recommend that the Gateway, Dashboard and Pump are installed on separate machines. If installing multiple Gateways, you should install each on a separate machine. For more information on deploying to a production environment, see [Planning for Production](/planning-for-production/).
 {{< /note >}}
 
 ## Installing Tyk On-Premises: Managed releases and package options
 
 Tyk can be installed on almost any Linux environment, we've also created Docker containers that can be deployed and configured easily. Supported by the Tyk team, you can get Tyk for:
 
-* [Ubuntu](/docs/getting-started/installation/with-tyk-on-premises/on-ubuntu/) (x86, ARM and AMD64)
-* [Red Hat](/docs/getting-started/installation/with-tyk-on-premises/redhat-rhel-centos/) / CentOS (x86, ARM and AMD64)
+* [Ubuntu](/getting-started/installation/with-tyk-on-premises/on-ubuntu/) (x86, ARM and AMD64)
+* [Red Hat](/getting-started/installation/with-tyk-on-premises/redhat-rhel-centos/) / CentOS (x86, ARM and AMD64)
 * [Tarballs](https://github.com/TykTechnologies/tyk/releases) for any other Linux variant (x86, ARM and AMD64)
 * [Docker images](https://hub.docker.com/u/tykio/)
-* [Heroku](/docs/getting-started/with-tyk-on-premises/installation/on-heroku/)
+* [Heroku](/getting-started/with-tyk-on-premises/installation/on-heroku/)
 
 We distribute Tyk via Packagecloud.io APT and Yum repositories, as well as via our [Github repository for the Tarballs](http://upstart.ubuntu.com/cookbook/).
 
@@ -54,7 +54,7 @@ By default the Tyk Gateway uses MongoDB. You can also use the following:
 {{< note success >}}
 **Note**  
 
-If you are using DocumentDB, [capped collections](/docs/analytics-and-reporting/capping-analytics-data-storage/) are not supported. See [here](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html) for more details.
+If you are using DocumentDB, [capped collections](/analytics-and-reporting/capping-analytics-data-storage/) are not supported. See [here](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html) for more details.
 {{< /note >}}
 
 ### Tyk Dashboard

@@ -16,7 +16,7 @@ Installing Tyk on Ubuntu is very straightforward, follow the guides and tutorial
 {{< note success >}}
 **Note**  
 
-For a production environment, we recommend that the Gateway, Dashboard and Pump are installed on separate machines. If installing multiple Gateways, you should install each on a separate machine. See [Planning for Production](/docs/planning-for-production/) For more details.
+For a production environment, we recommend that the Gateway, Dashboard and Pump are installed on separate machines. If installing multiple Gateways, you should install each on a separate machine. See [Planning for Production](/planning-for-production/) For more details.
 {{< /note >}}
 
 
@@ -49,7 +49,7 @@ By default the Tyk Gateway uses MongoDB. You can also use the following:
 {{< note success >}}
 **Note**  
 
-If you are using DocumentDB, [capped collections](/docs/analytics-and-reporting/capping-analytics-data-storage/) are not supported. See [here](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html) for more details.
+If you are using DocumentDB, [capped collections](/analytics-and-reporting/capping-analytics-data-storage/) are not supported. See [here](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html) for more details.
 {{< /note >}}
 
 ### Tyk Dashboard
@@ -81,6 +81,6 @@ sudo apt-get install -y redis-server
 
 We then recommend installing Tyk in the following order:
 
-- [Dashboard](/docs/getting-started/installation/with-tyk-on-premises/on-ubuntu/dashboard/)
-- [Pump](/docs/getting-started/installation/with-tyk-on-premises/on-ubuntu/analytics-pump/)
-- [Gateway](/docs/getting-started/installation/with-tyk-on-premises/on-ubuntu/gateway/)
+- [Dashboard](/getting-started/installation/with-tyk-on-premises/on-ubuntu/dashboard/)
+- [Pump](/getting-started/installation/with-tyk-on-premises/on-ubuntu/analytics-pump/)
+- [Gateway](/getting-started/installation/with-tyk-on-premises/on-ubuntu/gateway/)

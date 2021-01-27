@@ -35,7 +35,7 @@ Enabling detailed logging is very simple and it can be done with either of the f
 
 > This will enable detailed recording for all APIs and it also requires the gateway to be restarted.
 
-- Enable detailed analytics at the API level. This involves updating your [API definition](/docs/tyk-gateway-api/api-definition-objects) to include this at the root level:
+- Enable detailed analytics at the API level. This involves updating your [API definition](/tyk-gateway-api/api-definition-objects) to include this at the root level:
 
 ```{.copyWrapper}
 "enable_detailed_recording": true

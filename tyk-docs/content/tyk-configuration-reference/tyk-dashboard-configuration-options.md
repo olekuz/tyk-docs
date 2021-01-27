@@ -14,7 +14,7 @@ The Dashboard configuration file can be found in the `tyk-dashboard` folder and 
 
 ### Environment Variables
 
-Environment variables can be used to override the settings defined in the configuration file. See [Environment Variables](/docs/tyk-configuration-reference/environment-variables/) for details. Where an environment variable is specified, its value will take precedence over the value in the configuration file.
+Environment variables can be used to override the settings defined in the configuration file. See [Environment Variables](/tyk-configuration-reference/environment-variables/) for details. Where an environment variable is specified, its value will take precedence over the value in the configuration file.
 
 The file will look like the sample below, the various fields are explained in the following sections:
 
@@ -173,7 +173,7 @@ The file will look like the sample below, the various fields are explained in th
 
 Setting this value will change the port that Tyk Dashboard listens on. By default Tyk will try to listen on port `3000`.
 
-> **NOTE**: You may see `net::ERR_CONNECTION_REFUSED` errors in the browser console if you don't have port 5000 open. See [Port 5000 Errors in the Browser Console](/docs/troubleshooting/tyk-dashboard/port-5000-errors/). Port 5000 is no longer required from v2.9.3.
+> **NOTE**: You may see `net::ERR_CONNECTION_REFUSED` errors in the browser console if you don't have port 5000 open. See [Port 5000 Errors in the Browser Console](/troubleshooting/tyk-dashboard/port-5000-errors/). Port 5000 is no longer required from v2.9.3.
 
 ### tyk_api_config
 
@@ -211,7 +211,7 @@ As of Tyk Gateway **v2.0** and Tyk Dashboard **v1.0** all Tyk API Gateway nodes 
 {{< note success >}}
 **Note**  
 
-This value should match with the [`node_secret`](/docs/tyk-configuration-reference/tyk-gateway-configuration-options/#a-name-node-secret-a-node-secret) Gateway configuration option value.
+This value should match with the [`node_secret`](/tyk-configuration-reference/tyk-gateway-configuration-options/#a-name-node-secret-a-node-secret) Gateway configuration option value.
 {{< /note >}}
 
     
@@ -220,7 +220,7 @@ Each node communicates with the Dashboard via a shared secret (this setting) and
 #### admin_secret
 
 This secret is to be used by a special set of endpoints that we call "Admin APIs". This API is part of the super-admin context and therefore has a separate endpoint prefix `/admin`. It also requires a special auth header called `admin-auth`.
-This purpose of these endpoints is to allow functionality that regular Dashboard users should not have, such as create new organisations, create super users etc. See the [Admin API](/docs/dashboard-admin-api/) for more information on these endpoints.
+This purpose of these endpoints is to allow functionality that regular Dashboard users should not have, such as create new organisations, create super users etc. See the [Admin API](/dashboard-admin-api/) for more information on these endpoints.
 
 ### mongo_url
 
@@ -296,7 +296,7 @@ You can also specify multiple Redis hosts here. Tyk will use this array if it is
 
 ### redis_addrs
 
-This is new from v1.9.3 and replaces `redis_hosts` for configuring Redis clusters. See [Redis Cluster and Tyk Dashboard](/docs/tyk-configuration-reference/redis-cluster/#a-nameredis-cluster-dashboarda-redis-cluster--tyk-dashboard) for more info.
+This is new from v1.9.3 and replaces `redis_hosts` for configuring Redis clusters. See [Redis Cluster and Tyk Dashboard](/tyk-configuration-reference/redis-cluster/#a-nameredis-cluster-dashboarda-redis-cluster--tyk-dashboard) for more info.
 
 ### force_api_defaults
 
@@ -320,11 +320,11 @@ To update a key by its hash, set this option to `true`.
 
 ### enable_master_keys
 
-If this is set to true, session objects (key definitions) that do not have explicit access rights set will be allowed by Tyk. This means that keys that are created have access to ALL APIs, which in many cases is unwanted behaviour unless you are sure about what you are doing. To use this setting also requires the corresponding Gateway configuration setting [allow_master_keys](/docs/tyk-configuration-reference/tyk-gateway-configuration-options/#a-name-allow-master-keys-a-allow-master-keys) to be set to `true`.
+If this is set to true, session objects (key definitions) that do not have explicit access rights set will be allowed by Tyk. This means that keys that are created have access to ALL APIs, which in many cases is unwanted behaviour unless you are sure about what you are doing. To use this setting also requires the corresponding Gateway configuration setting [allow_master_keys](/tyk-configuration-reference/tyk-gateway-configuration-options/#a-name-allow-master-keys-a-allow-master-keys) to be set to `true`.
 
 ### email_backend
 
-Tyk supports an interface-based email back-end system. We support `mandrill`, `sendgrid`, `amazonses` and `mailgun`. See [Outbound Email Configuration](/docs/tyk-configuration-reference/outbound-email-configuration/) for more details on configuring these different providers.
+Tyk supports an interface-based email back-end system. We support `mandrill`, `sendgrid`, `amazonses` and `mailgun`. See [Outbound Email Configuration](/tyk-configuration-reference/outbound-email-configuration/) for more details on configuring these different providers.
 
 #### enable_email_notifications
 
@@ -332,7 +332,7 @@ Set to `true` to have Tyk send emails for things such as key approvals and porta
 
 #### code
 
-The code of the back-end to use, `mandrill`, `sendgrid`, `amazonses` and `mailgun` are supported. See [Outbound Email Configuration](/docs/tyk-configuration-reference/outbound-email-configuration/) for more details on configuring these different providers.
+The code of the back-end to use, `mandrill`, `sendgrid`, `amazonses` and `mailgun` are supported. See [Outbound Email Configuration](/tyk-configuration-reference/outbound-email-configuration/) for more details on configuring these different providers.
 
 #### email_backend.settings
 
@@ -458,7 +458,7 @@ Array of allowed cipher suites as defined at https://golang.org/pkg/crypto/tls/#
 
 A boolean value to control whether the server selects the preferred ciphersuite for the client, or the preferred ciphersuite for the server. If set to `true`, the server preferences in the order of the elements listed in `ssl_ciphers` is used.
     
-For more information see [TLS and SSL](/docs/basic-config-and-security/security/tls-and-ssl/)
+For more information see [TLS and SSL](/basic-config-and-security/security/tls-and-ssl/)
 
 ### security
 
@@ -614,7 +614,7 @@ If set to `true`, it restricts an account to a single session. When an account l
 
 ### sso_permission_defaults
 
-Specify permissions of the user who logged in using Admin SSO API (for example Tyk Identity Broker). See [Dashboard Admin SSO API](/docs/tyk-apis/tyk-dashboard-admin-api/sso/) for more details.
+Specify permissions of the user who logged in using Admin SSO API (for example Tyk Identity Broker). See [Dashboard Admin SSO API](/tyk-apis/tyk-dashboard-admin-api/sso/) for more details.
 
 ### sso_custom_login_url
 

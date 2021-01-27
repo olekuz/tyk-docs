@@ -34,7 +34,7 @@ A person who is a member of a Team with a set of permissions.
 
 ### Role
 
-A set of data and access permissions that can be applied to a user or team of users. See [User Roles](/docs/tyk-cloud/reference-docs/user-roles/) for more details.
+A set of data and access permissions that can be applied to a user or team of users. See [User Roles](/tyk-cloud/reference-docs/user-roles/) for more details.
 
 ### Profile
 
@@ -78,7 +78,7 @@ The Tyk Analytics Dashboard to manage APIs and services.
 
 ### Retirement
 
-Where an Organisation has expired due to either a subscription failure or cancellation and is now within a "retirement" period of 30 days, during which an [Billing Admin](/docs/tyk-cloud/reference-docs/user-roles/#user-roles-within-tyk-cloud) can reinstate full functionality by updating or creating a new subscription.
+Where an Organisation has expired due to either a subscription failure or cancellation and is now within a "retirement" period of 30 days, during which an [Billing Admin](/tyk-cloud/reference-docs/user-roles/#user-roles-within-tyk-cloud) can reinstate full functionality by updating or creating a new subscription.
 
 ## Action Terms
 
@@ -150,7 +150,7 @@ When a deployment is being undeployed.
 
 ## Roles and Permissions
 
-See [User Roles](/docs/reference-docs/user-roles/) for more details
+See [User Roles](/reference-docs/user-roles/) for more details
 
 ### Super Administrator
 

@@ -47,7 +47,7 @@ The algorithm used by the global rate limiter will be the same algorithm configu
  
 From the Dashboard, you can specify the Global Rate Limits from the API Designer: 
 
-![global-limits](/docs/img/2.10/rate_limits_quotas.png)
+![global-limits](/img/2.10/rate_limits_quotas.png)
 
 ### Can I disable the rate limiter?
 
@@ -71,9 +71,9 @@ Not yet, though IP-based rate limiting is possible using custom pre-processor mi
 
 2.  Ensure the new key has access to the APIs you wish it work with by selecting the API from **Access Rights** > **Choose API**. Turn the **Set per API Limits and Quota** options on.
 
-3.  From the **Rate Limit** section, select the **rate** (number of requests) and the **per seconds** period. If the period is not available in the drop down, you can set it to a custom value using the [Tyk Dashboard API](/docs/tyk-apis/tyk-dashboard-api/api-definitions/).
+3.  From the **Rate Limit** section, select the **rate** (number of requests) and the **per seconds** period. If the period is not available in the drop down, you can set it to a custom value using the [Tyk Dashboard API](/tyk-apis/tyk-dashboard-api/api-definitions/).
     
-![Tyk API Gateway Rate Limits](/docs/img/2.10/api_rate_limits_keys.png)
+![Tyk API Gateway Rate Limits](/img/2.10/api_rate_limits_keys.png)
 
 4.  Save the token, it will be created instantly.
 

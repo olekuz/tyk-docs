@@ -81,9 +81,9 @@ There are 3 different pumps we want to look at:
 
 This Pump simply saves all individual requests across every organisation to a collection called `tyk_analytics`. Each request will be stored as a single document.
 
-The Dashboard will use this collection to show requests from the **API Usage Data > Log Browser** menu, unless [use_sharded_analytics](/docs/tyk-configuration-reference/tyk-dashboard-configuration-options/) are set to true, in which case, `Log Browser` will be populated using the `mongo-pump-selective` pump below.
+The Dashboard will use this collection to show requests from the **API Usage Data > Log Browser** menu, unless [use_sharded_analytics](/tyk-configuration-reference/tyk-dashboard-configuration-options/) are set to true, in which case, `Log Browser` will be populated using the `mongo-pump-selective` pump below.
 
-This collection [should be capped](/docs/tyk-configuration-reference/tyk-pump-configuration/tyk-pump-configuration/#capping-analytics-data) due to the number of individual documents.
+This collection [should be capped](/tyk-configuration-reference/tyk-pump-configuration/tyk-pump-configuration/#capping-analytics-data) due to the number of individual documents.
 
 ```{.json}
 {
@@ -135,7 +135,7 @@ This pump stores data in collections called `z_tyk_analyticz_{ORG ID}`.
 
 If the Dashboard configuration key `use_sharded_keys` equals `true`, then the Dashboard will use these collections to populate the `Log Browser`.
 
-This collection [should be capped](/docs/tyk-configuration-reference/tyk-pump-configuration/#capping-analytics-data) due to the number of individual documents.
+This collection [should be capped](/tyk-configuration-reference/tyk-pump-configuration/#capping-analytics-data) due to the number of individual documents.
 ```{.json}
 {
   ...

@@ -9,5 +9,5 @@ This functionality can be useful if you need to pass additional information from
 Since we are basically declaring headers' prefix as tags Tyk as expected from tags will also do aggregations per tag for the API calls.
 If you don't want to have aggregation for these tags you can add them or their prefixes to `ignore_tag_prefix_list` in `pump.conf` in case the pump is writing the aggregated analytics to MongoDB. Alternatively, in case MDCB is doing the writing to mongoDB, set the same field in `tyk_sink.conf` at root level (please note that this field is replacing `"aggregates_ignore_tags"` which is still working but will eventually be deprecated).
 
-See [Log Browser](/docs/analytics-and-reporting/log-browser/) for more details on setting via the Dashboard.
+See [Log Browser](/analytics-and-reporting/log-browser/) for more details on setting via the Dashboard.
 

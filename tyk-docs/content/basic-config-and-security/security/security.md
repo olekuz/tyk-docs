@@ -28,7 +28,7 @@ To find a balance between performance and security, the default algorithm used b
 
 It is possible to disable key hashing in Tyk using `hash_keys` set to `false` in the `tyk.conf` file and the `tyk_analytics.conf` file.
 
-See the [Gateway Configuration Options](/docs/configure/tyk-gateway-configuration-options/) for more details.
+See the [Gateway Configuration Options](/configure/tyk-gateway-configuration-options/) for more details.
 
 #### Custom Key Hash Algorithms
 
@@ -68,15 +68,15 @@ and call it with the new optional query parameter `hashed=true`. So the new form
 - we also have the same optional parameter for endpoint `DELETE /keys/{keyName}?hashed=true` and call it with the optional query parameter `hashed=true`. So the format is `GET /keys/{keyName}?hashed=true"`
 - The same optional parameter is available for the `DELETE /keys/{keyName}?hashed=true` endpoint
 
-See the Keys section of [Tyk Gateway API Swagger page](/docs/tyk-gateway-api/) for more details.
+See the Keys section of [Tyk Gateway API Swagger page](/tyk-gateway-api/) for more details.
 
 ### TLS and SSL
 
-Tyk supports TLS connections and Mutual TLS. All TLS connections also support HTTP/2. Tyk also supports Let's Encrypt. See [TLS and SSL](/docs/security/tls-and-ssl/) for more details.
+Tyk supports TLS connections and Mutual TLS. All TLS connections also support HTTP/2. Tyk also supports Let's Encrypt. See [TLS and SSL](/security/tls-and-ssl/) for more details.
 
 ### Whitelisting
 
-As part of using Mutual TLS, you can create a whitelist of trusted certificates. See [Authorisation](/docs/basic-config-and-security/security/tls-and-ssl/mutual-tls/#authorisation) for more details.
+As part of using Mutual TLS, you can create a whitelist of trusted certificates. See [Authorisation](/basic-config-and-security/security/tls-and-ssl/mutual-tls/#authorisation) for more details.
 
 ### Certificate Pinning
 
@@ -93,10 +93,10 @@ Tyk supports various ways to secure your APIs, including:
 * OAuth 2.0
 * OpenID Connect
 
-See [Authentication and Authorization](/docs/basic-config-and-security/security/authentication-authorization/) for more details.
+See [Authentication and Authorization](/basic-config-and-security/security/authentication-authorization/) for more details.
 
 ### Security Policies
 
-A Tyk security policy incorporates several security options that can be applied to an API key. These include [Partioned Policies](/docs/security/security-policies/partitioned-policies/) and securing by [Method and Path](/docs/security/security-policies/secure-apis-method-path/).
+A Tyk security policy incorporates several security options that can be applied to an API key. These include [Partioned Policies](/security/security-policies/partitioned-policies/) and securing by [Method and Path](/security/security-policies/secure-apis-method-path/).
 
-See [Security Policies](/docs/security/security-policies/) for more details.
+See [Security Policies](/security/security-policies/) for more details.

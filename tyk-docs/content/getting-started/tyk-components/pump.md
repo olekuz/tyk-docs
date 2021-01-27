@@ -13,7 +13,7 @@ The Tyk Pump is our [open source](https://github.com/TykTechnologies/tyk-pump) a
 
 ### Tyk Pump Data Flow
 
-![Tyk Pump Data Transport Service](/docs/img/diagrams/pump3.png)
+![Tyk Pump Data Transport Service](/img/diagrams/pump3.png)
 
 ### Other Supported Backend Services
 
@@ -33,6 +33,6 @@ The following services can be configured in your `pump.conf` file:
 * Logz.io
 * Kafka
 
-See [Tyk Pump Configuration](/docs/tyk-configuration-reference/tyk-pump-configuration/tyk-pump-configuration/) for more details.
+See [Tyk Pump Configuration](/tyk-configuration-reference/tyk-pump-configuration/tyk-pump-configuration/) for more details.
 
 Tyk Pump can be horizontally scaled without causing duplicate data.

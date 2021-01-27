@@ -48,4 +48,4 @@ The API definition should have this:
 
 ### Supported Response Plugin Languages
 
-See [Supported Plugins](/docs/plugins/supported-languages/#plugin-support) for details on which languages the response plugin is supported in.
+See [Supported Plugins](/plugins/supported-languages/#plugin-support) for details on which languages the response plugin is supported in.

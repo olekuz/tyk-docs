@@ -13,11 +13,11 @@ The Master Data Centre (DC) will contain all the standard components of a standa
 We will assume that your account manager has provided you with a valid MDCB and Dashboard License and the command to enable you to download the MDCB package.
 We will assume that the following components are up and running in your master DC:
 
-* MongoDB (check [supported versions](/docs/#supported-mongodb-and-redis-versions))
-* Redis (check [supported versions](/docs/#supported-mongodb-and-redis-versions))
+* MongoDB (check [supported versions](/#supported-mongodb-and-redis-versions))
+* Redis (check [supported versions](/#supported-mongodb-and-redis-versions))
 * Dashboard
 * Gateway / Gateway Cluster
-* Working Tyk-Pro [On Premises installation](/docs/getting-started/installation/with-tyk-on-premises/)
+* Working Tyk-Pro [On Premises installation](/getting-started/installation/with-tyk-on-premises/)
 
 ### Default Ports
 
@@ -131,7 +131,7 @@ Once installed, modify your `/opt/tyk-sink/tyk_sink.conf` file as follows:
 |`storage.redis_use_ssl` |   bool  |If set, MDCB will assume the connection to Redis is encrypted. (use with Redis providers that support in-transit encryption)|
 |`redis_ssl_insecure_skip_verify` |   bool  |Allows usage of self-signed certificates when connecting to an encrypted Redis database.|
 |`security` |   object  ||
-|`security.private_certificate_encoding_secret` |   string  |Allows MDCB to use Mutual TLS. This requires that `server_options.use_ssl` is set to true. See [Mutual TLS](/docs/basic-config-and-security/security/tls-and-ssl/mutual-tls/#a-name-mdcb-a-mdcb) for more details.|
+|`security.private_certificate_encoding_secret` |   string  |Allows MDCB to use Mutual TLS. This requires that `server_options.use_ssl` is set to true. See [Mutual TLS](/basic-config-and-security/security/tls-and-ssl/mutual-tls/#a-name-mdcb-a-mdcb) for more details.|
 |`hash_keys` |   bool  |Set to true if you are using a hashed configuration installation of Tyk, otherwise set to false.|
 |`session_timeout` |   int  |Number of seconds before the gateways are forced to re-login. Default is 86400 (24 hours).|
 |`forward_analytics_to_pump` |   bool  |Instead of sending analytics directly to MongoDB, MDCB can send analytics to Redis. This will allow [tyk-pump] (https://github.com/TykTechnologies/tyk-pump) to pull analytics from Redis and send to your own data sinks.|
@@ -218,7 +218,7 @@ May 06 11:50:42 master tyk-sink[1798]: time="2018-05-06T11:50:42Z" level=info ms
 
 Before a worker node can connect to MDCB, it is important to enable the organisation that owns all the APIs to be distributed to be allowed to utilise Tyk MDCB. To do this, the organisation record needs to be modified with two flags using the [Tyk Dashboard Admin API](https://tyk.io/docs/dashboard-admin-api/).
 
-To make things easier, we will first set a few [environment variables](/docs/tyk-configuration-reference/environment-variables/):
+To make things easier, we will first set a few [environment variables](/tyk-configuration-reference/environment-variables/):
 
 1.`export DASH_ADMIN_SECRET=<YOUR_ADMIN_SECRET>`
 
@@ -232,7 +232,7 @@ This is the URL you use to access the Dashboard (including the port if not using
 
 You can find your organisation id in the Dashboard, under your user account details.
 
-![Org ID](/docs/img/2.10/user_api_id.png)
+![Org ID](/img/2.10/user_api_id.png)
 
 4.Send a GET request to the Dashboard API to `/admin/organisations/$ORG_ID` to retrieve the organisation object. In the example below, we are redirecting the output json to a file `myorg.json` for easy editing.
 

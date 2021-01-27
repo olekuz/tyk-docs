@@ -54,4 +54,4 @@ Response provides the token as `access_token` in the returned JSON which can the
 
 ### Sequence Diagram
 
-![Username and Password Grant](/docs/img/diagrams/username-and-password-grant.png)
+![Username and Password Grant](/img/diagrams/username-and-password-grant.png)

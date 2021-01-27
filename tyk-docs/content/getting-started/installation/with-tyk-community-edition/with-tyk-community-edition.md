@@ -10,7 +10,7 @@ url: "/getting-started/installation/with-tyk-community-edition"
 
 ## What is the Tyk Community Edition?
 
-The Tyk Community Edition is the open-source API Gateway that is developed by our community and supported by our community members and advocates (with some help from the Tyk Technologies team). The Tyk Community Edition is a [Tyk Gateway](/docs/getting-started/tyk-components/gateway/) only edition:
+The Tyk Community Edition is the open-source API Gateway that is developed by our community and supported by our community members and advocates (with some help from the Tyk Technologies team). The Tyk Community Edition is a [Tyk Gateway](/getting-started/tyk-components/gateway/) only edition:
 
 
 ## Prerequisites

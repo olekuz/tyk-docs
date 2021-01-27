@@ -101,7 +101,7 @@ Usage of ./tyk-auth-proxy:
 
 The TIB flow is quite complex, the initial authentication request must go via the broker, before being handled by the Tyk Gateway:
 
-![Tyk Identity Broker OAuth Flow](/docs/img/diagrams/idbroker.png)
+![Tyk Identity Broker OAuth Flow](/img/diagrams/idbroker.png)
 
 ### Example TIB implementation with GitHub and OAuth 2.0
 

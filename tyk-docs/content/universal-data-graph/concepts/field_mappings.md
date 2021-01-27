@@ -84,4 +84,4 @@ Nested path's are also OK using dots to seperate each segment of the JSON path, 
 
 See below how to configure the field mapping for each individual field.  
 
-![Create New API](/docs/img/dashboard/udg/concepts/field_mappings.png)
+![Create New API](/img/dashboard/udg/concepts/field_mappings.png)

@@ -27,7 +27,7 @@ In order to do this, Tyk Multi-Cloud Gateways use a compressed RPC channel back 
 
 ### Getting Started
 
-To get started with Tyk Multi-Cloud, [create an account](/docs/getting-started/installation/with-tyk-multi-cloud/create-an-account/).
+To get started with Tyk Multi-Cloud, [create an account](/getting-started/installation/with-tyk-multi-cloud/create-an-account/).
 
 ## What are the benefits of Multi-Cloud ?
 

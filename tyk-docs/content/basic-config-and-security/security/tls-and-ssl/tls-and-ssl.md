@@ -12,7 +12,7 @@ TLS connections are supported for all Tyk components.
 
 We enable SSL in Tyk Gateway and Dashboard by modifying the `tyk.conf` and `tyk_analytics.conf` files.
 
-If you need to, [generate self-signed certs](/docs/basic-config-and-security/security/tls-and-ssl/mutual-tls/#a-name-tips-tricks-a-tips-and-tricks) first and come back.
+If you need to, [generate self-signed certs](/basic-config-and-security/security/tls-and-ssl/mutual-tls/#a-name-tips-tricks-a-tips-and-tricks) first and come back.
 
 #### Add/Replace these sections in the conf files
 
@@ -105,7 +105,7 @@ You can enter multiple certificates, that link to multiple domain names, this en
 
 The `min_version` setting is optional, you can set it to have Tyk only accept connections from TLS V1.0, 1.1, 1.2 or 1.3 respectively.
 
-Finally, set the [host_config.generate_secure_paths](/docs/tyk-configuration-reference/tyk-dashboard-configuration-options/#host_configgenerate_secure_paths) flag to `true` in your `tyk_analytics.conf`
+Finally, set the [host_config.generate_secure_paths](/tyk-configuration-reference/tyk-dashboard-configuration-options/#host_configgenerate_secure_paths) flag to `true` in your `tyk_analytics.conf`
 
 
 #### Values for TLS Versions
@@ -259,4 +259,4 @@ Use `proxy.transport.ssl_force_common_name_check` in your API definition.
 
 ## Internal Proxy Setup
 
-From v2.9.3 you can also specify a custom proxy and set the minimum TLS versions and any SSL ciphers within your API definitions. See [Internal Proxy Setup](/docs/tyk-apis/tyk-gateway-api/api-definition-objects/proxy-settings/#internal-proxy-setup) for more details.
+From v2.9.3 you can also specify a custom proxy and set the minimum TLS versions and any SSL ciphers within your API definitions. See [Internal Proxy Setup](/tyk-apis/tyk-gateway-api/api-definition-objects/proxy-settings/#internal-proxy-setup) for more details.

@@ -22,13 +22,13 @@ Every new Tyk Cloud account is assigned to our 14 free trial. You have the follo
 
 ## What happens if my free trial expires?
 
-If your free trial ends without you upgrading, your account enters what we call [retirement](/docs/tyk-cloud/troubleshooting-support/glossary/#retirement).
+If your free trial ends without you upgrading, your account enters what we call [retirement](/tyk-cloud/troubleshooting-support/glossary/#retirement).
 
 ## What does upgrading a free trial account involve?
 
 To upgrade your free trial, you (as a Billing Admin) need to:
-* Add a [payment method](/docs/account-billing/add-payment-method/) to your organisation
-* Select a new [plan](/docs/account-billing/plans/) from our list
+* Add a [payment method](/account-billing/add-payment-method/) to your organisation
+* Select a new [plan](/account-billing/plans/) from our list
 
 ## I've trialled more than what my desired paid plan allows.
 

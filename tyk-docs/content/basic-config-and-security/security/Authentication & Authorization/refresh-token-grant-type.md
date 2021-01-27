@@ -58,4 +58,4 @@ Response provides a new token as `access_token` and a new refresh token as `refr
 
 ### Sequence Diagram
 
-![Refresh Token Grant](/docs/img/diagrams/refresh-token-grant.png)
+![Refresh Token Grant](/img/diagrams/refresh-token-grant.png)

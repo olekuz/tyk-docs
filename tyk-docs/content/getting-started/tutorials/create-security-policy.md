@@ -10,7 +10,7 @@ menu:
 
 A security policy encapsulates several options that can be applied to a key. It acts as a template that can override individual sections of an API key (or identity) in Tyk.
 
-See [What is a Security Policy?](/docs/getting-started/key-concepts/what-is-a-security-policy/) for more details.
+See [What is a Security Policy?](/getting-started/key-concepts/what-is-a-security-policy/) for more details.
 
 {{< tabs_start >}}
 {{< tab_start "Cloud Classic" >}}

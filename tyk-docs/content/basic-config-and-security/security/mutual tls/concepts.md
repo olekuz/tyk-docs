@@ -72,7 +72,7 @@ generating certificate SHA256 fingerprint using the following command:
 openssl x509 -noout -fingerprint -sha256 -inform pem -in <cert>.
 ```
 
-You may notice that you can't get the raw certificate back, only its meta information. This is to ensure security. Certificates with private keys have special treatment and are encoded before storing: if a private key is found it gets encrypted with the AES256 algorithm 3 using `security.private_certificate_encoding_secret` from the Gateway configuration file (`tyk.conf`)and if it is empty, it will fallback to the value in the field [secret](/docs/configure/tyk-gateway-configuration-options/#a-name-secret-a-secret).
+You may notice that you can't get the raw certificate back, only its meta information. This is to ensure security. Certificates with private keys have special treatment and are encoded before storing: if a private key is found it gets encrypted with the AES256 algorithm 3 using `security.private_certificate_encoding_secret` from the Gateway configuration file (`tyk.conf`)and if it is empty, it will fallback to the value in the field [secret](/configure/tyk-gateway-configuration-options/#a-name-secret-a-secret).
 
 ### MDCB 
 Mutual TLS configuration in an MDCB environment has specific requirements. An MDCB environment usually consists of a management environment and slaves who, using MDCB, sync configuration. 
@@ -90,7 +90,7 @@ definition:
 
 From the Tyk Dashboard, to do the same from the **API Designer Core settings** section you need to select **Mutual TLS** authentication mode from the **Authentication** section, and whitelist the certificates using the built-in widget, as below:
 
-![mutual_tls_auth](/docs/img/2.10/mtls_auth_cert.png)
+![mutual_tls_auth](/img/2.10/mtls_auth_cert.png)
 
 If all your APIs have a common set of certificates, you can define them in your Gateway configuration file via the `security.certificates.apis` key - string array of certificate IDs or paths.
 
@@ -154,9 +154,9 @@ the only wildcard value accepted would be `*.production.myupstream.com`.  The va
 
 To do the same via the Tyk Dashboard, go to the **API Designer** > **Advanced Options** panel > **Upstream certificates** section.
 
-![upstream_cert](/docs/img/2.10/attach_upstream_cert.png)
+![upstream_cert](/img/2.10/attach_upstream_cert.png)
 
-![add_upstream_cert](/docs/img/2.10/add_upstream_cert.png)
+![add_upstream_cert](/img/2.10/add_upstream_cert.png)
 
 
 ## Tips and Tricks 
@@ -165,7 +165,7 @@ You can create self-signed client and server certificates with this command:
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
 ```
 
-For the server in `common name` specify a domain, or just pass `-subj "/CN=localhost"` to OpenSSL command. Then follow our [TLS and SSL Guide](/docs/basic-config-and-security/security/tls-and-ssl/).
+For the server in `common name` specify a domain, or just pass `-subj "/CN=localhost"` to OpenSSL command. Then follow our [TLS and SSL Guide](/basic-config-and-security/security/tls-and-ssl/).
 
 To get certificate SHA256 fingerprint use the following command:
 ```{.copyWrapper}

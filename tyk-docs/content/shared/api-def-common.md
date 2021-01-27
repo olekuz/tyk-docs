@@ -22,9 +22,9 @@
 
 * `do_not_track`: Set this value to true to have traffic for this API completely ignored.
 
-* `enable_context_vars`: Context variables are extracted from the request at the start of the middleware chain, and must be explicitly enabled in order for them to be made available to your transforms. These values can be very useful for later transformation of request data, for example, in converting a Form-based POST into a JSON-based PUT or to capture an IP address as a header. See [Context Variables](/docs/getting-started/key-concepts/context-variables/) for more details.
+* `enable_context_vars`: Context variables are extracted from the request at the start of the middleware chain, and must be explicitly enabled in order for them to be made available to your transforms. These values can be very useful for later transformation of request data, for example, in converting a Form-based POST into a JSON-based PUT or to capture an IP address as a header. See [Context Variables](/getting-started/key-concepts/context-variables/) for more details.
 
-* `config_data`: You can use the config_data field in your API definition to pass custom attributes to middleware via a virtual endpoint. See [Virtual Endpoints](/docs/advanced-configuration/compose-apis/virtual-endpoints/) for more details.
+* `config_data`: You can use the config_data field in your API definition to pass custom attributes to middleware via a virtual endpoint. See [Virtual Endpoints](/advanced-configuration/compose-apis/virtual-endpoints/) for more details.
 
 * `tag_headers`: This specifies a string array of HTTP headers which can be extracted and turned to tags. For example if you include X-Request-ID header to tag_headers, for each incoming request it will include a x-request-id-<header_value> tag to request an analytic record. This functionality can be useful if you need to pass additional information from the request to the analytics, without enabling detailed logging, which records the full request and response objects.
 
@@ -34,4 +34,4 @@
   * `getUser`
   * `GetUser`
 
-If set to true, this will override ignoring the case for a particular endpoint with the [Ignore](/docs/advanced-configuration/transform-traffic/endpoint-designer/#ignore), [Blacklist](/docs/advanced-configuration/transform-traffic/endpoint-designer/#blacklist) and [Whitelist](/docs/advanced-configuration/transform-traffic/endpoint-designer/#whitelist) plugins. This setting can be overriden at a "global" Tyk level by setting `ignore_endpoint_case` to `true` in your `tyk.conf` file. See [ignore_endpoint_case](/docs/tyk-configuration-reference/tyk-gateway-configuration-options/#ignore_endpoint_case) for details.
+If set to true, this will override ignoring the case for a particular endpoint with the [Ignore](/advanced-configuration/transform-traffic/endpoint-designer/#ignore), [Blacklist](/advanced-configuration/transform-traffic/endpoint-designer/#blacklist) and [Whitelist](/advanced-configuration/transform-traffic/endpoint-designer/#whitelist) plugins. This setting can be overriden at a "global" Tyk level by setting `ignore_endpoint_case` to `true` in your `tyk.conf` file. See [ignore_endpoint_case](/tyk-configuration-reference/tyk-gateway-configuration-options/#ignore_endpoint_case) for details.

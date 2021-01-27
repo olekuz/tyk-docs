@@ -17,11 +17,11 @@ After creating your Organisation you'll land on the success screen. Click **Get 
 
 ## Step One - Name your Team
 
-Give your [Team](/docs/tyk-cloud/troubleshooting-support/glossary/#team) a name. You may find it useful to reflect the names used within your organisation.
+Give your [Team](/tyk-cloud/troubleshooting-support/glossary/#team) a name. You may find it useful to reflect the names used within your organisation.
 
 ## Step Two - Invite your Users
 
-Invite your [users](/docs/tyk-cloud/troubleshooting-support/glossary/#user) to your team. You'll only need their email address and which of the available [roles](/docs/tyk-cloud/troubleshooting-support/glossary/#role) you want to assign to them. This step is optional and can be completed within the dashboard later.
+Invite your [users](/tyk-cloud/troubleshooting-support/glossary/#user) to your team. You'll only need their email address and which of the available [roles](/tyk-cloud/troubleshooting-support/glossary/#role) you want to assign to them. This step is optional and can be completed within the dashboard later.
 
 Out of the box, the following roles are setup:
 

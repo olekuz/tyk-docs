@@ -18,4 +18,4 @@ to be synced with upstream again. It can be found above the schema editor.
 For syncing the schema just press the resync button.
  > **Note:** Syncing schemas is only available for proxy-only GraphQL APIs and **not** for UDG.
 
- ![Sync Schema Button](/docs/img/dashboard/graphql/schema_sync.png)
+ ![Sync Schema Button](/img/dashboard/graphql/schema_sync.png)

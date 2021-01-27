@@ -14,14 +14,14 @@ Installing Tyk on RHEL is very straightforward using our YUM repositories, follo
 
 The suggested order would be to install Tyk Dashboard, then Tyk Pump and then Tyk Gateway for a full stack.
 
-- [Dashboard](/docs/getting-started/installation/with-tyk-on-premises/redhat-rhel-centos/dashboard/)
-- [Pump](/docs/getting-started/installation/with-tyk-on-premises/redhat-rhel-centos/analytics-pump/)
-- [Gateway](/docs/getting-started/installation/with-tyk-on-premises/redhat-rhel-centos/gateway/)
+- [Dashboard](/getting-started/installation/with-tyk-on-premises/redhat-rhel-centos/dashboard/)
+- [Pump](/getting-started/installation/with-tyk-on-premises/redhat-rhel-centos/analytics-pump/)
+- [Gateway](/getting-started/installation/with-tyk-on-premises/redhat-rhel-centos/gateway/)
 
 {{< note success >}}
 **Note**  
 
-For a production environment, we recommend that the Gateway, Dashboard and Pump are installed on separate machines. If installing multiple Gateways, you should install each on a separate machine. See [Planning for Production](/docs/planning-for-production/) For more details.
+For a production environment, we recommend that the Gateway, Dashboard and Pump are installed on separate machines. If installing multiple Gateways, you should install each on a separate machine. See [Planning for Production](/planning-for-production/) For more details.
 {{< /note >}}
 
 ## Database Support
@@ -36,7 +36,7 @@ By default the Tyk Gateway uses MongoDB. You can also use the following:
 {{< note success >}}
 **Note**  
 
-If you are using DocumentDB, [capped collections](/docs/analytics-and-reporting/capping-analytics-data-storage/) are not supported. See [here](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html) for more details.
+If you are using DocumentDB, [capped collections](/analytics-and-reporting/capping-analytics-data-storage/) are not supported. See [here](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html) for more details.
 {{< /note >}}
 
 ### Tyk Dashboard

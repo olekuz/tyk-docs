@@ -13,7 +13,7 @@ The Tyk Gateway server is configured primarily via the `tyk.conf` file, this fil
 
 ### Environment Variables
 
-Environment variables can be used to override the settings defined in the configuration file. See [Environment Variables](/docs/tyk-configuration-reference/environment-variables/) for details. Where an environment variable is specified, its value will take precedence over the value in the configuration file.
+Environment variables can be used to override the settings defined in the configuration file. See [Environment Variables](/tyk-configuration-reference/environment-variables/) for details. Where an environment variable is specified, its value will take precedence over the value in the configuration file.
 
 ### tyk lint
 
@@ -44,7 +44,7 @@ This is the path to the Tyk templates, as of the current version there is only o
 
 ### app_path
 
-If Tyk is being used in its standard configuration (CE Mode), then API definitions are stored in the apps folder (by default in `/opt/tyk-gateway/apps`). This file is scanned for files that ending in `.json` extension and interpreted at startup or reload. See the API Management section of the [Tyk Gateway API](/docs/tyk-gateway-api/) for more details.
+If Tyk is being used in its standard configuration (CE Mode), then API definitions are stored in the apps folder (by default in `/opt/tyk-gateway/apps`). This file is scanned for files that ending in `.json` extension and interpreted at startup or reload. See the API Management section of the [Tyk Gateway API](/tyk-gateway-api/) for more details.
 
 ### hash_keys
 
@@ -161,7 +161,7 @@ Tyk is capable of recording every hit to your API into a database with various f
 {{< note success >}}
 **Note**  
 
-For performance reasons, Tyk will store traffic data to Redis initially and then purge the data from Redis to MongoDB or other, [data stores](/docs/analytics-and-reporting/other-data-stores/), on a regular basis as determined by the `purge_delay` setting in your Tyk Pump configuration.
+For performance reasons, Tyk will store traffic data to Redis initially and then purge the data from Redis to MongoDB or other, [data stores](/analytics-and-reporting/other-data-stores/), on a regular basis as determined by the `purge_delay` setting in your Tyk Pump configuration.
 {{< /note >}}
 
 
@@ -181,7 +181,7 @@ Setting `enforce_org_data_detail_logging` in the `tyk.conf` will enforce it (quo
 
 As of Tyk API Gateway 2.0, Tyk can store GeoIP information based on MaxMind DB's, to enable GeoIP tracking on inbound request analytics, set this value to `true` and assign a DB using the `geo_ip_db_path` setting.
 
-Please make sure you have also enabled analytics storing by setting [`enable_analytics`](/docs/tyk-configuration-reference/tyk-gateway-configuration-options/#a-name-enable-analytics-a-enable-analytics) in the Gateway.
+Please make sure you have also enabled analytics storing by setting [`enable_analytics`](/tyk-configuration-reference/tyk-gateway-configuration-options/#a-name-enable-analytics-a-enable-analytics) in the Gateway.
 
 ##### geo_ip_db_path
 
@@ -321,7 +321,7 @@ A list of certificates and domains to match against. Please see the SSL section 
 
 #### http_server_options.ssl_certificates
 
-Added in v2.4, as altertnative to `http_server_options.certificates`, which supports our [Certificate API](/docs/basic-config-and-security/security/tls-and-ssl/mutual-tls/#a-name-certificates-management-a-certificate-management) format. It should be a list of certificate IDs returned by Certificate API, or paths to certificate in PEM format (including private key).
+Added in v2.4, as altertnative to `http_server_options.certificates`, which supports our [Certificate API](/basic-config-and-security/security/tls-and-ssl/mutual-tls/#a-name-certificates-management-a-certificate-management) format. It should be a list of certificate IDs returned by Certificate API, or paths to certificate in PEM format (including private key).
 
 #### http_server_options.skip_url_cleaning
 
@@ -521,7 +521,7 @@ The hostname to bind the REST API to.
 ### control_api_port
 
 This allows you to run the Gateway Control API on separate port, and protect it behind a firewall if needed.
-Please make sure you follow these [instructions](/docs/planning-for-production/#change-your-control-port) when setting the control port.
+Please make sure you follow these [instructions](/planning-for-production/#change-your-control-port) when setting the control port.
 
 {{< note success >}}
 **Note**  
@@ -881,7 +881,7 @@ Defaults: `2`.
 #### Secrets map
 
 Values that are set in this map will be available for use to your app.
-Please take a look at [KV store reference for usage](/docs/tyk-configuration-reference/kv-store/)
+Please take a look at [KV store reference for usage](/tyk-configuration-reference/kv-store/)
 ```
 "secrets": {
     "key": "value",
@@ -901,7 +901,7 @@ Please use Consul/Vault to store more sensitive data
 Environment variables can also be used as a KV store. A value in the environment
 as `SOME_VALUE` will be accessible as `env://SOME_VALUE`.
 
-Please take a look at [KV store reference for usage](/docs/tyk-configuration-reference/kv-store/)
+Please take a look at [KV store reference for usage](/tyk-configuration-reference/kv-store/)
 
 {{< note success >}}
 **Note**  
@@ -984,7 +984,7 @@ New in 2.9.4, you can now override the default error code and or message returne
 
 ### ignore_endpoint_case
 
-New in v2.9.4 you can now configure Tyk to ignore the case of any endpoints for APIs managed by Tyk. Setting this to `true` will override any [individual API](/docs/tyk-rest-api/api-definition-objects/other-root-objects/) and [Ignore](/docs/advanced-configuration/transform-traffic/endpoint-designer/#ignore), [Blacklist](/docs/advanced-configuration/transform-traffic/endpoint-designer/#blacklist) and [Whitelist](/docs/advanced-configuration/transform-traffic/endpoint-designer/#whitelist) plugin endpoint settings. 
+New in v2.9.4 you can now configure Tyk to ignore the case of any endpoints for APIs managed by Tyk. Setting this to `true` will override any [individual API](/tyk-rest-api/api-definition-objects/other-root-objects/) and [Ignore](/advanced-configuration/transform-traffic/endpoint-designer/#ignore), [Blacklist](/advanced-configuration/transform-traffic/endpoint-designer/#blacklist) and [Whitelist](/advanced-configuration/transform-traffic/endpoint-designer/#whitelist) plugin endpoint settings. 
 
 ### ssl_force_common_name_check
 

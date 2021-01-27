@@ -12,7 +12,7 @@ By default, any user who accesses your developer Portal will be able to view all
 We'll walk through how you can use custom Page Templates to control the visibility of an internal API so it can only be seen by your internal developers.
 
 ## Prerequisites
-1. You have An API created in your Dashboard. See [Create an API](/docs/try-out-tyk/tutorials/create-api/) for more details.
+1. You have An API created in your Dashboard. See [Create an API](/try-out-tyk/tutorials/create-api/) for more details.
 2. You have a Policy created in your Dashboard that has access rights to this API
 3. You have a Portal Catalog entry for this API with the name of "Internal API"
 4. You have a developer account that can access your Developer Portal.
@@ -23,7 +23,7 @@ We'll walk through how you can use custom Page Templates to control the visibili
 For this example, we'll add a custom field to the developer profile called "internal". This flag when set to 1 indicates the developer is an internal developer, when set to 0 indicates the developer is an external developer.
 Go to the Portal Management > Developers screen
 
-![dev_profile_custom_field](/docs/img/dashboard/portal-management/dev_profile_custom_field.jpg)
+![dev_profile_custom_field](/img/dashboard/portal-management/dev_profile_custom_field.jpg)
 
 
 This flag can also be [set programatically](https://tyk.io/docs/tyk-developer-portal/customise/custom-developer-portal/#updating-a-developer-example-adding-custom-fields).
@@ -170,10 +170,10 @@ Now the visibility of the "Internal API" is driven by the internal flag on the d
 
 
 #### Developer Logged In, internal flag set to 1 (Internal API is visible)
-![dev_logged_in_internal](/docs/img/dashboard/portal-management/dev_logged_in_internal.jpg)
+![dev_logged_in_internal](/img/dashboard/portal-management/dev_logged_in_internal.jpg)
 
 #### Developer Logged In, internal flag set to 0 (Internal API not visible)
-![dev_logged_in_external](/docs/img/dashboard/portal-management/dev_logged_in_external.jpg)
+![dev_logged_in_external](/img/dashboard/portal-management/dev_logged_in_external.jpg)
 
 #### No User Logged In (Internal API not visible)
-![no_user_logged_in](/docs/img/dashboard/portal-management/no_user_logged_in.jpg)
+![no_user_logged_in](/img/dashboard/portal-management/no_user_logged_in.jpg)

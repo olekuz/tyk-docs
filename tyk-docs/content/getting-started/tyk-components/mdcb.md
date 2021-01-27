@@ -13,4 +13,4 @@ The Multi Data Centre Bridge (MDCB) allows for centralised management of multipl
 
 Tyk MDCB is battle-hardened with our Cloud infrastructure and is in production with a variety of large and small companies worldwide.
 
-See [Tyk Multi Data Centre](/docs/tyk-multi-data-centre/) for details on setting up MDCB.
+See [Tyk Multi Data Centre](/tyk-multi-data-centre/) for details on setting up MDCB.

@@ -38,7 +38,7 @@ You can create 20 teams with 20 users.
 For the 14 day trial plan, these quotas are the same as for our Enterprise Global plan
 {{< /note >}}
 
-[What happens at the end of my free trial?](/docs/tyk-cloud/account-billing/upgrade-free-trial/)
+[What happens at the end of my free trial?](/tyk-cloud/account-billing/upgrade-free-trial/)
 
 ### Proof of Concept (PoC) Plan
 

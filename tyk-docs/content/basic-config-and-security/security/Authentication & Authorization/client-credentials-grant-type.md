@@ -59,4 +59,4 @@ It does not provide a refresh token.
 
 ### Sequence Diagram
 
-![Client Credentials Grant](/docs/img/diagrams/client-grant.png)
+![Client Credentials Grant](/img/diagrams/client-grant.png)

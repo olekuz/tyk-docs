@@ -11,7 +11,7 @@ weight: 3
 ## Gateway & API Sharding
 Tyk Gateway has a very powerful functionality that allows you to selectively choose which APIs are to be loaded on which Gateways.
 
-Imagine the case where you have two sets of APIs, Internal & External.  You want to prevent your Internal APIs from being accessed or visible outside your protected network.  Well, [sharding](/docs/advanced-configuration/manage-multiple-environments/#api-sharding) makes it extremely easy to configure your Tyk Gateways from the Dashboard.
+Imagine the case where you have two sets of APIs, Internal & External.  You want to prevent your Internal APIs from being accessed or visible outside your protected network.  Well, [sharding](/advanced-configuration/manage-multiple-environments/#api-sharding) makes it extremely easy to configure your Tyk Gateways from the Dashboard.
 
 # Instructions
 
@@ -34,11 +34,11 @@ Tags are always treated as OR conditions, so this node will pick up all APIs tha
 
 To add an API Tag to a an API configuration in the dashboard, first ensure you are in the API Editor, and have selected the *Advanced Options* tab:
 
-![Advanced options tab location](/docs/img/2.10/advanced_options_designer.png)
+![Advanced options tab location](/img/2.10/advanced_options_designer.png)
 
 Once you have reached this section, scroll down to the *Segment Tags* section:
 
-![Segement tags section](/docs/img/2.10/segment_tags.png)
+![Segement tags section](/img/2.10/segment_tags.png)
 
 In this section, set the tag name you want to apply, and click the *Add* button.
 

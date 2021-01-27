@@ -108,7 +108,7 @@ If the command succeeds, you will see:
 
 **What did we just do?**
 
-We just sent an API definition to the Tyk `/apis` endpoint, API definitions are discussed in detail in the [Tyk Gateway REST API documentation](/docs/tyk-rest-api/api-definition-objects/). These objects encapsulate all of the settings for an API within Tyk.
+We just sent an API definition to the Tyk `/apis` endpoint, API definitions are discussed in detail in the [Tyk Gateway REST API documentation](/tyk-rest-api/api-definition-objects/). These objects encapsulate all of the settings for an API within Tyk.
 {{< tab_end >}}
 {{< tab_start "Community Edition" >}}
 ## <a name="prerequisites"></a>Prerequisites

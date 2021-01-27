@@ -15,7 +15,7 @@ You also need to set your `listen_path` in your API definition and a specific po
 
 The gRPC over HTTP2 specification defines the rules on how the gRPC protocol maps to a HTTP request, for more information [see](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md). In the context of the API Gateway, we are interested in the following:
 
-- You can target specific methods of the gRPC service using the format: `/{Service-Name}/{method name}`, for example: `/google.pubsub.v2.PublisherService/CreateTopic`. You can use this feature to apply standard ACL rules via Keys and Policies, or use URL rewrite plugins in our [Endpoint Desiger](/docs/transform-traffic/url-rewriting/#a-name-url-rewrite-with-endpoint-designer-a-rewrite-a-url-with-the-endpoint-designer). 
+- You can target specific methods of the gRPC service using the format: `/{Service-Name}/{method name}`, for example: `/google.pubsub.v2.PublisherService/CreateTopic`. You can use this feature to apply standard ACL rules via Keys and Policies, or use URL rewrite plugins in our [Endpoint Desiger](/transform-traffic/url-rewriting/#a-name-url-rewrite-with-endpoint-designer-a-rewrite-a-url-with-the-endpoint-designer). 
 - HTTP method is always `POST`.
 gRPC custom request metadata is added as HTTP headers, where metadata key is directly mapped to the HTTP header with the same name. 
 
@@ -35,17 +35,17 @@ For those scenarios that you want to connect 2 services that call each other or 
 Tyk supports gRPC streaming, it only requires to set a low value for `flush_interval`, a low flush interval is required in order to forward data to the downstream as soon as the upstream replies. A high flush interval would delay the communication. We recommend the lowest possible value: 1 (1 millisecond), you can set this value in the gateway config `http_server_options.flush_interval`
 
 ### Mutual Authentication
-Tyk supports Mutual Authentication in gRPC. See [Mutual TLS](/docs/basic-config-and-security/security/tls-and-ssl/mutual-tls/) to configure Mutual Authentication in Tyk. 
+Tyk supports Mutual Authentication in gRPC. See [Mutual TLS](/basic-config-and-security/security/tls-and-ssl/mutual-tls/) to configure Mutual Authentication in Tyk. 
 
 ### Basic Authentication
-Tyk supports Basic Authentication in gRPC. See [Basic Authentication](/docs/basic-config-and-security/security/authentication-authorization/basic-auth/) to configure Basic Authentication in Tyk. 
+Tyk supports Basic Authentication in gRPC. See [Basic Authentication](/basic-config-and-security/security/authentication-authorization/basic-auth/) to configure Basic Authentication in Tyk. 
 
 After setting your Tyk configuration, all you need to do is to send credentials with the correct base64 format in an `Authorization` header from your gRPC client. 
 
 `Basic base64Encode(username:password)`
 
 ### Token Based Authentication
-Tyk supports Token Based Authentication in gRPC. See [Bearer Tokens](/docs/basic-config-and-security/security/authentication-authorization/bearer-tokens/) to configure Token Based Authentication in Tyk. 
+Tyk supports Token Based Authentication in gRPC. See [Bearer Tokens](/basic-config-and-security/security/authentication-authorization/bearer-tokens/) to configure Token Based Authentication in Tyk. 
 
 After setting your Tyk configuration, all you need to do is to send a token in an `Authorization` header from your gRPC client.
 
@@ -88,7 +88,7 @@ This is the simplest way to have a working gRPC proxy setup, in order to do so w
 
 ### gRPC load balancing
 
-Tyk is able to perform load balancing on gRPC traffic using an approach similar to our native [Load Balancing](/docs/planning-for-production/ensure-high-availability/load-balancing/) functionality.
+Tyk is able to perform load balancing on gRPC traffic using an approach similar to our native [Load Balancing](/planning-for-production/ensure-high-availability/load-balancing/) functionality.
 
 For both secure and insecure gRPC scenarios, the above steps serve as a starting point.
 

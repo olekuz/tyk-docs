@@ -27,4 +27,4 @@ Depending on your initial requirements in terms of Environments, Teams and Users
 The following information would be useful so you can set up Tyk Cloud as quickly as possible:
 
 * Team member information including their email address and the role you plan to assign to them.
-* We have some specific terminology used within Tyk Cloud. It would be useful to checkout our [Glossary](/docs/tyk-cloud/troubleshooting-support/glossary/) so you understand what we are referring to.
+* We have some specific terminology used within Tyk Cloud. It would be useful to checkout our [Glossary](/tyk-cloud/troubleshooting-support/glossary/) so you understand what we are referring to.

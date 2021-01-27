@@ -146,4 +146,4 @@ This grant will generate a notification, sent from the Gateway to the _OAuth Not
 
 ### Sequence Diagram
 
-![Auth-Code-Grant-Diagram](/docs/img/diagrams/auth-code-grant.png)
+![Auth-Code-Grant-Diagram](/img/diagrams/auth-code-grant.png)

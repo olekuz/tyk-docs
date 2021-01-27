@@ -23,7 +23,7 @@ You need to install the mserv binary according to your local environment from th
 
 From your Control Plane you need the following settings.
 
-![File Server Settings](/docs/img/plugins/fileserver_settings.png)
+![File Server Settings](/img/plugins/fileserver_settings.png)
 
 * Your Tyk Cloud Control Plane Ingress File Server Endpoint (1)
 * Your File Server API Key (2)

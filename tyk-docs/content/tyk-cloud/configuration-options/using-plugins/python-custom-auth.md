@@ -19,7 +19,7 @@ We are going to configure an Tyk Cloud Control Plane to use a custom authenticat
 
 ## What do I need in advance?
 
-Firstly you will need a local Tyk Gateway installation that allows you to create your Python plugin bundle. We recommend [installing our On-Premises version on Ubuntu Bionic 18.04](/docs/getting-started/installation/with-tyk-on-premises/on-ubuntu/).
+Firstly you will need a local Tyk Gateway installation that allows you to create your Python plugin bundle. We recommend [installing our On-Premises version on Ubuntu Bionic 18.04](/getting-started/installation/with-tyk-on-premises/on-ubuntu/).
 
 ### Further Python Requirements
 

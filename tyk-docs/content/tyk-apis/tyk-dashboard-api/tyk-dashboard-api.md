@@ -39,7 +39,7 @@ The Tyk Dashboard API application (`tyk_analytics`), can use a command line flag
     #~/> ./tyk_analytics --neworg --newuser 
 ``
 
-The `--neworg` flag creates a new organisation, and the `--newuser` flag creates a new user, which can be assigned to an organisation. Organisations and un-tagged users can also be created using the Dashboard Admin API. See [Admin API Organisations](/docs/dashboard-admin-api/organisations/) for more details.
+The `--neworg` flag creates a new organisation, and the `--newuser` flag creates a new user, which can be assigned to an organisation. Organisations and un-tagged users can also be created using the Dashboard Admin API. See [Admin API Organisations](/dashboard-admin-api/organisations/) for more details.
 
 ### Special cases
 

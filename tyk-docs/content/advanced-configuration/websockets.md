@@ -44,4 +44,4 @@ From http://websocket.org/echo.html enter the following in the **Location** fiel
 
 Enter some text in the **Message** field, and click **Send**. You should see your sent message in the **Log** field.
 
-![WebSocket Test](/docs/img/dashboard/system-management/websocket_test.png)
+![WebSocket Test](/img/dashboard/system-management/websocket_test.png)

@@ -61,7 +61,7 @@ Example configuration inside `tyk.conf`
 }
 ```
 
-See [detailed configuration reference](/docs/tyk-configuration-reference/tyk-gateway-configuration-options/#a-namekva-key-value-store)
+See [detailed configuration reference](/tyk-configuration-reference/tyk-gateway-configuration-options/#a-namekva-key-value-store)
 
 
 ## Usage information

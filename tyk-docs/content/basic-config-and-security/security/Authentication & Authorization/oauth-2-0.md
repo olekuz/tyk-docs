@@ -26,10 +26,10 @@ Tyk can act as a full blown OAuth 2.0 provider for Authorisation an access token
 Tyk supports the following grant types:
 
 
-- [Authorization Code](/docs/basic-config-and-security/security/authentication-authorization/oauth2.0/auth-code-grant)
-- [Refresh Token](/docs/basic-config-and-security/security/authentication-authorization/oauth2.0/refresh-token-grant)
-- [Username and Password](/docs/basic-config-and-security/security/authentication-authorization/oauth2.0/username-password-grant)
-- [Client Credentials](/docs/basic-config-and-security/security/authentication-authorization/oauth2.0/client-credentials-grant)
+- [Authorization Code](/basic-config-and-security/security/authentication-authorization/oauth2.0/auth-code-grant)
+- [Refresh Token](/basic-config-and-security/security/authentication-authorization/oauth2.0/refresh-token-grant)
+- [Username and Password](/basic-config-and-security/security/authentication-authorization/oauth2.0/username-password-grant)
+- [Client Credentials](/basic-config-and-security/security/authentication-authorization/oauth2.0/client-credentials-grant)
 
 
 The Tyk OAuth flow is described in the following sections.
@@ -93,7 +93,7 @@ To get OAuth set up in your API configuration, you will need to set up your API 
     }
 ```
 
-As can be seen - a lot more configuration is required than with other methods. See [API Definition Objects](/docs/tyk-gateway-api/api-definition-objects/) for more details.
+As can be seen - a lot more configuration is required than with other methods. See [API Definition Objects](/tyk-gateway-api/api-definition-objects/) for more details.
 
 The key elements to take into account here are the enabling of the `use_oauth2` flag and the `notifications` section.
 

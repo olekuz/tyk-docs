@@ -29,7 +29,7 @@ Yes, you can. If you set `throttle_interval` and `throttle_retry_limit` values t
 
 3.  From the **Throttling** section, select the **Throttle interval** and the **Throttle retry limit** values.
     
-![Tyk API Gateway Request Throttling](/docs/img/dashboard/system-management/throttling_update.png)
+![Tyk API Gateway Request Throttling](/img/dashboard/system-management/throttling_update.png)
 
 4.  Save the token/policy.
 

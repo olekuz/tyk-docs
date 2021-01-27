@@ -20,7 +20,7 @@ In this article we will cover:
 
 ## Prerequisites
 
-* Either a Tyk [Community Edition (CE) Installation](/docs/getting-started/installation/with-tyk-community-edition/), or a Tyk [On-Premises Pro Edition Installation](/docs/getting-started/installation/with-tyk-on-premises/) with an appropriate [licence](/docs/getting-started/licencing/#on-premises-licencing).
+* Either a Tyk [Community Edition (CE) Installation](/getting-started/installation/with-tyk-community-edition/), or a Tyk [On-Premises Pro Edition Installation](/getting-started/installation/with-tyk-on-premises/) with an appropriate [licence](/getting-started/licencing/#on-premises-licencing).
 
 * Redis installed in the cluster or reachable from K8s
 * MongoDB installed in the cluster, or reachable from inside K8s
@@ -138,7 +138,7 @@ When Tyk is first installed via the Helm chart, it will install itself as a Daem
 
 This means that the Gateways are now exposed to the outside of your cluster through a load balancer provisioned by your cloud environment.
 
-These external-facing Gateways are tagged, or [sharded](/docs/advanced-configuration/manage-multiple-environments/#a-name-what-is-api-sharding-a-what-is-api-sharding) in Tyk terminology. This means that they will only ever load API Definitions for services that have been defined and tagged with the same tag name. The tag-name for the Ingress Gateways are (unimaginatively) tagged as "ingress". This is worth remembering if you ever create a service route manually using the Tyk Gateway API or the Tyk Dashboard API Designer.
+These external-facing Gateways are tagged, or [sharded](/advanced-configuration/manage-multiple-environments/#a-name-what-is-api-sharding-a-what-is-api-sharding) in Tyk terminology. This means that they will only ever load API Definitions for services that have been defined and tagged with the same tag name. The tag-name for the Ingress Gateways are (unimaginatively) tagged as "ingress". This is worth remembering if you ever create a service route manually using the Tyk Gateway API or the Tyk Dashboard API Designer.
 
 At this point, the controller cannot act as a service mesh controller, to get this to work you need to add the mutating webhook definition that allows these events to be processed by the controller.
 

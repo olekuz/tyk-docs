@@ -15,7 +15,7 @@ Now that you have completed onboarding you will setup a very basic API to demons
 
 ## Step One - Access the Dashboard
 
-Go to the Control Plane overview and click the dashboard link in the Ingress list. You'll be redirected to the Tyk Dashboard for your [Control Plane](/docs/tyk-cloud/troubleshooting-support/glossary/#control-plane).
+Go to the Control Plane overview and click the dashboard link in the Ingress list. You'll be redirected to the Tyk Dashboard for your [Control Plane](/tyk-cloud/troubleshooting-support/glossary/#control-plane).
 
 ## Step Two - Add a New API
 

@@ -32,4 +32,4 @@ We can do this by using templating syntax to inject it into the URL:
 https://example.com/user/{{ .arguments.id }}
 ``` 
 
-![Create New API](/docs/img/dashboard/udg/concepts/arguments.png)
+![Create New API](/img/dashboard/udg/concepts/arguments.png)

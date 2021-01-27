@@ -10,4 +10,4 @@ url: "/tyk-developer-portal/tutorials"
 
 We have provided a tutorial to get you started with the Developer Portal:
 
-[Create a Portal Catalogue Entry](/docs/getting-started/tutorials/create-portal-entry/)
+[Create a Portal Catalogue Entry](/getting-started/tutorials/create-portal-entry/)

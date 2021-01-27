@@ -72,14 +72,14 @@ The manifest file contains information about your plugin file structure and how 
 ### File description
 
 
-* The `custom_middleware` block contains the middleware settings like the plugin driver you want to use (driver) and the hooks that your plugin will expose. We use the `auth_check` for this tutorial. For other hooks see [here](/docs/plugins/rich-plugins/rich-plugins-work/#coprocess-dispatcher---hooks).
+* The `custom_middleware` block contains the middleware settings like the plugin driver you want to use (driver) and the hooks that your plugin will expose. We use the `auth_check` for this tutorial. For other hooks see [here](/plugins/rich-plugins/rich-plugins-work/#coprocess-dispatcher---hooks).
 * The `file_list` block contains the list of files to be included in the bundle. The CLI tool expects to find these files in the current working directory.
 * The name field references the name of the function that you implement in your plugin code: `MyAuthMiddleware`.
 * You add an additional file called `middleware.py`, this contains the main implementation of our middleware.
 
 ### Creating the middleware.py file
 
-You import decorators from the Tyk module that gives us the Hook decorator, and we import [Tyk Python API helpers](/docs/plugins/rich-plugins/python/tyk-python-api-methods/)
+You import decorators from the Tyk module that gives us the Hook decorator, and we import [Tyk Python API helpers](/plugins/rich-plugins/python/tyk-python-api-methods/)
 
 You implement a middleware function and register it as a hook. The input includes the request object, the session object, the API meta data and its specification. The hook checks the authorization header for a specified value. In this tutorial we have called it `Authorization`.
 
@@ -126,7 +126,7 @@ Then run the following to build your bundle
 ```.bash
 /opt/tyk-gateway/bin/tyk bundle build -y
 ```
-A plugin bundle is a packaged version of the plugin, it may also contain a cryptographic signature of its contents. The -y flag tells the Tyk CLI tool to skip the signing process in order to simplify this tutorial. For more information on the Tyk CLI tool, see [here](/docs/plugins/rich-plugins/plugin-bundles/#bundler-tool).
+A plugin bundle is a packaged version of the plugin, it may also contain a cryptographic signature of its contents. The -y flag tells the Tyk CLI tool to skip the signing process in order to simplify this tutorial. For more information on the Tyk CLI tool, see [here](/plugins/rich-plugins/plugin-bundles/#bundler-tool).
 
 You should now have a `bundle.zip` file in the plugin working directory.
 

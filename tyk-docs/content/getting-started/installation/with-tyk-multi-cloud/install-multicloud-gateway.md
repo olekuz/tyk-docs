@@ -27,7 +27,7 @@ To install the Tyk Multi-Cloud Gateway, you need:
 1.  A Docker-enabled host
 2.  Access to the shell of this host
 3.  Port 8080 and 9091 open
-4.  A Tyk Multi-Cloud account. Click [here](/docs/getting-started/installation/with-tyk-multi-cloud/create-an-account/) for details of how to create one.
+4.  A Tyk Multi-Cloud account. Click [here](/getting-started/installation/with-tyk-multi-cloud/create-an-account/) for details of how to create one.
 
 ## Install the Multi-Cloud Gateway
 
@@ -36,7 +36,7 @@ To install the Tyk Multi-Cloud Gateway, you need:
 1.  Go to <https://admin.cloud.tyk.io> and login with your new details.
 2.  Click "Users" and select your name, you will see your Organisation ID, take note of this:
     
-    ![RPC credentials](/docs/img/dashboard/system-management/api_access_cred_2.5.png)
+    ![RPC credentials](/img/dashboard/system-management/api_access_cred_2.5.png)
 
 ### Step 2: Installation
 

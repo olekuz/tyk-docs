@@ -85,4 +85,4 @@ When a GraphQL operation exceeds the query depth limit the consumer will receive
 3. Select your GraphQL API (marked as *GraphQL*).
 4. Change the value for **Query depth** by unchecking the *Unlimited query depth* checkmark and insert the maximum allowed query depth. This can be done on global or per API level.
 
-![query-depth-limit](/docs/img/dashboard/system-management/query_depth_limit.png)
+![query-depth-limit](/img/dashboard/system-management/query_depth_limit.png)

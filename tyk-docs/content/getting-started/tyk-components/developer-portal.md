@@ -20,7 +20,7 @@ The developer portal enables you to:
 {{< note success >}}
 **Note**  
 
-Support for API Blueprint is being deprecated. See [Importing APIs](/docs/tyk-configuration-reference/import-apis/#api-blueprint-is-being-deprecated) for more details.
+Support for API Blueprint is being deprecated. See [Importing APIs](/tyk-configuration-reference/import-apis/#api-blueprint-is-being-deprecated) for more details.
 {{< /note >}}
 
 The developer Portal is available to Pro (On-Premises), Cloud Classic and Multi-Cloud users.
