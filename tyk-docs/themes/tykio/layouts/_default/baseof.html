@@ -113,6 +113,16 @@
     </div>
   </header>
 
+<section>
+  <div class="container clear" style="text-align: center;">
+Select version
+<select onchange="window.location = this.options[this.selectedIndex].value" style="border: 1px solid red;">
+  <option value="/">Unstable</option>
+  <option value="/latest/" selected="selected">Latest</option>
+</select>
+</div>
+</section>
+
   <section class="section-page {{if not .Params.hideSidebar}}hasSidebar{{end}}">
     <div class="container clear">
       {{if not .Params.hideSidebar}}
