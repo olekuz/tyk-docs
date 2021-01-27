@@ -102,6 +102,16 @@
     <button class="m-show burger" data-toggle="show-submenu"></button>
   </header>
 
+<section>
+  <div class="container clear" style="text-align: center;">
+Select version
+<select onchange="window.location = this.options[this.selectedIndex].value" style="border: 1px solid red;">
+  <option value="/" selected="selected">Unstable</option>
+  <option value="/latest/">Latest</option>
+</select>
+</div>
+</section>
+
   <header class="hero" data-turbolinks-permanent>
     <div class="container">
       <div class="hero-sidebyside">
