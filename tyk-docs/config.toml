@@ -1,10 +1,9 @@
-baseurl = "//tyk.io/docs/"
+baseurl = "/docs/"
 languageCode = "en-gb"
 title = "Tyk Documentation"
 theme = "tykio"
 MetaDataFormat = "yaml"
 enableGitInfo = true
-relativeURLs = true
 [sitemap]
   changefreq = "daily"
   priority = 0.5
