@@ -74,7 +74,7 @@ Use the *save* or *create* buttons to save the changes and make the URL rewrite 
 
 As of v2.2 Tyk allows context variables to be injected into the regex using the `$tyk_context.` namespace instead of the numeric index.
 
-For more details see [Context Variables](/docs/concepts/context-variables/)
+For more details see [Context Variables](/docs/getting-started/key-concepts/context-variables/)
 
 ### Meta Data
 
@@ -88,7 +88,12 @@ To make it work you should set the **triggers** field, defining rules. If there 
 
 Additionally, each trigger also sets a context variable for each match it finds. These context vars can then be used in the rewrites. Trigger contexts take the format: `$tyk_context.trigger-{n}-{name}-{i}` where `n` is the trigger index in the array, `name` is the regexp matcher name and `i` is the index of that match (since query strings and headers can be arrays of values).
 
- > **NOTE**: When using `header_ matches` in the trigger, the name is the normalised form of the header name.
+{{< note success >}}
+**Note**  
+
+When using `header_matches` in the trigger, the name is the normalised form of the header name.
+{{< /note >}}
+
 
 
 ```{.copyWrapper}

@@ -3,19 +3,26 @@ date: 2017-03-22T15:46:41Z
 Title: On Ubuntu
 menu:
   main:
-    parent: "With Tyk On-Premises"
+    parent: "Tyk On-Premises"
 weight: 3
-url: "/getting-started/installation/with-tyk-on-premises/on-ubuntu"
+url: "/tyk-on-premises/on-ubuntu"
+aliases:
+  - /getting-started/installation/with-tyk-on-premises/on-ubuntu/
 
 ---
 
-## <a name="ubuntu"></a> Install Tyk API Gateway on Ubuntu
+## Install Tyk API Gateway on Ubuntu
 
 Installing Tyk on Ubuntu is very straightforward, follow the guides and tutorials in this section to have Tyk up and running in no time.
 
-> **NOTE**: For a production environment, we recommend that the Gateway, Dashboard and Pump are installed on separate machines. If installing multiple Gateways, you should install each on a separate machine. See [Deploy to Production](https://tyk.io/docs/deploy-tyk-premise-production/) For more details.
+{{< note success >}}
+**Note**  
 
-## <a name="prerequisites"></a> Prerequisites
+For a production environment, we recommend that the Gateway, Dashboard and Pump are installed on separate machines. If installing multiple Gateways, you should install each on a separate machine. See [Planning for Production](/docs/planning-for-production/) For more details.
+{{< /note >}}
+
+
+## Prerequisites
 
 Before installing the Tyk components in the order below, you need to install firstly MongoDB, then Redis.
 
@@ -34,12 +41,23 @@ Before installing the Tyk components in the order below, you need to install fir
 
 ## Database Support
 
-By default Tyk uses MongoDB. You can also use the following:
+### Tyk Gateway
+
+By default the Tyk Gateway uses MongoDB. You can also use the following:
 
 * [DocumentDB](https://aws.amazon.com/documentdb/)
 * [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
 
-> NOTE: If you are using DocumentDB, [capped collections](/docs/analytics-and-reporting/capping-analytics-data-storage/) are not supported. See [here](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html) for more details.
+{{< note success >}}
+**Note**  
+
+If you are using DocumentDB, [capped collections](/docs/analytics-and-reporting/capping-analytics-data-storage/) are not supported. See [here](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html) for more details.
+{{< /note >}}
+
+### Tyk Dashboard
+
+The Tyk Dashboard and Portal use Redis.
+
 
 ### Supported Verions of MongoDB and Redis
 
@@ -65,10 +83,6 @@ sudo apt-get install -y redis-server
 
 We then recommend installing Tyk in the following order:
 
-- [Dashboard][2]
-- [Pump][1]
-- [Gateway][3]
-
-[1]: /docs/get-started/with-tyk-on-premise/installation/on-ubuntu/analytics-pump
-[2]: /docs/get-started/with-tyk-on-premise/installation/on-ubuntu/dashboard
-[3]: /docs/get-started/with-tyk-on-premise/installation/on-ubuntu/gateway/
+- [Dashboard](/docs/getting-started/installation/with-tyk-on-premises/on-ubuntu/dashboard/)
+- [Pump](/docs/getting-started/installation/with-tyk-on-premises/on-ubuntu/analytics-pump/)
+- [Gateway](/docs/getting-started/installation/with-tyk-on-premises/on-ubuntu/gateway/)

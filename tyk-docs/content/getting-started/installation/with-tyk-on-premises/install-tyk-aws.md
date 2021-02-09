@@ -3,9 +3,11 @@ date: 2019-12-03T15:46:41Z
 Title: AWS Marketplace
 menu:
   main:
-    parent: "With Tyk On-Premises"
+    parent: "Tyk On-Premises"
 weight: 5
-url: "/getting-started/with-tyk-on-premises/installation/on-aws"
+url: "/tyk-on-premises/installation/on-aws"
+aliases:
+  - /getting-started/with-tyk-on-premises/installation/on-aws/
 ---
 
 To get started easily, [Tyk offers AWS Marketplace products][6] which bootstrap the entire stack, via CloudFormation templates.
@@ -84,7 +86,7 @@ In order to access GW, simply assign Elastic IP to the GW instance.  The auto ge
 To test, cURL the following: 
 ```{.copyWrapper}
 $ curl http://<elastic_public_ip>:8080/hello
-Hello Tiki
+{"status":"pass","version":"v3.0.0","description":"Tyk GW","details":{"dashboard":{"status":"pass","componentType":"system","time":"2020-08-28T17:19:49+02:00"},"redis":{"status":"pass","componentType":"datastore","time":"2020-08-28T17:19:49+02:00"}}}
 ```
 
 {{% tab_end %}}
@@ -97,7 +99,7 @@ Navigate to the AWS Load Balancing section and find the  `TYKElasticLoadBalancer
 We can check it is running by visiting
 ```{.copyWrapper}
 $ curl http://TYKElasticLoadBalancerALB-2050138050.us-east-1.elb.amazonaws.com/hello
-Hello Tiki
+{"status":"pass","version":"v3.0.0","description":"Tyk GW","details":{"dashboard":{"status":"pass","componentType":"system","time":"2020-08-28T17:19:49+02:00"},"redis":{"status":"pass","componentType":"datastore","time":"2020-08-28T17:19:49+02:00"}}}
 ```
 
 Note that ALB rules are already setup to accept traffic on port 80 and forward it to the Gateways on port 8080.

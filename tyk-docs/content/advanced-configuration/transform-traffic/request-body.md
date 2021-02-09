@@ -174,7 +174,11 @@ And this Template:
 
 ```{.copyWrapper}
 {
-{{range $x, $s := .servers.server}}    "{{$s.serverName}}": "{{$s.serverIP}}"{{if not $x}},{{end}}
+{{if hasPrefix "[]" (printf "%T" .servers.server) }}
+    {{range $x, $s := .servers.server}}    "{{$s.serverName}}": "{{$s.serverIP}}"{{if not $x}},{{end}}
+    {{end}}
+{{else}}
+    "{{.servers.server.serverName}}": "{{.servers.server.serverIP}}"
 {{end}}
 }
 ```
@@ -210,7 +214,7 @@ This mechanism operates the same way as the header injection middleware.
 
 ## Context Data
 
-As of version 2.2 Tyk also allows context variables to be injected into the body using the `._tyk_context.` namespace, unlike the context exposed to the URL rewriter and header injector, the body transform can fully iterate through list indices so, for example, calling `{{ index ._tyk_context.path_parts 0 }}` in a template will expose the first entry in the `path_parts` list.
+Tyk also allows context variables to be injected into the body using the `._tyk_context.` namespace, unlike the context exposed to the URL rewriter and header injector, the body transform can fully iterate through list indices so, for example, calling `{{ index ._tyk_context.path_parts 0 }}` in a template will expose the first entry in the `path_parts` list.
 
 Some of the context variables that are available are:
 
