@@ -17,7 +17,6 @@ Tyk support [Open Policy Agent](https://www.openpolicyagent.org/) (OPA) standard
 | security.openpolicy_debug       | boolean    | Enable debugging mode, prints a lot of information to the console                                        | true                    |
 | security.additional_permissions | string map | Add custom user/user_group permissions. You can use them in your rules, and they will be displayed on UI | `{"key": "human name"}` |
 
-Dashboard security rules were re-implemented as Opa rules, and stored inside the plain file [schemas/dashboard.opa](https://github.com/TykTechnologies/tyk-analytics/blob/feature/opa/schemas/dashboard.opa). This file is well documented and by itself can act as a tutorial.
 
 When Opa turned on, the majority of the security rules will be dynamically evaluate based on these rules.
 Additionally, on-prem users can modify this file and define their own rules.
