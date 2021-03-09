@@ -1,5 +1,5 @@
 ---
-title: "Open Policy Agent (OPA)"
+title: "Open Policy Agent (OPA)" 
 date: 2021-02-23
 tags: ["OPA", "Open Policy Agent"]
 menu: "main"
