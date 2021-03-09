@@ -4,7 +4,7 @@ date: 2021-02-23
 tags: ["OPA", "Open Policy Agent"]
 menu: "main"
 description: "Open Policy Agent (OPA)"
-weight: 80
+weight: 80 
 url: "/opa"
 ---
 
