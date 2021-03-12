@@ -6,7 +6,7 @@ menu:
 weight: 70
 ---
 
-Tyk support [Open Policy Agent](https://www.openpolicyagent.org/) (OPA) standard.
+Tyk now supports the [Open Policy Agent](https://www.openpolicyagent.org/) (OPA) standard.
 
 ### Added new config fields:
 | Key                             | Type       | Description                                                                                              | Example                 |
@@ -17,20 +17,19 @@ Tyk support [Open Policy Agent](https://www.openpolicyagent.org/) (OPA) standard
 | security.disable_open_policy_api       | boolean    | Disables access to the OPA API, even for users with Admin role                                           | true
 
 
-When Opa turned on, the majority of the security rules will be dynamically evaluate based on these rules.
-Additionally, users can modify OPA (Open Policy Agent) rules, and define their own, through the [OPA API](/docs/tyk-dashboard-api/org/permissions/), or, on-prem users, can access and modify the OPA rules from the file system.
+With Opa turned on, the majority of the security rules will be dynamically evaluated based on these rules.
+Additionally, users can modify OPA (Open Policy Agent) rules, and define their own, through the [OPA API](/docs/tyk-dashboard-api/org/permissions/), or, On-premises users can access and modify the OPA rules from the file system.
 Moreover, using these rules you can also modify request content 🚀
 
 To give you some inspiration here are some ideas of the rules you can implement now:
 
-Enforce HTTP proxy option for all APIs which target URL does not point to the internal domain
-Control access for individual fields. For example, do not allow change API "active" status (e.g. deploy), unless you have a specific permission set (and make new permission be available to the UI/API). Custom permissions can be creating using the [Additional Permissions API](/docs/tyk-dashboard-api/org/permissions/)
-Have a user(or group) which has read access to one APIs and write to another
-OpenPolicy rule engine put on top of Dashboard API, which means you can control the behavior of all APIs (except public developer portal).
-
+* Enforce HTTP proxy option for all APIs which target URL does not point to the internal domain
+* Control access for individual fields. For example, do not allow change API "active" status (e.g. deploy), unless you have a specific permission set (and make new permission be available to the UI/API). Custom permissions can be creating using the [Additional Permissions API](/docs/tyk-dashboard-api/org/permissions/)
+* Have a user(or group) which has read access to one APIs and write to another
+OpenPolicy rule engine put on top of Dashboard API, which means you can control the behavior of all APIs (except public developer portal)
 
 ### Language intro
-OPA is purpose built for reasoning about information represented in structured documents. The data that your service and its users publish can be inspected and transformed using OPA’s native query language Rego.
+OPA is purpose built for reasoning about information represented in structured documents. The data that your service and its users publish can be inspected and transformed using OPA’s native query language - Rego.
 
 ### What is Rego?
 Rego was inspired by Datalog, which is a well understood, decades old query language. Rego extends Datalog to support structured document models such as JSON.
@@ -38,22 +37,22 @@ Rego was inspired by Datalog, which is a well understood, decades old query lang
 Rego queries are assertions on data stored in OPA. These queries can be used to define policies that enumerate instances of data that violate the expected state of the system.
 
 ### Why use Rego?
-Use Rego for defining policy that is easy to read and write.
+Use Rego for defining a policy that is easy to read and write.
 
 Rego focuses on providing powerful support for referencing nested documents and ensuring that queries are correct and unambiguous.
 
 Rego is declarative so policy authors can focus on what queries should return rather than how queries should be executed. These queries are simpler and more concise than the equivalent in an imperative language.
 
-Like other applications which support declarative query languages, OPA is able to optimize queries to improve performance.
+Like other applications which support declarative query languages, OPA is able to optimise queries to improve performance.
 
-Rego supports a variety of statements and functions. And you can even use things like HTTP calls, to build a policies that depends on third-party APIs.
-See more about the language itself https://www.openpolicyagent.org/docs/latest/policy-language/.
+Rego supports a variety of statements and functions. You can even use things like HTTP calls to build policies that depends on third-party APIs.
+See more about the language itself [here](https://www.openpolicyagent.org/docs/latest/policy-language/).
 
 
 ### Tyk policy primitives
-The main building block which is required for controlling access is a "deny" rule, which should return a detailed error, in case of rejection. You can specify multiple deny rules, and they all will be evaluated. If none of the rules was matched, user will be allowed to access the resource.
+The main building block which is required for controlling access is a "deny" rule, which should return a detailed error in case of a rejection. You can specify multiple deny rules, and they will all be evaluated. If none of the rules was matched, user will be allowed to access the resource.
 
-Simple deny rule with static error message can look like:
+A simple deny rule with a static error message can look like:
 
 ```
 deny["User is not active"] {
@@ -86,9 +85,10 @@ patch_request[x] {
 
 
 ### Getting Tyk Objects
-In some of the cases, you may want to write a rule, which is based on existing Tyk Object.
+In some cases, you may want to write a rule which is based on existing Tyk Object.
 For example, you can write a rule for a policy API, which depends on the metadata of the API inside it.
-Policy engine has access to TykAPIGet function, which essentially just does a GET call to Dashboard API.
+The policy engine has access to the `TykAPIGet` function, which essentially just does a GET call to the Tyk Dashboard API.
+
 Example:
 
 ```
@@ -97,7 +97,9 @@ contains(api.target_url, "external.com")
 ```
 
 Getting changeset of current request
-For requests which modify the content, you can get a changeset (e.g. difference) using `TykDiff` function, combined with `TykAPIGet` call to get original object. See example:
+For requests which modify the content, you can get a changeset (e.g. difference) using the `TykDiff` function, combined with a `TykAPIGet` call to get the original object. 
+
+Example:
 
 ```
 # Example of the complex rule which forbids user to change API status, if he has some custom permission
@@ -122,16 +124,16 @@ deny["You are not allowed to change API status"] {
 ```
 
 ### Developer guide
-Since Opa rules are declarative, in order to test them, in the majority of the cases you can test your rules without using the dashboard, and using this pre-build Rego playground https://play.openpolicyagent.org/p/x3ila2Q8Gb
-When it comes `TykAPIGet` and `TykDiff` functions, you can mock them in your tests.
+Since Opa rules are declarative, so in order to test them in the majority of the cases you can test your rules without using the Tyk Dashboard, and using this pre-build Rego playground https://play.openpolicyagent.org/p/x3ila2Q8Gb
+When it comes to the `TykAPIGet` and `TykDiff` functions, you can mock them in your tests.
 
-In order to understand how Dashboard evaluates the rules, you can enable debugging mode by setting `security.openpolicy_debug` option, and in dashboard logs, you will see the detailed output with input and output of the rule engine. It can be useful to copy-paste dashboard log output to the Rego playground, fix issue, and validate it on the dashboard.
+In order to understand how the Dashboard evaluates the rules, you can enable debugging mode by setting the `security.openpolicy_debug` option, and in the Dashboard logs, you will see the detailed output with input and output of the rule engine. It can be useful to copy-paste the Dashboard log output to the Rego playground, fix the issue, and validate it on the Dashboard.
 
-When you modify `dashboard.opa` file, you need to restart dashboard.
+When you modify the `dashboard.opa` file, you will need to restart your tyk Dashboard.
 
-### Using Open Policy Agent (OPA) in the dashboard
+### Using Open Policy Agent (OPA) in the Dashboard
 
-As well as configuring OPA rules through the API, admin users can view and edit OPA rules from within the dashboard. The advantage of configuring your OPA rules in the dashboard is that the format is (what is the language or format compared to the API? Why is it more readable), and there are two ways you can do this.
+As well as configuring OPA rules through the API, admin users can view and edit OPA rules from within the Tyk Dashboard. The advantage of configuring your OPA rules in the Dashboard is that the format is (what the language is or the format compared to the API? Why is it more readable?), and there are two ways you can do this.
 
 Open Policy Agent Rules page: In the side navigation under Dashboard Management, there is a page called OPA Rules. Here you can view and make any changes and choose whether your OPA rules should be enabled or disabled. 
 Developer Tools: Using the keyboard shortcut CMD+SHIFT+D (or CTRL+SHIFT+D for PC), you can open the Developer Tools panel on any page in the dashboard and configure the permissions, seeing them come into effect straight away.  
