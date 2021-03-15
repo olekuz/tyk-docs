@@ -11,10 +11,10 @@ Tyk now supports the [Open Policy Agent](https://www.openpolicyagent.org/) (OPA)
 ### Added new config fields:
 | Key                             | Type       | Description                                                                                              | Example                 |
 | -------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------- | ----------------------- |
-| security.enable_open_policy            | boolean    | Toggle support for OpenPolicy                                                                            | true                    |
-| security.open_policy_debug             | boolean    | Enable debugging mode, prints a lot of information to the console                                        | true                    |
+| security.open_policy.enabled           | boolean    | Toggle support for OpenPolicy                                                                            | true                    |
+| security.open_policy.debug             | boolean    | Enable debugging mode, prints a lot of information to the console                                        | true                    |
+| security.open_policy.disable_api       | boolean    | Disables access to the OPA API, even for users with Admin role                                           | true
 | security.additional_permissions        | string map | Add custom user/user_group permissions. You can use them in your rules, and they will be displayed on UI | `{"key": "human name"}` |
-| security.disable_open_policy_api       | boolean    | Disables access to the OPA API, even for users with Admin role                                           | true
 
 
 With Opa turned on, the majority of the security rules will be dynamically evaluated based on these rules.
@@ -127,7 +127,7 @@ deny["You are not allowed to change API status"] {
 Since Opa rules are declarative, so in order to test them in the majority of the cases you can test your rules without using the Tyk Dashboard, and using this pre-build Rego playground https://play.openpolicyagent.org/p/x3ila2Q8Gb
 When it comes to the `TykAPIGet` and `TykDiff` functions, you can mock them in your tests.
 
-In order to understand how the Dashboard evaluates the rules, you can enable debugging mode by setting the `security.openpolicy_debug` option, and in the Dashboard logs, you will see the detailed output with input and output of the rule engine. It can be useful to copy-paste the Dashboard log output to the Rego playground, fix the issue, and validate it on the Dashboard.
+In order to understand how the Dashboard evaluates the rules, you can enable debugging mode by setting the `security.open_policy.debug` option, and in the Dashboard logs, you will see the detailed output with input and output of the rule engine. It can be useful to copy-paste the Dashboard log output to the Rego playground, fix the issue, and validate it on the Dashboard.
 
 When you modify the `dashboard.opa` file, you will need to restart your tyk Dashboard.
 
