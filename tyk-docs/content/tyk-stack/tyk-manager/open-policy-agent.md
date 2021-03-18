@@ -22,9 +22,9 @@ You can control OPA functionality on global level via configuration file or per 
 
 | Key                             | Type       | Description                                                                                              | Example                 |
 | -------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------- | ----------------------- |
-| security.open_policy.enabled           | boolean    | Toggle support for OPA                                                                            | true                    |
-| security.open_policy.debug             | boolean    | Enable debugging mode, prints a lot of information to the console                                        | true                    |
-| security.open_policy.disable_api       | boolean    | Disables access to the OPA API, even for users with Admin role                                           | true
+| security.open_policy.enabled           | boolean    | Toggle support for OPA                                                                            | false                   |
+| security.open_policy.debug             | boolean    | Enable debugging mode, prints a lot of information to the console                                        | false                   |
+| security.open_policy.enable_api        | boolean    | Enable access to the OPA API, even for users with Admin role                                           | false
 | security.additional_permissions        | string map | Add custom user/user_group permissions. You can use them in your rules, and they will be displayed on UI | `{"key": "human name"}` |
 
 
