@@ -2,39 +2,47 @@
 title: Open Policy Agent
 menu:
   main:
-    parent: "Key Concepts"
-weight: 70
+    parent: "Tyk Dashboard"
+url: "/tyk-dashboard/open-policy-agent"
 ---
 
-Tyk now supports the [Open Policy Agent](https://www.openpolicyagent.org/) (OPA) standard.
-
-### Added new config fields:
-| Key                             | Type       | Description                                                                                              | Example                 |
-| -------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------- | ----------------------- |
-| security.open_policy.enabled           | boolean    | Toggle support for OpenPolicy                                                                            | true                    |
-| security.open_policy.debug             | boolean    | Enable debugging mode, prints a lot of information to the console                                        | true                    |
-| security.open_policy.disable_api       | boolean    | Disables access to the OPA API, even for users with Admin role                                           | true
-| security.additional_permissions        | string map | Add custom user/user_group permissions. You can use them in your rules, and they will be displayed on UI | `{"key": "human name"}` |
-
-
-With Opa turned on, the majority of the security rules will be dynamically evaluated based on these rules.
-Additionally, users can modify OPA (Open Policy Agent) rules, and define their own, through the [OPA API](/docs/tyk-dashboard-api/org/permissions/), or, On-premises users can access and modify the OPA rules from the file system.
-Moreover, using these rules you can also modify request content 🚀
+Tyk Dashboard permission system can be extended by writing custom rules using Open Policy Agent (OPA). The rule engine works on top of Dashboard API, which means you can control not only access rules, but also behaviour of all Dashboard APIs (except public developer portal).
 
 To give you some inspiration here are some ideas of the rules you can implement now:
 
 * Enforce HTTP proxy option for all APIs which target URL does not point to the internal domain
 * Control access for individual fields. For example, do not allow change API "active" status (e.g. deploy), unless you have a specific permission set (and make new permission be available to the UI/API). Custom permissions can be creating using the [Additional Permissions API](/docs/tyk-dashboard-api/org/permissions/)
 * Have a user(or group) which has read access to one APIs and write to another
-OpenPolicy rule engine put on top of Dashboard API, which means you can control the behavior of all APIs (except public developer portal)
+OPA rule engine put on top of Dashboard API, which means you can control the behavior of all APIs (except public developer portal)
+
+### Configuration
+
+By default Dashboard OPA engine is turned off, and you need to explicitly enable it via configuration file.
+You can control OPA functionality on global level via configuration file or per organisation level using [OPA API](/docs/tyk-dashboard-api/org/permissions/) and [UI](#using-open-policy-agent-(opa)-in-the-dashboard).
+
+| Key                             | Type       | Description                                                                                              | Example                 |
+| -------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------- | ----------------------- |
+| security.open_policy.enabled           | boolean    | Toggle support for OPA                                                                            | true                    |
+| security.open_policy.debug             | boolean    | Enable debugging mode, prints a lot of information to the console                                        | true                    |
+| security.open_policy.disable_api       | boolean    | Disables access to the OPA API, even for users with Admin role                                           | true
+| security.additional_permissions        | string map | Add custom user/user_group permissions. You can use them in your rules, and they will be displayed on UI | `{"key": "human name"}` |
+
+
+With Opa turned on, the majority of the security rules will be dynamically evaluated based on these rules.
+
+Additionally, users can modify OPA rules, and define their own, through the [OPA API](/docs/tyk-dashboard-api/org/permissions/), or, On-premises users can access and modify the OPA rules from the file system, in [`schemas/dashboard.rego`](/docs/tyk-dashboard/opa-rules).
+Moreover, using these rules you can also modify request content 🚀
 
 ### Language intro
-OPA is purpose built for reasoning about information represented in structured documents. The data that your service and its users publish can be inspected and transformed using OPA’s native query language - Rego.
+The Open Policy Agent (OPA, pronounced “oh-pa”) is an open source, general-purpose policy engine that unifies policy enforcement across the stack. OPA provides a high-level declarative language (Rego) that lets you specify policy as code and simple APIs to offload policy decision-making from your software. (source: https://www.openpolicyagent.org/docs/latest/)
 
 ### What is Rego?
+OPA policies are expressed in a high-level declarative language called Rego. Rego (pronounced “ray-go”) is purpose-built for expressing policies over complex hierarchical data structures. For detailed information on Rego see the (Policy Language)[https://www.openpolicyagent.org/docs/latest/policy-language] documentation.
+
 Rego was inspired by Datalog, which is a well understood, decades old query language. Rego extends Datalog to support structured document models such as JSON.
 
 Rego queries are assertions on data stored in OPA. These queries can be used to define policies that enumerate instances of data that violate the expected state of the system.
+
 
 ### Why use Rego?
 Use Rego for defining a policy that is easy to read and write.
