@@ -8,10 +8,15 @@ menu:
 url: "/apim/open-source"
 ---
 
+
+
 Tyk offers many open source products.  You can use as many or as few as you need to solve your API problems.
 
-![OSS-Guide](/docs/img/diagrams/tyk-oss.png)
+Please show your support by giving us a GitHub Star. You can star our API Gateway by clicking this button
+{{< github_star_button "TykTechnologies" "tyk" "true" >}}
 
+
+![OSS-Guide](/docs/img/diagrams/oss-flow.png)
 
 {{< include "oss-product-list-include" >}}
 
@@ -23,4 +28,4 @@ At the center of everything is the Tyk Gateway.  The primary application for Ope
 
 ## Get Started
 
-To Get started, simply install [Tyk Open Source](/docs/tyk-oss-gateway/install/), and then create your first API!
+To Get started, simply install [Tyk Open Source](/docs/apim/open-source/getting-started/), and then create your first API!
