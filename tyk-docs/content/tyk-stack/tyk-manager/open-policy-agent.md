@@ -32,6 +32,7 @@ With Opa turned on, the majority of the security rules will be dynamically evalu
 
 Additionally, users can modify OPA rules, and define their own, through the [OPA API](/docs/tyk-dashboard-api/org/permissions/), or, On-premises users can access and modify the OPA rules from the file system, in [`schemas/dashboard.rego`](/docs/tyk-dashboard/opa-rules).
 Moreover, using these rules you can also modify request content 🚀
+Suggestion is to use those modifications in dev environments also do not forget to create a backup of the rego rules (ideally to store it in git)
 
 ### Language intro
 The Open Policy Agent (OPA, pronounced “oh-pa”) is an open source, general-purpose policy engine that unifies policy enforcement across the stack. OPA provides a high-level declarative language (Rego) that lets you specify policy as code and simple APIs to offload policy decision-making from your software. (source: https://www.openpolicyagent.org/docs/latest/)
