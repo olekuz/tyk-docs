@@ -34,6 +34,10 @@ Additionally, users can modify OPA rules, and define their own, through the [OPA
 Moreover, using these rules you can also modify request content 🚀
 Suggestion is to use those modifications in dev environments also do not forget to create a backup of the rego rules (ideally to store it in git)
 
+Enable flag is used on organisation level in case that it's not set or it's false we are aming settings from `tyk_analytics.conf`.
+
+Additional Permissions are set on organisation level object, a sligtly different than Open Policy here we combine addiitonal permissions from organisation object and from global config in our case it's set inside `tyk_analytics.conf`.
+
 ### Language intro
 The Open Policy Agent (OPA, pronounced “oh-pa”) is an open source, general-purpose policy engine that unifies policy enforcement across the stack. OPA provides a high-level declarative language (Rego) that lets you specify policy as code and simple APIs to offload policy decision-making from your software. (source: https://www.openpolicyagent.org/docs/latest/)
 
