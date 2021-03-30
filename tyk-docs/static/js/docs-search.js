@@ -11,6 +11,9 @@ var searchClient = algoliasearch(
 var search = instantsearch({
 	indexName: 'tyk-docs',
 	searchClient,
+	searchParams: {
+		advancedSyntax: true
+	},
 	searchFunction: function(helper) {
 		var searchResults = document.getElementById('hits');
 		var searchbox = document.getElementById('searchbox');
