@@ -1,7 +1,7 @@
 ---
 publishdate: 2020-03-09
 lastmod: 2020-03-09
-title: Kubernetes Docker Pro Demo on Windows
+title: Deploy Tyk Pro On Windows Using Helm
 tags: ["Tyk Stack", "Self Managed", "Installation", "Kubernetes", "Helm Chart"]
 description: "How to install Tyk in a self-managed environment using Kubernetes on Windows" 
 menu:
@@ -22,7 +22,7 @@ Installing Tyk on Kubernetes requires a multi-node Tyk licence. If you are evalu
 {{< warning success >}}
 **Warning**  
 
-This demo is NOT designed for production use or performance testing. The Tyk Pro Docker Demo is our full, [On-Premises](https://tyk.io/api-gateway/on-premise/) solution, which includes our Gateway, Dashboard and analytics processing pipeline. 
+This demo is NOT designed for production use or performance testing.
 
 This demo will run Tyk On-Premises on your machine, which contains 5 containers: Tyk Gateway, Tyk Dashboard, Tyk Pump, Redis and MongoDB. 
 
@@ -46,7 +46,6 @@ You use this at your own risk. Tyk is not supported on the Windows platform. How
 - Git for Windows
 - [Python for Windows](https://www.python.org/downloads/windows/)
 - PowerShell running as administrator
-- Our Pro Demo Docker [GitHub repo](https://github.com/TykTechnologies/tyk-pro-docker-demo)
 - A free Tyk On-Premises [Developer licence](https://tyk.io/product/tyk-on-premises-free-edition/)
 
 Ensure that kubectl and helm prerequisites are configured on your Windows path environment variable
